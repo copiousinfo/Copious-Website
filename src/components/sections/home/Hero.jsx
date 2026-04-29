@@ -4,7 +4,7 @@ import heroBg from '../../../assets/image.jpg';
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-[565px] flex items-center justify-center pt-20">
+    <section className="relative w-full min-h-[565px] flex items-center justify-center pt-32 pb-20 md:py-20">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -18,9 +18,9 @@ export default function Hero() {
           Trusted By 1000+ People In India
         </div>
         
-        <h1 className="text-4xl md:text-5xl lg:text-[50px] font-bold text-white mb-6 leading-[1.1] tracking-tight">
-          Unlock Seamless Experiences <br />
-          With Our App For Your Booking, <br />
+        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-[50px] font-bold text-white mb-6 leading-[1.25] md:leading-[1.1] tracking-tight max-w-[320px] sm:max-w-none">
+          Unlock Seamless Experiences <br className="hidden sm:block" />
+          With Our App For Your Booking, <br className="hidden sm:block" />
           Ticketing, And Parking Needs
         </h1>
         
