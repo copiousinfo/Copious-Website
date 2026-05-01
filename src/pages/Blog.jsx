@@ -1,58 +1,105 @@
 import React from 'react';
+import blogImage from '../assets/blog.jpg';
+import billingImage from '../assets/billing.jpg';
 
 const blogPosts = [
   {
     id: 1,
-    title: 'How to Optimize Your Billing Process',
-    excerpt: 'Discover the top 5 strategies to streamline your company billing and reduce errors.',
-    date: 'April 25, 2026',
-    image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80'
+    title: 'Best Whatsapp Marketing Campaign',
+    excerpt: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text.',
+    date: 'Jan 25, 2026',
+    image: billingImage,
   },
   {
     id: 2,
-    title: 'The Future of Digital Ticketing',
-    excerpt: 'Exploring how mobile-first ticketing solutions are changing the event industry.',
-    date: 'April 20, 2026',
-    image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&q=80'
+    title: 'Best Whatsapp Marketing Campaign',
+    excerpt: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text.',
+    date: 'Jan 25, 2026',
+    image: billingImage,
   },
   {
     id: 3,
-    title: 'Smart Parking: A Guide for Cities',
-    excerpt: 'How data-driven parking management can reduce traffic and improve urban life.',
-    date: 'April 15, 2026',
-    image: 'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&q=80'
-  }
+    title: 'Best Whatsapp Marketing Campaign',
+    excerpt: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text.',
+    date: 'Jan 25, 2026',
+    image: billingImage,
+  },
+  {
+    id: 4,
+    title: 'Best Whatsapp Marketing Campaign',
+    excerpt: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text.',
+    date: 'Jan 25, 2026',
+    image: billingImage,
+  },
+  {
+    id: 5,
+    title: 'Best Whatsapp Marketing Campaign',
+    excerpt: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text.',
+    date: 'Jan 25, 2026',
+    image: billingImage,
+  },
+  {
+    id: 6,
+    title: 'Best Whatsapp Marketing Campaign',
+    excerpt: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text.',
+    date: 'Jan 25, 2026',
+    image: billingImage,
+  },
 ];
 
 export default function Blog() {
   return (
-    <div className="pt-32 pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[80vh] bg-white text-dark">
-      <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#da251d]">Our Blog</h1>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Stay updated with the latest news, tips, and insights from the Copious team.
-        </p>
-      </div>
+    <div className="w-full pt-[92px] bg-[#202329]">
+      <section className="w-full bg-[#202329]">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-7">
+          <h1 className="text-white text-3xl sm:text-4xl font-semibold">Blogs</h1>
+        </div>
+      </section>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {blogPosts.map((post) => (
-          <div key={post.id} className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm flex flex-col hover:shadow-md transition-shadow">
-            <div className="h-48 w-full">
-              <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
-            </div>
-            <div className="p-6 flex flex-col flex-grow">
-              <span className="text-xs text-[#da251d] font-bold mb-2 uppercase tracking-wider">{post.date}</span>
-              <h3 className="text-xl font-bold mb-3 text-dark">{post.title}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                {post.excerpt}
-              </p>
-              <button className="text-[#da251d] font-bold text-sm hover:underline mt-auto inline-flex items-center">
-                Read More <span className="ml-1">→</span>
-              </button>
-            </div>
+      <section className="max-w-[1440px] mx-auto">
+        <div
+          className="relative h-[250px] sm:h-[310px] lg:h-[360px] bg-cover bg-center"
+          style={{ backgroundImage: `url(${blogImage})` }}
+        >
+          <div className="absolute inset-0 bg-black/45" />
+          <div className="relative z-10 h-full flex flex-col justify-center px-6 sm:px-10 lg:px-16">
+            <span className="bg-[#da251d] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-4 w-fit">
+              Our Blogs
+            </span>
+            <h2 className="text-white text-4xl sm:text-5xl lg:text-[48px] font-semibold mb-3 leading-tight">
+              Read Our Blogs
+            </h2>
+            <p className="text-gray-100 text-xs sm:text-sm max-w-3xl">
+              Simplify Your Billing, Boost Efficiency, And Serve Customers Faster - All From Your Mobile.
+            </p>
           </div>
-        ))}
-      </div>
+        </div>
+      </section>
+
+      <section className="w-full bg-[#efefef]">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-8 sm:py-10 lg:py-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+            {blogPosts.map((post) => (
+              <article
+                key={post.id}
+                className="bg-[#f5f5f5] rounded-2xl overflow-hidden border border-[#e5e7eb] flex flex-col"
+              >
+                <div className="h-[180px] w-full">
+                  <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
+                </div>
+                <div className="p-4 sm:p-5 flex flex-col flex-grow">
+                  <span className="text-[10px] text-[#6b7280] mb-2">{post.date}</span>
+                  <h3 className="text-[#da251d] text-xl font-semibold leading-tight mb-2">{post.title}</h3>
+                  <p className="text-[#4b5563] text-xs sm:text-[13px] leading-5 mb-5">{post.excerpt}</p>
+                  <button className="mt-auto w-fit bg-[#da251d] text-white text-sm font-medium px-5 py-2 rounded-md hover:bg-[#c6221a] transition-colors">
+                    Read Now
+                  </button>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
