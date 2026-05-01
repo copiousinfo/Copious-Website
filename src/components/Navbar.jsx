@@ -15,7 +15,7 @@ export default function Navbar() {
   ]
 
   return (
-    <header className="w-full z-[100] flex flex-col fixed top-0 bg-white shadow-sm">
+    <header className="w-full z-[100] flex flex-col fixed top-0 shadow-sm transition-colors bg-[#1A1A1A] md:bg-white">
       {/* Top Black Bar */}
       <div className="bg-[#1A1A1A] w-full py-1.5 flex justify-center items-center">
         <span className="text-white text-[11px] md:text-xs tracking-wider font-medium">Welcome to Copious Info</span>
@@ -54,8 +54,8 @@ export default function Navbar() {
             </button>
             
             {/* Mobile Menu Toggle */}
-            <button 
-              className="md:hidden text-dark p-2"
+            <button
+              className="md:hidden p-2 transition-colors text-white"
               onClick={() => setIsOpen(!isOpen)}
             >
               {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
@@ -67,14 +67,14 @@ export default function Navbar() {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 py-4 px-4 flex flex-col gap-4 animate-fadeIn">
+        <div className="md:hidden bg-[#1A1A1A] border-t border-[#2f2f2f] py-4 px-4 flex flex-col gap-4 animate-fadeIn">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               to={link.path}
               onClick={() => setIsOpen(false)}
               className={`text-[16px] font-bold py-2 ${
-                location.pathname === link.path ? 'text-[#da251d]' : 'text-dark'
+                location.pathname === link.path ? 'text-[#da251d]' : 'text-white'
               }`}
             >
               {link.name}
