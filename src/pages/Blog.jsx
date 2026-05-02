@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import blogImage from '../assets/blog.jpg';
 import billingImage from '../assets/billing.jpg';
 
@@ -91,9 +92,12 @@ export default function Blog() {
                   <span className="text-[10px] text-[#6b7280] mb-2">{post.date}</span>
                   <h3 className="text-[#da251d] text-xl font-semibold leading-tight mb-2">{post.title}</h3>
                   <p className="text-[#4b5563] text-xs sm:text-[13px] leading-5 mb-5">{post.excerpt}</p>
-                  <button className="mt-auto w-fit bg-[#da251d] text-white text-sm font-medium px-5 py-2 rounded-md hover:bg-[#c6221a] transition-colors">
+                  <Link
+                    to="/blog/read"
+                    className="mt-auto w-fit inline-flex bg-[#da251d] text-white text-sm font-medium px-5 py-2 rounded-md hover:bg-[#c6221a] transition-colors"
+                  >
                     Read Now
-                  </button>
+                  </Link>
                 </div>
               </article>
             ))}

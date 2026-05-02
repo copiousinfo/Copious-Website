@@ -32,7 +32,13 @@ export default function Navbar() {
                 key={link.name}
                 to={link.path}
                 className={`text-[14px] lg:text-[15px] font-bold transition-colors hover:text-[#da251d] ${
-                  location.pathname === link.path ? 'text-[#da251d]' : 'text-[#4b5563]'
+                  link.path === '/blog'
+                    ? location.pathname === '/blog' || location.pathname.startsWith('/blog/')
+                      ? 'text-[#da251d]'
+                      : 'text-[#4b5563]'
+                    : location.pathname === link.path
+                      ? 'text-[#da251d]'
+                      : 'text-[#4b5563]'
                 }`}
               >
                 {link.name}
@@ -74,7 +80,13 @@ export default function Navbar() {
               to={link.path}
               onClick={() => setIsOpen(false)}
               className={`text-[16px] font-bold py-2 ${
-                location.pathname === link.path ? 'text-[#da251d]' : 'text-white'
+                link.path === '/blog'
+                  ? location.pathname === '/blog' || location.pathname.startsWith('/blog/')
+                    ? 'text-[#da251d]'
+                    : 'text-white'
+                  : location.pathname === link.path
+                    ? 'text-[#da251d]'
+                    : 'text-white'
               }`}
             >
               {link.name}

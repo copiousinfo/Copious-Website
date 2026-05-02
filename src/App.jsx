@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import Blog from './pages/Blog'
+import BlogReading from './pages/BlogReading'
 import Contact from './pages/Contact'
 
 function ScrollToTop() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/read" element={<BlogReading />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
