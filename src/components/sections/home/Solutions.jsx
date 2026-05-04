@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SectionHeading from '../../ui/SectionHeading';
 import billingImg from '../../../assets/billing.jpg';
 import ticketingImg from '../../../assets/tickting.jpg';
@@ -7,18 +8,21 @@ import parkingImg from '../../../assets/parking.jpg';
 const solutionsData = [
   {
     id: 1,
+    slug: 'billing',
     title: 'Billing',
     image: billingImg,
     description: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text And WhatsApp Respectively, For Efficient Customer Outreach, IT Consulting Advises On Technology Use For Business Goals.'
   },
   {
     id: 2,
+    slug: 'ticketing',
     title: 'Ticketing',
     image: ticketingImg,
     description: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text And WhatsApp Respectively, For Efficient Customer Outreach, IT Consulting Advises On Technology Use For Business Goals.'
   },
   {
     id: 3,
+    slug: 'parking',
     title: 'Parking',
     image: parkingImg,
     description: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text And WhatsApp Respectively, For Efficient Customer Outreach, IT Consulting Advises On Technology Use For Business Goals.'
@@ -42,9 +46,12 @@ export default function Solutions() {
                 <p className="text-[#4b5563] text-[13px] font-medium leading-[1.6] mb-5">
                   {solution.description}
                 </p>
-                <button className="bg-[#da251d] text-white px-5 py-2 rounded-md text-[13px] font-semibold hover:bg-[#c02019] transition-colors mt-auto">
+                <Link
+                  to={`/solutions/${solution.slug}`}
+                  className="bg-[#da251d] text-white px-5 py-2 rounded-md text-[13px] font-semibold hover:bg-[#c02019] transition-colors mt-auto"
+                >
                   More Detail
-                </button>
+                </Link>
               </div>
             </div>
           ))}
