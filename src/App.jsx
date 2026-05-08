@@ -10,6 +10,10 @@ import Contact from './pages/Contact'
 import SolutionsDetail from './pages/SolutionsDetail'
 import ServiceDetail from './pages/ServiceDetail'
 import SecurityDetail from './pages/SecurityDetail'
+import AWSCloudDetail from './pages/AWSCloudDetail'
+import AzureCloudDetail from './pages/AzureCloudDetail'
+import JioCloudDetail from './pages/JioCloudDetail'
+import CloudServiceHome from './pages/CloudServiceHome'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -35,7 +39,13 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/solutions/:slug" element={<SolutionsDetail />} />
           <Route path="/services/security" element={<SecurityDetail />} />
+          <Route path="/services/cloud-service" element={<CloudServiceHome />} />
+          <Route path="/services/cloud-service_aws" element={<AWSCloudDetail />} />
+          <Route path="/services/cloud-service_azure" element={<AzureCloudDetail />} />
+          <Route path="/services/cloud-service_jio" element={<JioCloudDetail />} />
           <Route path="/services/:slug" element={<ServiceDetail />} />
+
+
         </Routes>
       </main>
       <Footer />

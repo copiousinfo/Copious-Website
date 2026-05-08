@@ -1,4 +1,5 @@
 import { FaFacebookF, FaInstagram, FaPinterestP, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import logoImg from '../assets/copious.png';
 
 export default function Footer() {
@@ -37,11 +38,11 @@ export default function Footer() {
           <div className="md:col-span-3 flex flex-col">
             <h4 className="font-bold text-lg mb-6">Quick Links</h4>
             <ul className="space-y-4 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">Home</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">My Story</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Blogs</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Policy</a></li>
+              <li><Link to="/" className="hover:text-white transition-colors">Home</Link></li>
+              <li><Link to="/about" className="hover:text-white transition-colors">My Story</Link></li>
+              <li><Link to="/blog" className="hover:text-white transition-colors">Blogs</Link></li>
+              <li><Link to="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
+              <li><Link to="/" className="hover:text-white transition-colors">Policy</Link></li>
             </ul>
           </div>
 
