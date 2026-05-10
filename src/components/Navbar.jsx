@@ -259,7 +259,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-6 xl:gap-1">
+          <nav className="hidden lg:flex items-center gap-4 xl:gap-16">
             {navItems.map((item) =>
               item.children ? (
                 <DesktopDropdown key={item.name} item={item} />
