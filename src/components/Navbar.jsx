@@ -259,7 +259,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-4 xl:gap-16">
+          <nav className="hidden lg:flex items-center gap-3 xl:gap-5">
             {navItems.map((item) =>
               item.children ? (
                 <DesktopDropdown key={item.name} item={item} />
@@ -267,7 +267,7 @@ export default function Navbar() {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`text-[13px] xl:text-[14px] font-bold px-2 xl:px-2.5 py-2 transition-colors hover:text-[#da251d] ${
+                  className={`text-[13px] xl:text-[14px] font-bold py-2 transition-colors hover:text-[#da251d] ${
                     item.path === '/blog'
                       ? location.pathname.startsWith('/blog')
                         ? 'text-[#da251d]'

@@ -3,7 +3,7 @@ import aboutHero from '../assets/about.jpg';
 import aboutImage from '../assets/about1.jpg';
 
 const tabData = [
-  'Billing Management Software',
+  'Ticket Booking & Billing',
   'Automated Billing Management Software',
 ];
 
@@ -11,13 +11,13 @@ const featureCards = [
   { title: "Customer Management", subtitle: "Send booking confirmations and reminders via email or SMS." },
   { title: "Customer Support", subtitle: "Sync customer data with CRM systems" },
   { title: "Payment Integration", subtitle: "Self Managed MOP like Cash, Wallets, UPI etc" },
-  { title: "Automation", subtitle: "Make Ticket automation by Mobile" },
-  { title: "Multi-Currency", subtitle: "Handle transactions in different currencies." },
-  { title: "Import & Export", subtitle: "You can easily data import and export" },
+  { title: "Automation", subtitle: "Make Ticcket automation by Mobile" },
+  { title: "Multi-Currency Support", subtitle: "Handle transactions in different currencies." },
+  { title: "Import & Export", subtitle: "You can easly data import and export" },
   { title: "Tax Management", subtitle: "Tax Management Reports Format & Excel Export" },
-  { title: "Multilingual", subtitle: "It's provided multiple language" },
-  { title: "Data-transfer", subtitle: "Data transfer with security" },
-  { title: "Searching", subtitle: "Records find easily and fast" },
+  { title: "Multilingual", subtitle: "It's provided multipal language" },
+  { title: "Data-transfar", subtitle: "Data transfar with security" },
+  { title: "Searching", subtitle: "Records find easly and fast" },
 ];
 
 export default function BillingDetail() {
@@ -63,6 +63,12 @@ export default function BillingDetail() {
               <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
                 Billing software streamlines the invoicing procedure through automation, including tasks like invoice creation, payment monitoring, and payment reminders.
               </p>
+              <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
+                This eradicates the necessity for manual input of data, minimizing the chances of mistakes and conserving precious time for businesses and their customers.
+              </p>
+              <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
+                Companies can effectively manage access to parking locations and handle various fees with the assistance of parking management software.
+              </p>
               <p className="text-[#4b5563] text-[14px] leading-7">
                 Our comprehensive Billing Software efficiently handles all aspects of your business, including inventory and sales tracking, as well as service and repair management. With our user-friendly billing software, you will have access to a wide range of tools that will streamline your business operations effortlessly. Additionally, you can easily maintain a customized workflow to effectively monitor all items undergoing service.
               </p>
@@ -87,12 +93,6 @@ export default function BillingDetail() {
               <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
                 By automating tasks such as generating invoices, tracking payments, and sending payment reminders, billing software makes the invoicing process more efficient and less prone to errors, ultimately saving time for both businesses and their clients.
               </p>
-              <ul className="list-disc pl-6 text-[#4b5563] text-[14px] leading-7 space-y-1 marker:text-[#da251d]">
-                <li>Streamlines the invoicing procedure through automation.</li>
-                <li>Handles inventory and sales tracking efficiently.</li>
-                <li>Maintains a customized workflow to monitor service items.</li>
-                <li>Minimizes the chances of mistakes and conserves precious time.</li>
-              </ul>
             </div>
           </div>
         </div>
@@ -100,8 +100,9 @@ export default function BillingDetail() {
 
       <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pb-12 sm:pb-14 lg:pb-16">
         <div className="bg-white rounded-md p-5 sm:p-7 lg:p-8">
-          <h2 className="text-center text-3xl sm:text-4xl lg:text-[56px] font-semibold text-[#1f2937] mb-8">
-            Billing Management Feature
+          <h2 className="text-center text-3xl sm:text-4xl lg:text-[56px] font-semibold text-[#1f2937] flex flex-col lg:gap-4 mb-12">
+            <span>Ticket Booking & Billing Management</span>
+            <span>Feature</span>
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

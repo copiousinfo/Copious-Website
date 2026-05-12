@@ -14,11 +14,17 @@ const titleMap = {
   parking: 'Parking',
 };
 
-const featureCards = Array.from({ length: 9 }, (_, idx) => ({
-  id: idx + 1,
-  title: 'Create & Manage',
-  subtitle: 'Tickets Are Create And Manage Very Easy',
-}));
+const featureCards = [
+  { id: 1, title: 'Create & Manage', subtitle: 'Tickets are create and manage very Easy' },
+  { id: 2, title: 'Records', subtitle: 'We can multipal Records store.' },
+  { id: 3, title: 'Payment of Method', subtitle: 'Self Managed MOP like Cash, Wallets, UPI etc' },
+  { id: 4, title: 'Account Statement', subtitle: 'Indivisual Statement Record Print' },
+  { id: 5, title: 'Import & Export', subtitle: 'You can easly data import and export' },
+  { id: 6, title: 'GST', subtitle: 'GST Reports Format & Excel Export' },
+  { id: 7, title: 'Multilingual', subtitle: "It's provided multipal language" },
+  { id: 8, title: 'Data-transfar', subtitle: 'Data transfar with security' },
+  { id: 9, title: 'Searching', subtitle: 'Records find easly and fast' },
+];
 
 export default function SolutionsDetail() {
   const { slug } = useParams();
@@ -109,8 +115,9 @@ export default function SolutionsDetail() {
 
       <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pb-12 sm:pb-14 lg:pb-16">
         <div className="bg-white rounded-md p-5 sm:p-7 lg:p-8">
-          <h2 className="text-center text-3xl sm:text-4xl lg:text-[56px] font-semibold text-[#1f2937] mb-8">
-            Ticket Booking Management Feature
+          <h2 className="text-center text-3xl sm:text-4xl lg:text-[56px] font-semibold text-[#1f2937] flex flex-col lg:gap-4 mb-12">
+            <span>Ticket Booking Management</span>
+            <span>Feature</span>
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
