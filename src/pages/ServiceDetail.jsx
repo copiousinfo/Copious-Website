@@ -27,9 +27,9 @@ const serviceContent = {
     ],
     planTitle: 'Bulk Sms Our Best Plans',
     plans: [
-      { price: '$10', label: 'Basic plan', features: ['Access to all basic features', 'Basic reporting and analytics', 'Up to 10 individual users', '20GB individual data each user', 'Basic chat and email support'] },
-      { price: '$10', label: 'Basic plan', features: ['Access to all basic features', 'Basic reporting and analytics', 'Up to 10 individual users', '20GB individual data each user', 'Basic chat and email support'] },
-      { price: '$10', label: 'Basic plan', features: ['Access to all basic features', 'Basic reporting and analytics', 'Up to 10 individual users', '20GB individual data each user', 'Basic chat and email support'] },
+      { price: '$10', label: 'One Month Plan', features: ['Monthly Cost for IVR', 'Fully automated IVR at $0.06/min', 'Basic reporting and analytics', 'Basic chat and email support'] },
+      { price: '$12', label: 'Three Month Plan', features: ['Monthly Cost for IVR', 'Fully automated IVR at $0.06/min', 'Basic reporting and analytics', 'Basic chat and email support'] },
+      { price: '$16', label: 'Six Month Plan', features: ['Monthly Cost for IVR', 'Fully automated IVR at $0.06/min', 'Basic reporting and analytics', 'Basic chat and email support'] },
     ],
     features: [
       { title: 'Instant Delivery', subtitle: 'Messages reach recipients within seconds of sending.' },
