@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutHero from '../assets/about.jpg';
+import parkingImg from '../assets/parking.png';
 import aboutImage from '../assets/about1.jpg';
 
 const tabData = [
@@ -22,23 +22,13 @@ const featureCards = [
 export default function ParkingDetail() {
   return (
     <div className="w-full pt-[92px] bg-[#efefef]">
-      <section className="max-w-[1440px] mx-auto">
-        <div
-          className="relative h-[260px] sm:h-[320px] lg:h-[360px] bg-cover bg-center"
-          style={{ backgroundImage: `url(${aboutHero})` }}
-        >
-          <div className="absolute inset-0 bg-black/40" />
-          <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
-            <span className="bg-[#da251d] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
-              About Us
-            </span>
-            <h1 className="text-white text-3xl sm:text-5xl lg:text-[64px] font-semibold leading-[1.08] mb-0 max-w-[1320px]">
-              Smart Solutions For Modern Ticketing, Billing, And Parking
-            </h1>
-            <p className="text-gray-100 text-xs sm:text-sm max-w-3xl mt-5 sm:mt-6">
-              Simplify Your Parking, Boost Efficiency, And Serve Customers Faster - All From Your Mobile.
-            </p>
-          </div>
+      <section className="w-full">
+        <div className="w-full h-[220px] sm:h-[300px] md:h-[340px] lg:h-[380px]">
+          <img
+            src={parkingImg}
+            alt="Parking Solution"
+            className="w-full h-full object-cover object-center block"
+          />
         </div>
       </section>
 
@@ -73,27 +63,6 @@ export default function ParkingDetail() {
             />
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10 mt-10 items-start">
-            <img
-              src={aboutImage}
-              alt="Online booking"
-              className="w-full rounded-md object-cover h-[240px] sm:h-[300px] lg:h-[320px]"
-            />
-            <div>
-              <h3 className="text-3xl font-semibold text-[#1f2937] mb-4">
-                The Purpose Of Parking Systems
-              </h3>
-              <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
-                Our application offers a convenient web platform that enables companies to efficiently manage their parking spaces by setting up parking rules and inviting employees to manage their own spaces.
-              </p>
-              <ul className="list-disc pl-6 text-[#4b5563] text-[14px] leading-7 space-y-1 marker:text-[#da251d]">
-                <li>Enables users to find, register, and make payments for parking.</li>
-                <li>Beneficial tool for managing employee parking lots.</li>
-                <li>Effectively manage access to parking locations and handle various fees.</li>
-                <li>Efficiently handle vehicle spot reservations and tickets.</li>
-              </ul>
-            </div>
-          </div>
         </div>
       </section>
 

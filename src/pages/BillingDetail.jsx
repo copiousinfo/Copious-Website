@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutHero from '../assets/about.jpg';
+import billingImg from '../assets/billing.png';
 import aboutImage from '../assets/about1.jpg';
 
 const tabData = [
@@ -23,23 +23,13 @@ const featureCards = [
 export default function BillingDetail() {
   return (
     <div className="w-full pt-[92px] bg-[#efefef]">
-      <section className="max-w-[1440px] mx-auto">
-        <div
-          className="relative h-[260px] sm:h-[320px] lg:h-[360px] bg-cover bg-center"
-          style={{ backgroundImage: `url(${aboutHero})` }}
-        >
-          <div className="absolute inset-0 bg-black/40" />
-          <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
-            <span className="bg-[#da251d] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
-              About Us
-            </span>
-            <h1 className="text-white text-3xl sm:text-5xl lg:text-[64px] font-semibold leading-[1.08] mb-0 max-w-[1320px]">
-              Smart Solutions For Modern Ticketing, Billing, And Parking
-            </h1>
-            <p className="text-gray-100 text-xs sm:text-sm max-w-3xl mt-5 sm:mt-6">
-              Simplify Your Billing, Boost Efficiency, And Serve Customers Faster - All From Your Mobile.
-            </p>
-          </div>
+      <section className="w-full">
+        <div className="w-full h-[220px] sm:h-[300px] md:h-[340px] lg:h-[380px]">
+          <img
+            src={billingImg}
+            alt="Billing Solution"
+            className="w-full h-full object-cover object-center block"
+          />
         </div>
       </section>
 
@@ -52,9 +42,8 @@ export default function BillingDetail() {
                 {tabData.map((tab, idx) => (
                   <span
                     key={tab}
-                    className={`text-[11px] px-4 py-1.5 rounded-full ${
-                      idx === 0 ? 'bg-[#da251d] text-white' : 'bg-[#f1f5f9] text-[#374151]'
-                    }`}
+                    className={`text-[11px] px-4 py-1.5 rounded-full ${idx === 0 ? 'bg-[#da251d] text-white' : 'bg-[#f1f5f9] text-[#374151]'
+                      }`}
                   >
                     {tab}
                   </span>

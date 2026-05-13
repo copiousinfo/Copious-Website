@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import aboutHero from '../assets/about.jpg';
-import aboutImage from '../assets/about1.jpg';
+import ticketImg from '../assets/ticket.png';
+import aboutImg from '../assets/about1.jpg';
 
 const tabData = [
   'Ticket Management Software',
@@ -31,45 +31,41 @@ export default function SolutionsDetail() {
   const currentTitle = titleMap[slug] || 'Solutions';
 
   return (
-    <div className="w-full pt-[92px] bg-[#efefef]">
-      <section className="max-w-[1440px] mx-auto">
-        <div
-          className="relative h-[260px] sm:h-[320px] lg:h-[360px] bg-cover bg-center"
-          style={{ backgroundImage: `url(${aboutHero})` }}
-        >
-          <div className="absolute inset-0 bg-black/40" />
-          <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
-            <span className="bg-[#da251d] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
-              About Us
-            </span>
-            <h1 className="text-white text-3xl sm:text-5xl lg:text-[64px] font-semibold leading-[1.08] mb-0 max-w-[1320px]">
-              Smart Solutions For Modern Ticketing, Billing, And Parking
-            </h1>
-            <p className="text-gray-100 text-xs sm:text-sm max-w-3xl mt-5 sm:mt-6">
-              Simplify Your Billing, Boost Efficiency, And Serve Customers Faster - All From Your Mobile.
-            </p>
-          </div>
+    <div className="w-full pt-[72px] sm:pt-[80px] lg:pt-[92px] bg-[#efefef]">
+
+      {/* ── Hero: ticket.png full-width image ── */}
+      <section className="w-full">
+        <div className="w-full h-[220px] sm:h-[300px] md:h-[340px] lg:h-[380px]">
+          <img
+            src={ticketImg}
+            alt="Ticketing Solution"
+            className="w-full h-full object-cover object-center block"
+          />
         </div>
       </section>
 
-      <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-8 sm:py-10 lg:py-12">
-        <div className="bg-white p-5 sm:p-7 lg:p-8 rounded-md">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10 items-start">
+      {/* ── About + Purpose Section ── */}
+      <section className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-10 py-6 sm:py-10 lg:py-12">
+        <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-md">
+
+          {/* About Us row */}
+          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-5 lg:gap-10 items-start">
             <div>
-              <h2 className="text-3xl font-semibold text-[#1f2937] mb-4">About Us</h2>
-              <div className="flex flex-wrap gap-2 mb-4">
+              <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#1f2937] mb-3 sm:mb-4">
+                About Us
+              </h2>
+              <div className="flex flex-wrap gap-2 mb-3 sm:mb-4">
                 {tabData.map((tab, idx) => (
                   <span
                     key={tab}
-                    className={`text-[11px] px-4 py-1.5 rounded-full ${
-                      idx === 0 ? 'bg-[#da251d] text-white' : 'bg-[#f1f5f9] text-[#374151]'
-                    }`}
+                    className={`text-[10px] sm:text-[11px] px-3 sm:px-4 py-1 sm:py-1.5 rounded-full ${idx === 0 ? 'bg-[#da251d] text-white' : 'bg-[#f1f5f9] text-[#374151]'
+                      }`}
                   >
                     {tab}
                   </span>
                 ))}
               </div>
-              <p className="text-[#4b5563] text-[14px] leading-7">
+              <p className="text-[#4b5563] text-[13px] sm:text-[14px] leading-6 sm:leading-7">
                 Businesses utilize ticket management software to monitor and handle customer service
                 requests and inquiries. This software enables customer service teams to efficiently
                 process incoming tickets, allocate them to the relevant team members, and deliver
@@ -80,29 +76,30 @@ export default function SolutionsDetail() {
               </p>
             </div>
             <img
-              src={aboutImage}
-              alt="Solution management"
-              className="w-full rounded-md object-cover h-[240px] sm:h-[300px] lg:h-[320px]"
+              src={aboutImg}
+              alt="Ticket Management"
+              className="w-full rounded-md object-cover h-[200px] sm:h-[260px] lg:h-[320px] mt-2 lg:mt-0"
             />
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10 mt-10 items-start">
+          {/* Purpose of Online Booking row */}
+          <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5 lg:gap-10 mt-6 sm:mt-10 items-start">
             <img
-              src={aboutImage}
+              src={aboutImg}
               alt="Online booking"
-              className="w-full rounded-md object-cover h-[240px] sm:h-[300px] lg:h-[320px]"
+              className="w-full rounded-md object-cover h-[200px] sm:h-[260px] lg:h-[320px]"
             />
             <div>
-              <h3 className="text-3xl font-semibold text-[#1f2937] mb-4">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#1f2937] mb-3 sm:mb-4">
                 The Purpose Of Online Booking Systems
               </h3>
-              <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
+              <p className="text-[#4b5563] text-[13px] sm:text-[14px] leading-6 sm:leading-7 mb-3 sm:mb-4">
                 If you are not currently utilizing an online booking system, you may question the necessity
                 of it. You might think that phone and email bookings are sufficient. However, it is
                 important to take into account the current trends and metrics through which guests are
                 making their bookings before making any hasty judgments.
               </p>
-              <ul className="list-disc pl-6 text-[#4b5563] text-[14px] leading-7 space-y-1 marker:text-[#da251d]">
+              <ul className="list-disc pl-5 sm:pl-6 text-[#4b5563] text-[13px] sm:text-[14px] leading-6 sm:leading-7 space-y-1 marker:text-[#da251d]">
                 <li>Enhance the quality of online interactions for your customers.</li>
                 <li>Increase the speed of online transactions for your customers.</li>
                 <li>Efficiently gather crucial information to support various aspects of business.</li>
@@ -110,32 +107,35 @@ export default function SolutionsDetail() {
               </ul>
             </div>
           </div>
+
         </div>
       </section>
 
-      <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pb-12 sm:pb-14 lg:pb-16">
-        <div className="bg-white rounded-md p-5 sm:p-7 lg:p-8">
-          <h2 className="text-center text-3xl sm:text-4xl lg:text-[56px] font-semibold text-[#1f2937] flex flex-col lg:gap-4 mb-12">
-            <span>Ticket Booking Management</span>
-            <span>Feature</span>
+      {/* ── Ticket Booking Management Feature Cards ── */}
+      <section className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-10 pb-8 sm:pb-12 lg:pb-16">
+        <div className="bg-white rounded-md p-4 sm:p-6 lg:p-8">
+          <h2 className="text-center text-2xl sm:text-3xl lg:text-[48px] font-semibold text-[#1f2937] mb-6 sm:mb-10 lg:mb-12 leading-tight">
+            Ticket Booking Management{' '}
+            <span className="block sm:inline">Feature</span>
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
             {featureCards.map((item) => (
               <article
                 key={item.id}
-                className="bg-[#f8f8f8] rounded-[10px] border border-gray-200 px-4 py-3 flex items-center gap-3"
+                className="bg-[#f8f8f8] rounded-[10px] border border-gray-200 px-3 sm:px-4 py-3 flex items-center gap-3"
               >
-                <div className="w-10 h-10 rounded-full bg-[#f2e7e7] shrink-0" aria-hidden />
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#f2e7e7] shrink-0" aria-hidden />
                 <div>
-                  <h3 className="text-[#da251d] text-sm font-bold">{item.title}</h3>
-                  <p className="text-[#4b5563] text-[11px] mt-0.5">{item.subtitle}</p>
+                  <h3 className="text-[#da251d] text-[13px] sm:text-sm font-bold">{item.title}</h3>
+                  <p className="text-[#4b5563] text-[10px] sm:text-[11px] mt-0.5">{item.subtitle}</p>
                 </div>
               </article>
             ))}
           </div>
         </div>
       </section>
+
     </div>
   );
 }
