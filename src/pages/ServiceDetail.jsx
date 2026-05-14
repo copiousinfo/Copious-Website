@@ -161,9 +161,12 @@ export default function ServiceDetail() {
             <p className="text-gray-200 text-[13px] sm:text-[15px] max-w-2xl mx-auto leading-relaxed mb-6 sm:mb-8 px-2">
               {content.heroSub}
             </p>
-            <button className="bg-[#da251d] text-white px-8 sm:px-10 py-2.5 sm:py-3 rounded-lg font-bold text-[14px] sm:text-[15px] hover:bg-[#c02019] transition-all shadow-md w-auto">
+            <Link
+              to="/contact"
+              className="bg-[#da251d] text-white px-8 sm:px-10 py-2.5 sm:py-3 rounded-lg font-bold text-[14px] sm:text-[15px] hover:bg-[#c02019] transition-all shadow-md inline-block"
+            >
               Free Live Demo
-            </button>
+            </Link>
           </div>
         </div>
       </section>

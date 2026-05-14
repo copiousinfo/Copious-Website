@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SectionHeading from '../../ui/SectionHeading';
 import billingImg from '../../../assets/billing.jpg';
-import ticketingImg from '../../../assets/tickting.jpg';
+import ticketingImg from '../../../assets/ticket.png';
 import parkingImg from '../../../assets/parking.jpg';
 
 const solutionsData = [
@@ -11,21 +11,21 @@ const solutionsData = [
     slug: 'billing',
     title: 'Billing',
     image: billingImg,
-    description: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text And WhatsApp Respectively, For Efficient Customer Outreach, IT Consulting Advises On Technology Use For Business Goals.'
+    description: 'Simplify your billing processes with our advanced, automated billing software. Generate invoices, track payments, and manage financial records effortlessly to boost your business efficiency.'
   },
   {
     id: 2,
     slug: 'ticketing',
     title: 'Ticketing',
     image: ticketingImg,
-    description: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text And WhatsApp Respectively, For Efficient Customer Outreach, IT Consulting Advises On Technology Use For Business Goals.'
+    description: 'Our ticket management software helps businesses handle customer service requests efficiently. Track, categorize, and resolve incoming tickets to deliver effective and timely support.'
   },
   {
     id: 3,
     slug: 'parking',
     title: 'Parking',
     image: parkingImg,
-    description: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text And WhatsApp Respectively, For Efficient Customer Outreach, IT Consulting Advises On Technology Use For Business Goals.'
+    description: 'Optimize your parking operations with smart management solutions. Ensure seamless entry and exit, track availability, and provide a hassle-free parking experience for your customers.'
   }
 ];
 
