@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import heroBg from '../assets/about.jpg';
+import bulkSmsImg from '../assets/bulksms.png';
 import sectionImg from '../assets/about1.jpg';
 import { FiCheckCircle } from 'react-icons/fi';
 
@@ -146,29 +147,39 @@ export default function ServiceDetail() {
 
       {/* ── Hero Banner ─────────────────────────────────────────── */}
       <section className="w-full">
-        <div
-          className="relative w-full min-h-[380px] sm:min-h-[420px] lg:h-[480px] bg-cover bg-center flex flex-col justify-center py-12 sm:py-16"
-          style={{ backgroundImage: `url(${heroBg})` }}
-        >
-          <div className="absolute inset-0 bg-black/55" />
-          <div className="relative z-10 w-full flex flex-col items-center justify-center text-center px-4 sm:px-6">
-            <span className="bg-[#da251d] text-white text-[11px] sm:text-xs font-semibold px-4 sm:px-5 py-1.5 rounded-full mb-4 sm:mb-5 inline-block">
-              {content.badge}
-            </span>
-            <h1 className="text-white text-[28px] sm:text-4xl lg:text-[52px] font-bold leading-tight mb-3 sm:mb-4 max-w-3xl mx-auto px-2">
-              {content.hero}
-            </h1>
-            <p className="text-gray-200 text-[13px] sm:text-[15px] max-w-2xl mx-auto leading-relaxed mb-6 sm:mb-8 px-2">
-              {content.heroSub}
-            </p>
-            <Link
-              to="/contact"
-              className="bg-[#da251d] text-white px-8 sm:px-10 py-2.5 sm:py-3 rounded-lg font-bold text-[14px] sm:text-[15px] hover:bg-[#c02019] transition-all shadow-md inline-block"
-            >
-              Free Live Demo
-            </Link>
+        {slug === 'bulk-sms' ? (
+          <div className="w-full h-[220px] sm:h-[300px] md:h-[380px] lg:h-[480px]">
+            <img
+              src={bulkSmsImg}
+              alt="Bulk SMS Services"
+              className="w-full h-full object-cover object-center block"
+            />
           </div>
-        </div>
+        ) : (
+          <div
+            className="relative w-full min-h-[380px] sm:min-h-[420px] lg:h-[480px] bg-cover bg-center flex flex-col justify-center py-12 sm:py-16"
+            style={{ backgroundImage: `url(${heroBg})` }}
+          >
+            <div className="absolute inset-0 bg-black/55" />
+            <div className="relative z-10 w-full flex flex-col items-center justify-center text-center px-4 sm:px-6">
+              <span className="bg-[#da251d] text-white text-[11px] sm:text-xs font-semibold px-4 sm:px-5 py-1.5 rounded-full mb-4 sm:mb-5 inline-block">
+                {content.badge}
+              </span>
+              <h1 className="text-white text-[28px] sm:text-4xl lg:text-[52px] font-bold leading-tight mb-3 sm:mb-4 max-w-3xl mx-auto px-2">
+                {content.hero}
+              </h1>
+              <p className="text-gray-200 text-[13px] sm:text-[15px] max-w-2xl mx-auto leading-relaxed mb-6 sm:mb-8 px-2">
+                {content.heroSub}
+              </p>
+              <Link
+                to="/contact"
+                className="bg-[#da251d] text-white px-8 sm:px-10 py-2.5 sm:py-3 rounded-lg font-bold text-[14px] sm:text-[15px] hover:bg-[#c02019] transition-all shadow-md inline-block"
+              >
+                Free Live Demo
+              </Link>
+            </div>
+          </div>
+        )}
       </section>
 
       {/* ── What Is Section ─────────────────────────────────────── */}

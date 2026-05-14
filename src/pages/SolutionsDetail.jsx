@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import ticketImg from '../assets/ticket.png';
+import ticketImg from '../assets/ticket1.jpg'; 
 import aboutImg from '../assets/about1.jpg';
 
 const tabData = [
@@ -33,14 +33,22 @@ export default function SolutionsDetail() {
   return (
     <div className="w-full pt-[72px] sm:pt-[80px] lg:pt-[92px] bg-[#efefef]">
 
-      {/* ── Hero: ticket.png full-width image ── */}
-      <section className="w-full">
-        <div className="w-full h-[220px] sm:h-[300px] md:h-[340px] lg:h-[380px]">
-          <img
-            src={ticketImg}
-            alt="Ticketing Solution"
-            className="w-full h-full object-cover object-center block"
-          />
+      {/* ── Hero Section ── */}
+      <section
+        className="relative h-[300px] sm:h-[400px] lg:h-[480px] bg-cover bg-center flex items-center justify-center"
+        style={{ backgroundImage: `url(${ticketImg})` }}
+      >
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="relative z-10 flex flex-col items-center text-center px-4 max-w-[1000px]">
+          <span className="bg-[#da251d] text-white text-xs font-semibold px-5 py-1.5 rounded-full mb-6">
+            About Us
+          </span>
+          <h1 className="text-white text-3xl sm:text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+            Smart Solutions For Modern Ticketing, Billing, And Parking
+          </h1>
+          <p className="text-gray-200 text-sm sm:text-base leading-relaxed max-w-[800px]">
+            Simplify Your Events, Boost Efficiency, And Serve Attendees Faster - All From Your Mobile.
+          </p>
         </div>
       </section>
 

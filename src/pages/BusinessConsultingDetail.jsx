@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaCheckCircle } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
-import aboutHero from '../assets/about.jpg';
+import aboutHero from '../assets/consulting.png';
 import aboutImage from '../assets/about1.jpg';
 
 export default function BusinessConsultingDetail() {
