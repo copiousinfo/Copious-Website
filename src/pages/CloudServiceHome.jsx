@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import heroBg from '../assets/about.jpg';
+import heroBg from '../assets/cloud.jpg'; 
 import sectionImg from '../assets/about1.jpg';
 import { FiCheckCircle, FiCloud, FiShield, FiZap, FiDatabase, FiGlobe, FiTrendingUp } from 'react-icons/fi';
 

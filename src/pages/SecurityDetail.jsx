@@ -1,5 +1,5 @@
 import React from 'react';
-import heroBg from '../assets/about.jpg';
+import heroBg from '../assets/endpoint.jpg';
 import sectionImg from '../assets/about1.jpg';
 import { FiCheckCircle } from 'react-icons/fi';
 

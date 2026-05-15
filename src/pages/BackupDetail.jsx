@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaShieldAlt, FaCompressArrowsAlt, FaClock, FaLock, FaUndo, FaCogs, FaCheckCircle, FaRobot, FaTachometerAlt, FaCloudUploadAlt } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
-import aboutHero from '../assets/about.jpg';
+import aboutHero from '../assets/backup.jpg';
 import aboutImage from '../assets/about1.jpg';
 
 export default function BackupDetail() {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import aboutHero from '../assets/about.jpg';
+import aboutHero from '../assets/whattap.jpg';
 import aboutImage from '../assets/about1.jpg'; // Using existing images as fallbacks
 
 export default function BulkWebWhatsApp() {

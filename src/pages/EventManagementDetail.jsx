@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutHero from '../assets/about.jpg';
+import aboutHero from '../assets/event.jpg'; 
 import aboutImage from '../assets/about1.jpg';
 
 const tabData = [

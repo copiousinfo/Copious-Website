@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import heroBg from '../assets/about.jpg';
+import heroBg from '../assets/aws.jpg'; 
 import sectionImg from '../assets/about1.jpg';
 
 const categories = {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaCheckCircle, FaWindows, FaDatabase, FaEnvelope, FaShareAlt, FaMobileAlt, FaChartLine, FaShieldAlt } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
-import aboutHero from '../assets/about.jpg';
+import aboutHero from '../assets/microsoft.jpg';
 import aboutImage from '../assets/about1.jpg';
 
 export default function MicrosoftDetail() {
@@ -110,7 +110,7 @@ export default function MicrosoftDetail() {
             onClick={() => navigate('/contact')}
             className="bg-[#da251d] text-white font-bold py-3 px-8 rounded-md hover:bg-[#c02019] transition-colors"
           >
-            Request Call
+            Free Live Demo
           </button>
         </div>
       </section>
