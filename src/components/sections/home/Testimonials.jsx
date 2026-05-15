@@ -1,8 +1,8 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import SectionHeading from '../../ui/SectionHeading';
-import jennyImg from '../../../assets/jenny.png';
-import bgImg from '../../../assets/image.jpg';
+import jennyImg from '../../../assets/images/home/jenny.png';
+import bgImg from '../../../assets/images/home/hero-bg.jpg';
 
 const testimonialsData = [
   {

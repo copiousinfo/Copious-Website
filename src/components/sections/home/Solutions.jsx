@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SectionHeading from '../../ui/SectionHeading';
-import billingImg from '../../../assets/billing.jpg';
-import ticketingImg from '../../../assets/ticket.png';
-import parkingImg from '../../../assets/parking.jpg';
+import billingImg from '../../../assets/images/solutions/billing/billing-hero.jpg';
+import ticketingImg from '../../../assets/images/solutions/ticketing/ticket-hero.jpg';
+import parkingImg from '../../../assets/images/solutions/parking/parking-hero.jpg';
 
 const solutionsData = [
   {

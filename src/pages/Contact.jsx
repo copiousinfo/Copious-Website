@@ -1,5 +1,5 @@
 import React from 'react';
-import contactHero from '../assets/contactus.jpg';
+import contactHero from '../assets/images/contact/contact-hero.jpg';
 
 export default function Contact() {
   return (

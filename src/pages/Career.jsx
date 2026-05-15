@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import heroBg from '../assets/about.jpg';
-import jobImg from '../assets/about1.jpg';
+import heroBg from '../assets/images/about/about-hero.jpg';
+import jobImg from '../assets/images/about/about-section.jpg';
 
 /* ─── Job Listings Data ───────────────────────────────────────── */
 const jobs = [
