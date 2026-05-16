@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import aboutHero from '../assets/about.jpg';
+import aboutHero from '../assets/images/about/about-hero.jpg';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 export default function Faq() {

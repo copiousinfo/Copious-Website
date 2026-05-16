@@ -1,6 +1,6 @@
 import React from 'react';
-import aboutHero from '../assets/about.jpg';
-import aboutSectionImage from '../assets/about1.jpg';
+import aboutHero from '../assets/images/about/about-hero.jpg';
+import aboutSectionImage from '../assets/images/about/about-section.jpg';
 
 export default function About() {
   return (

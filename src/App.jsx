@@ -1,46 +1,37 @@
-import { useEffect } from 'react'
-import { Routes, Route, useLocation } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import { Routes, Route } from 'react-router-dom'
+import useScrollToTop from './hooks/useScrollToTop'
+import Navbar from './components/layout/Navbar'
+import Footer from './components/layout/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
-import Blog from './pages/Blog'
-import BlogReading from './pages/BlogReading'
+import Blog from './pages/blog/Blog'
+import BlogReading from './pages/blog/BlogReading'
 import Contact from './pages/Contact'
 import Faq from './pages/Faq'
-import SolutionsDetail from './pages/SolutionsDetail'
-import BillingDetail from './pages/BillingDetail'
-import ParkingDetail from './pages/ParkingDetail'
-import EventManagementDetail from './pages/EventManagementDetail'
-import ServiceDetail from './pages/ServiceDetail'
-import SecurityDetail from './pages/SecurityDetail'
-import EmailSecurity from './pages/EmailSecurity'
-import AntivirusSecurity from './pages/AntivirusSecurity'
-import BulkWebWhatsApp from './pages/BulkWebWhatsApp'
-import ITConsultingDetail from './pages/ITConsultingDetail'
-import BusinessConsultingDetail from './pages/BusinessConsultingDetail'
-import MicrosoftDetail from './pages/MicrosoftDetail'
-import BackupDetail from './pages/BackupDetail'
-import AWSCloudDetail from './pages/AWSCloudDetail'
-import AzureCloudDetail from './pages/AzureCloudDetail'
-import JioCloudDetail from './pages/JioCloudDetail'
-import CloudServiceHome from './pages/CloudServiceHome'
+import SolutionsDetail from './pages/solutions/SolutionsDetail'
+import BillingDetail from './pages/solutions/BillingDetail'
+import ParkingDetail from './pages/solutions/ParkingDetail'
+import EventManagementDetail from './pages/solutions/EventManagementDetail'
+import ServiceDetail from './pages/services/ServiceDetail'
+import SecurityDetail from './pages/services/security/SecurityDetail'
+import EmailSecurity from './pages/services/security/EmailSecurity'
+import AntivirusSecurity from './pages/services/security/AntivirusSecurity'
+import BulkWebWhatsApp from './pages/services/BulkWebWhatsApp'
+import ITConsultingDetail from './pages/services/consulting/ITConsultingDetail'
+import BusinessConsultingDetail from './pages/services/consulting/BusinessConsultingDetail'
+import MicrosoftDetail from './pages/services/MicrosoftDetail'
+import BackupDetail from './pages/services/BackupDetail'
+import AWSCloudDetail from './pages/services/cloud/AWSCloudDetail'
+import AzureCloudDetail from './pages/services/cloud/AzureCloudDetail'
+import JioCloudDetail from './pages/services/cloud/JioCloudDetail'
+import CloudServiceHome from './pages/services/cloud/CloudServiceHome'
 import Career from './pages/Career'
 
-function ScrollToTop() {
-  const { pathname } = useLocation()
-
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
-  }, [pathname])
-
-  return null
-}
-
 function App() {
+  useScrollToTop();
+
   return (
     <div className="flex flex-col min-h-screen">
-      <ScrollToTop />
       <Navbar />
       <main className="flex-grow">
         <Routes>
