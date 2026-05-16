@@ -27,6 +27,11 @@ import JioCloudDetail from './pages/services/cloud/JioCloudDetail'
 import CloudServiceHome from './pages/services/cloud/CloudServiceHome'
 import Career from './pages/Career'
 
+import BulkWhatsAppBlog from './pages/blog/BulkWhatsAppBlog'
+import CloudServiceBlog from './pages/blog/CloudServiceBlog'
+import SecurityBlog from './pages/blog/SecurityBlog'
+import BulkSMSBlog from './pages/blog/BulkSMSBlog'
+
 function App() {
   useScrollToTop();
 
@@ -38,7 +43,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/read" element={<BlogReading />} />
+          <Route path="/blog/bulk-whatsapp" element={<BulkWhatsAppBlog />} />
+          <Route path="/blog/cloud-service" element={<CloudServiceBlog />} />
+          <Route path="/blog/security" element={<SecurityBlog />} />
+          <Route path="/blog/bulk-sms" element={<BulkSMSBlog />} />
+          <Route path="/blog/:type" element={<BlogReading />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/solutions/billing" element={<BillingDetail />} />

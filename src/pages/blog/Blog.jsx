@@ -1,52 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import blogImage from '../../assets/images/blog/blog-hero.jpg';
-import billingImage from '../../assets/images/solutions/billing/billing-hero.jpg';
-
-const blogPosts = [
-  {
-    id: 1,
-    title: 'Best Whatsapp Marketing Campaign',
-    excerpt: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text.',
-    date: 'Jan 25, 2026',
-    image: billingImage,
-  },
-  {
-    id: 2,
-    title: 'Best Whatsapp Marketing Campaign',
-    excerpt: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text.',
-    date: 'Jan 25, 2026',
-    image: billingImage,
-  },
-  {
-    id: 3,
-    title: 'Best Whatsapp Marketing Campaign',
-    excerpt: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text.',
-    date: 'Jan 25, 2026',
-    image: billingImage,
-  },
-  {
-    id: 4,
-    title: 'Best Whatsapp Marketing Campaign',
-    excerpt: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text.',
-    date: 'Jan 25, 2026',
-    image: billingImage,
-  },
-  {
-    id: 5,
-    title: 'Best Whatsapp Marketing Campaign',
-    excerpt: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text.',
-    date: 'Jan 25, 2026',
-    image: billingImage,
-  },
-  {
-    id: 6,
-    title: 'Best Whatsapp Marketing Campaign',
-    excerpt: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text.',
-    date: 'Jan 25, 2026',
-    image: billingImage,
-  },
-];
+import ContentCard from '../../components/ui/ContentCard';
+import { blogData } from '../../data/blog_data';
 
 export default function Blog() {
   return (
@@ -78,28 +33,18 @@ export default function Blog() {
       </section>
 
       <section className="w-full bg-[#efefef]">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-8 sm:py-10 lg:py-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
-            {blogPosts.map((post) => (
-              <article
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 py-12 sm:py-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
+            {blogData.map((post) => (
+              <ContentCard
                 key={post.id}
-                className="bg-[#f5f5f5] rounded-2xl overflow-hidden border border-[#e5e7eb] flex flex-col"
-              >
-                <div className="h-[180px] w-full">
-                  <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
-                </div>
-                <div className="p-4 sm:p-5 flex flex-col flex-grow">
-                  <span className="text-[10px] text-[#6b7280] mb-2">{post.date}</span>
-                  <h3 className="text-[#da251d] text-xl font-semibold leading-tight mb-2">{post.title}</h3>
-                  <p className="text-[#4b5563] text-xs sm:text-[13px] leading-5 mb-5">{post.excerpt}</p>
-                  <Link
-                    to="/blog/read"
-                    className="mt-auto w-fit inline-flex bg-[#da251d] text-white text-sm font-medium px-5 py-2 rounded-md hover:bg-[#c6221a] transition-colors"
-                  >
-                    Read Now
-                  </Link>
-                </div>
-              </article>
+                image={post.image}
+                imageAlt={post.title}
+                title={post.title}
+                description={post.excerpt}
+                to={`/blog/${post.type}`}
+                ctaLabel="Read Now"
+              />
             ))}
           </div>
         </div>

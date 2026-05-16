@@ -118,7 +118,7 @@ export default function BulkWebWhatsApp() {
             {featuresList.map((item, index) => (
               <article
                 key={index}
-                className="bg-[#f3f4f6] p-6 lg:p-8 rounded-lg relative overflow-hidden group hover:shadow-lg transition-all duration-300 min-h-[200px] flex flex-col justify-center"
+                className="site-card bg-[#f3f4f6] p-6 lg:p-8 rounded-lg relative overflow-hidden min-h-[200px] flex flex-col justify-center cursor-pointer"
               >
                 <div className="absolute -right-8 -top-8 w-32 h-32 bg-[#e5e7eb] rounded-full opacity-50 group-hover:scale-110 transition-transform duration-500"></div>
                 <div className="absolute right-4 bottom-4 w-16 h-16 bg-[#e5e7eb] rounded-full opacity-50 group-hover:scale-110 transition-transform duration-500 delay-75"></div>
@@ -153,7 +153,7 @@ export default function BulkWebWhatsApp() {
             {plans.map((plan, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 flex flex-col"
+                className="site-card bg-white rounded-2xl shadow-sm border border-gray-100 p-8 flex flex-col cursor-pointer"
               >
                 <div className="text-center mb-8">
                   <h3 className="text-4xl font-bold text-[#1f2937] mb-2">{plan.price}</h3>

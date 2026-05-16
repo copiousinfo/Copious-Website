@@ -37,7 +37,7 @@ export default function Testimonials() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {testimonialsData.map((testimonial) => (
-            <div key={testimonial.id} className="bg-white rounded-2xl p-6 flex flex-col sm:flex-row gap-6 items-center sm:items-start shadow-lg">
+            <div key={testimonial.id} className="site-card bg-white rounded-2xl p-6 flex flex-col sm:flex-row gap-6 items-center sm:items-start shadow-lg border border-transparent">
               <div className="w-40 h-40 sm:w-32 sm:h-32 rounded-xl overflow-hidden shrink-0">
                 <img src={testimonial.image} alt={testimonial.name} className="w-full h-full object-cover" />
               </div>

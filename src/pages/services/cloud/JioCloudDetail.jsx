@@ -5,61 +5,71 @@ import sectionImg from '../../../assets/images/about/about-section.jpg';
 
 const features = [
   {
-    title: 'Trust Your Cloud',
-    desc: 'Receive Comprehensive Security Measures, Supported By A Group Of Proficient Professionals, And Peerless Adherence To Regulations That Is Relied Upon By Corporations, Governmental Bodies, And Emerging Businesses.',
+    title: 'Super Flexible',
+    desc: 'Enjoy the ease of using cloud storage designed specifically for photos, videos, music, documents, and contacts, regardless of their size or format. Easily handle a variety of file formats all in one centralized platform.',
   },
   {
-    title: 'Trust Your Cloud',
-    desc: 'Receive Comprehensive Security Measures, Supported By A Group Of Proficient Professionals, And Peerless Adherence To Regulations That Is Relied Upon By Corporations, Governmental Bodies, And Emerging Businesses.',
+    title: 'Mostly Secure',
+    desc: "Safeguard your confidential documents within JioCloud's Private Folder. Establish a unique passphrase and enable App Lock for enhanced confidentiality, guaranteeing the protection of your private information in case your device is lost.",
   },
   {
-    title: 'Trust Your Cloud',
-    desc: 'Receive Comprehensive Security Measures, Supported By A Group Of Proficient Professionals, And Peerless Adherence To Regulations That Is Relied Upon By Corporations, Governmental Bodies, And Emerging Businesses.',
+    title: 'High Searching Power',
+    desc: "Quickly access your files using JioCloud's innovative search feature. Easily find them based on Name, Date, or Location, guaranteeing you find what you're looking for without delay.",
   },
   {
-    title: 'Trust Your Cloud',
-    desc: 'Receive Comprehensive Security Measures, Supported By A Group Of Proficient Professionals, And Peerless Adherence To Regulations That Is Relied Upon By Corporations, Governmental Bodies, And Emerging Businesses.',
+    title: 'Enhanced Sharing',
+    desc: "JioCloud's secure private share feature enables you to share files with complete confidence. You can customize permissions to have full control over who can view or edit your data. Additionally, you can create share links for convenient public access to your files.",
   },
   {
-    title: 'Trust Your Cloud',
-    desc: 'Receive Comprehensive Security Measures, Supported By A Group Of Proficient Professionals, And Peerless Adherence To Regulations That Is Relied Upon By Corporations, Governmental Bodies, And Emerging Businesses.',
+    title: 'Always Keep Track Of Your Files',
+    desc: 'JioCloud guarantees a hassle-free file management experience through its Auto Backup functionality, providing secure storage for photos, videos, documents, messages, and contacts. This ensures uninterrupted access and peace of mind.',
   },
   {
-    title: 'Trust Your Cloud',
-    desc: 'Receive Comprehensive Security Measures, Supported By A Group Of Proficient Professionals, And Peerless Adherence To Regulations That Is Relied Upon By Corporations, Governmental Bodies, And Emerging Businesses.',
+    title: 'Smooth Sign-in',
+    desc: "Avoid the inconvenience of passwords by utilizing JioCloud's OTP login feature. Effortlessly access your account on your Desktop or STB by scanning the QR code displayed on your phone. This method ensures a straightforward and secure login process, as it should be.",
+  },
+  {
+    title: 'Widely Accessible',
+    desc: 'Experience the convenience of cloud storage tailored for photos, videos, music, documents, and contacts, irrespective of their format or size. Manage an array of file formats effortlessly within a unified platform.',
   },
 ];
 
 const advantages = [
   {
-    title: 'Bulk SMS And Bulk Web WhatsApp',
-    desc: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text And WhatsApp Respectively, For Efficient Customer Outreach. IT Consulting Advises On Technology To Maximize Jio Cloud Tools.',
-    slug: 'bulk-sms',
+    title: 'Simple',
+    desc: 'Assortment of pre-packaged solutions with guided purchasing and complete digital enrollment process.',
   },
   {
-    title: 'Cloud Service',
-    desc: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text And WhatsApp Respectively, For Efficient Customer Outreach. IT Consulting Advises On Technology For Efficient Customer Outreach.',
-    slug: 'cloud-service',
+    title: 'Secure',
+    desc: 'Cutting-edge worldwide cybersecurity intelligence, combined hardware, and numerous security accreditations.',
   },
   {
-    title: 'Security',
-    desc: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text And WhatsApp Respectively, For Efficient Customer Outreach. IT Consulting Advises On Technology For Your Business Needs.',
-    slug: 'security',
+    title: 'Superfast',
+    desc: 'GST Reports Format & Excel Export.',
   },
   {
-    title: 'Bulk SMS And Bulk Web WhatsApp',
-    desc: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text And WhatsApp Respectively, For Efficient Customer Outreach. IT Consulting Advises On Technology To Maximize Jio Cloud Tools.',
-    slug: 'bulk-sms',
+    title: 'State-of-the-art',
+    desc: 'Top-tier Cloud infrastructure featuring integrated IaaS, PaaS & SaaS, in addition to industry-specific solutions.',
   },
   {
-    title: 'Cloud Service',
-    desc: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text And WhatsApp Respectively, For Efficient Customer Outreach. IT Consulting Advises On Technology For Efficient Customer Outreach.',
-    slug: 'cloud-service',
+    title: 'Scalable',
+    desc: 'JioBusiness customers have access to dedicated data centers that offer expandable capacity, elastic bandwidth, and Virtual Machines (VMs) available on demand.',
   },
   {
-    title: 'Security',
-    desc: 'Bulk SMS And Bulk Web WhatsApp Enable Businesses To Send Mass Messages Via Text And WhatsApp Respectively, For Efficient Customer Outreach. IT Consulting Advises On Technology For Your Business Needs.',
-    slug: 'security',
+    title: 'Savings Oriented',
+    desc: "Business usage can benefit from a 'pay-as-you-go' model, featuring transparent pricing and potential savings of up to 60%.",
+  },
+  {
+    title: 'Service Focussed',
+    desc: 'Our customer service is available 24x7, we offer digital self-service options, and provide top deals through partnerships and collaborations.',
+  },
+  {
+    title: 'Multilingual',
+    desc: 'It is provided in multiple languages.',
+  },
+  {
+    title: 'Data Transfer',
+    desc: 'Data transfer with security.',
   },
 ];
 
@@ -98,10 +108,11 @@ export default function JioCloudDetail() {
               </h2>
               <div className="space-y-4">
                 <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8]">
-                  JioCloud is a secure cloud storage service offered by Jio, offers complimentary storage upon registration. The platform simplifies the process of backing up your device data, including videos, photos, contacts, documents, and SMS. The user-friendly platform enables users to access and effortlessly share their network, whether it be personal or business, and more, how easy it functions as a cloud service allowing you to achieve your awareness of photos, videos, music, documents, and contacts from anywhere.
+                  JioCloud, a secure cloud storage service offered by Jio, offers complimentary storage upon registration. This platform simplifies the process of backing up your device data. The stored information can be synchronized across multiple devices using a single account and effortlessly shared with your network, whether it be for personal or business purposes. Essentially, it functions as a virtual hard drive, allowing you to access your assortment of photos, videos, music, documents, and contacts from anywhere.
                 </p>
                 <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8]">
-                  JioCloud is a pioneer in introducing the combination of business applications and cloud storage services for businesses, joining as a key partner across Jio's network. With their exceptional capability for managing resources and overcoming any challenges, JioCloud has the potential to become a best-in-class solution.
+                  <strong className="block text-[#1f2937] mb-2 font-bold">Enhance IT infrastructure to streamline business operations.</strong>
+                  Cloud adoption is a pivotal factor in facilitating the optimization of business operations and expediting technological advancements. JioCloud aims to establish itself as the foremost local cloud provider in India by offering convenient purchasing options, cost-effective pricing, localization, extensive coverage, and a comprehensive range of suitable solutions.
                 </p>
               </div>
             </div>
@@ -127,7 +138,7 @@ export default function JioCloudDetail() {
             {features.map((feat, i) => (
               <div
                 key={i}
-                className="bg-white rounded-xl border border-gray-100 p-6 sm:p-7 shadow-sm hover:shadow-md transition-shadow"
+                className="site-card bg-white rounded-xl border border-gray-100 p-6 sm:p-7 shadow-sm cursor-pointer"
               >
                 {/* Icon */}
                 <div className="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center mb-4">
@@ -156,15 +167,15 @@ export default function JioCloudDetail() {
             {advantages.map((adv, i) => (
               <div
                 key={i}
-                className="bg-white rounded-xl border border-gray-100 p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col"
+                className="site-card bg-white rounded-xl border border-gray-100 p-6 shadow-sm flex flex-col cursor-pointer"
               >
                 <h3 className="text-[#1f2937] font-bold text-[15px] sm:text-[16px] mb-3">{adv.title}</h3>
                 <p className="text-[#4b5563] text-[13px] sm:text-[14px] leading-[1.8] mb-5 flex-grow">{adv.desc}</p>
                 <button
-                  onClick={() => navigate(`/services/${adv.slug}`)}
+                  onClick={() => navigate('/contact')}
                   className="w-full py-2.5 rounded-md bg-[#da251d] text-white font-bold text-[13px] sm:text-[14px] hover:bg-[#c02019] transition-all"
                 >
-                  More Detail
+                  More Details
                 </button>
               </div>
             ))}

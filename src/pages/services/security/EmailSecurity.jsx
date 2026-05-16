@@ -129,7 +129,7 @@ export default function EmailSecurity() {
             {advantages.map((label, i) => (
               <button
                 key={i}
-                className="border border-[#da251d] text-[#da251d] font-semibold text-[13px] sm:text-[14px] py-3.5 sm:py-4 px-4 rounded-lg hover:bg-[#da251d] hover:text-white transition-all duration-200"
+                className="site-card border border-[#da251d] text-[#da251d] font-semibold text-[13px] sm:text-[14px] py-3.5 sm:py-4 px-4 rounded-lg hover:bg-[#da251d] hover:text-white transition-colors duration-300 cursor-pointer"
               >
                 {label}
               </button>
