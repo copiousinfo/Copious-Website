@@ -108,7 +108,7 @@ export default function EventManagementDetail() {
             {featureCards.map((item, index) => (
               <article
                 key={index}
-                className="bg-[#f8f8f8] rounded-[10px] border border-gray-200 px-4 py-3 flex items-center gap-3"
+                className="site-card bg-[#f8f8f8] rounded-[10px] border border-gray-200 px-4 py-3 flex items-center gap-3 cursor-pointer"
               >
                 <div className="w-10 h-10 rounded-full bg-[#f2e7e7] shrink-0" aria-hidden />
                 <div>

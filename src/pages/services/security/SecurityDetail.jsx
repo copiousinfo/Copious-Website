@@ -137,15 +137,24 @@ export default function SecurityDetail() {
             Endpoint Security provides comprehensive protection for critical business data, ensuring defense against a wide range of threats such as virus spyware, pharming, hacking, IM, filtering, USB pen blocking, and data theft. With its known features, Copious Infotech Endpoint Security effectively safeguards all valuable information, offering peace of mind to businesses.
           </p>
 
-          {/* Create & Manage Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 max-w-4xl mx-auto">
-            {Array.from({ length: 6 }).map((_, i) => (
-              <button
+          {/* Advantages Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 max-w-5xl mx-auto">
+            {[
+              "Cloud-Security",
+              "Malware & Phishing Protection",
+              "Secure Roaming Users",
+              "URL Detection and Filtering",
+              "Flexible Policy Creation",
+              "Real-Time Analysis & Reporting",
+              "User Identification",
+              "DNS Firewall Security"
+            ].map((feature, i) => (
+              <div
                 key={i}
-                className="border border-[#da251d] text-[#da251d] font-semibold text-[14px] sm:text-[15px] py-3.5 sm:py-4 px-6 rounded-lg hover:bg-[#da251d] hover:text-white transition-all duration-200"
+                className="site-card border border-[#da251d] text-[#da251d] font-semibold text-[14px] sm:text-[15px] py-3.5 sm:py-4 px-6 rounded-lg hover:bg-[#da251d] hover:text-white transition-colors duration-300 text-center flex items-center justify-center cursor-pointer"
               >
-                Create &amp; Manage
-              </button>
+                {feature}
+              </div>
             ))}
           </div>
         </div>

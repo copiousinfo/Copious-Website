@@ -1,92 +1,9 @@
 import React from 'react';
-import { FaCheckCircle, FaWindows, FaDatabase, FaEnvelope, FaShareAlt, FaMobileAlt, FaChartLine, FaShieldAlt } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import aboutHero from '../../assets/images/services/general/microsoft.jpg';
-import aboutImage from '../../assets/images/about/about-section.jpg';
 
 export default function MicrosoftDetail() {
   const navigate = useNavigate();
-
-  const products = [
-    {
-      title: "Microsoft Windows",
-      icon: <FaWindows className="text-[#00a4ef] text-4xl mb-4" />,
-      features: [
-        "User Interface: Known for its graphical user interface (GUI).",
-        "Features: Multitasking, virtual desktops, Start menu, taskbar.",
-        "Compatibility: Runs on varied hardware, supports vast software.",
-        "Security: Windows Defender provides built-in antivirus/firewall.",
-        "Integration: Integrates with Office 365, OneDrive, Edge.",
-        "Customization: Themes, backgrounds, and personal settings."
-      ]
-    },
-    {
-      title: "SQL Server",
-      icon: <FaDatabase className="text-[#da251d] text-4xl mb-4" />,
-      features: [
-        "Relational Database: Stores data in relational tables (SQL).",
-        "Development Tools: Integrates with SSMS, Azure Data Studio.",
-        "Cloud Integration: Easy migration and hybrid scenarios via Azure.",
-        "Support & Updates: Regular updates for security and performance.",
-        "Ecosystem: Vast community and development resources."
-      ]
-    },
-    {
-      title: "Exchange Server",
-      icon: <FaEnvelope className="text-[#0078d4] text-4xl mb-4" />,
-      features: [
-        "Email Management: Efficient send/receive using SMTP, IMAP, POP3.",
-        "Calendar & Scheduling: Resource booking, meeting invitations.",
-        "Security: Encryption, anti-spam, malware protection, DLP.",
-        "High Availability: Clustering and Database Availability Groups.",
-        "Mobile Support: Synchronization via Exchange ActiveSync."
-      ]
-    },
-    {
-      title: "SharePoint Server",
-      icon: <FaShareAlt className="text-[#038387] text-4xl mb-4" />,
-      features: [
-        "Document Management: Secure libraries with versioning.",
-        "Business Intelligence: Integrates with Excel Services and Power BI.",
-        "Security: Granular security controls for sites and documents.",
-        "Integration: Works seamlessly with Microsoft 365, Teams, OneDrive.",
-        "Hybrid Deployment: Available on-premises or in the cloud."
-      ]
-    },
-    {
-      title: "Intune Suite",
-      icon: <FaMobileAlt className="text-[#5c2d91] text-4xl mb-4" />,
-      features: [
-        "MDM & MAM: Manage mobile devices and secure applications.",
-        "PC Management: Manage Windows 10 and macOS (Windows Autopilot).",
-        "Integration: Seamless management across Microsoft 365.",
-        "Security: Encryption enforcement, remote wipe, compliance.",
-        "Cloud-based: Accessible and scalable web-based console."
-      ]
-    },
-    {
-      title: "Dynamics 365",
-      icon: <FaChartLine className="text-[#002050] text-4xl mb-4" />,
-      features: [
-        "Modular Structure: Sales, Customer Service, Finance, Marketing.",
-        "Cloud-Based: Scalable, flexible, accessible from anywhere.",
-        "Integration: Office 365, Azure, Power Platform, LinkedIn.",
-        "Customization: Build apps and automate workflows via Power Platform.",
-        "Security: Adheres to industry-standard security and compliance."
-      ]
-    },
-    {
-      title: "Microsoft Defender",
-      icon: <FaShieldAlt className="text-[#00a4ef] text-4xl mb-4" />,
-      features: [
-        "Real-Time Protection: Scans and quarantines malware automatically.",
-        "Cloud-Based: Quick response to threats via Microsoft cloud.",
-        "Firewall: Network protection and suspicious activity monitoring.",
-        "Device Security: Secure Boot and TPM management.",
-        "Cross-Platform: Windows, macOS, iOS, and Android support."
-      ]
-    }
-  ];
 
   return (
     <div className="w-full pt-[92px]">
@@ -116,62 +33,195 @@ export default function MicrosoftDetail() {
       </section>
 
       {/* Content Section */}
-      <section className="bg-white py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      <section className="bg-white py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1000px] mx-auto">
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#1f2937] mb-6">
-              Empower Your Business With Microsoft
+              Microsoft Windows
             </h2>
-            <p className="text-[#4b5563] text-sm sm:text-base leading-relaxed mb-5">
-              In today's fast-paced digital world, leveraging the right technology stack is crucial. Microsoft offers an unparalleled ecosystem of operating systems, databases, cloud services, and productivity tools that integrate seamlessly.
+            <p className="text-[#4b5563] text-[15px] sm:text-base leading-relaxed mb-10">
+              Microsoft Windows is an operating system developed by Microsoft. It features a graphical user interface (GUI) that allows users to interact with their computer using visual elements like windows, icons, and menus. Windows supports multitasking, enabling multiple applications to run simultaneously. It is widely used across personal computers, business environments, and educational institutions. The OS comes with built-in applications and supports a vast range of third-party software. Windows updates regularly to enhance security, performance, and features.
             </p>
-            <p className="text-[#4b5563] text-sm sm:text-base leading-relaxed">
-              Whether you need robust database management through SQL Server, seamless communication via Exchange Server, intelligent collaboration with SharePoint, or comprehensive device management through Intune, we have the expertise to help you implement and scale these solutions effectively.
-            </p>
-          </div>
-          <div>
-            <img
-              src={aboutImage}
-              alt="Microsoft Solutions"
-              className="w-full rounded-xl object-cover shadow-lg h-[300px] sm:h-[400px]"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Products Grid Section */}
-      <section className="bg-[#f8f9fa] py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-[1200px] mx-auto">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#1f2937] mb-4">
-              Our Microsoft Expertise
-            </h2>
-            <p className="text-gray-500 max-w-2xl mx-auto">
-              Explore the full range of Microsoft products and services we support.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {products.map((product, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 flex flex-col hover:shadow-md transition-shadow"
+            <div className="mb-12">
+              <button
+                onClick={() => navigate('/contact')}
+                className="bg-transparent border-2 border-[#da251d] text-[#da251d] font-bold py-2 px-6 rounded-md hover:bg-[#da251d] hover:text-white transition-colors inline-flex items-center gap-2"
               >
-                <div className="mb-6 border-b border-gray-100 pb-6">
-                  {product.icon}
-                  <h3 className="text-2xl font-bold text-[#1f2937]">{product.title}</h3>
-                </div>
+                <span>More Details</span>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </button>
+            </div>
 
-                <div className="flex-grow space-y-3 mb-8">
-                  {product.features.map((feature, idx) => (
-                    <div key={idx} className="flex items-start gap-3">
-                      <FaCheckCircle className="text-[#10b981] shrink-0 mt-1" size={16} />
-                      <span className="text-[#4b5563] text-sm leading-relaxed">{feature}</span>
-                    </div>
-                  ))}
-                </div>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1f2937] mb-6">
+              SQL Server
+            </h2>
+            <p className="text-[#4b5563] text-[15px] sm:text-base leading-relaxed mb-10">
+              Microsoft SQL Server is a relational database management system developed by Microsoft. It supports a wide range of data types and provides robust performance, scalability, and security features. SQL Server is used for data storage, retrieval, and management, supporting applications from small, single-machine setups to large, distributed systems. It includes tools for data integration, analysis, and reporting. The platform is widely used in enterprise environments for business intelligence and transactional processing.
+            </p>
+            <div className="mb-12">
+              <button
+                onClick={() => navigate('/contact')}
+                className="bg-transparent border-2 border-[#da251d] text-[#da251d] font-bold py-2 px-6 rounded-md hover:bg-[#da251d] hover:text-white transition-colors inline-flex items-center gap-2"
+              >
+                <span>More Details</span>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </button>
+            </div>
+
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1f2937] mb-6">
+              Exchange Server
+            </h2>
+            <p className="text-[#4b5563] text-[15px] sm:text-base leading-relaxed mb-10">
+              Microsoft Exchange Server is a cornerstone of organizational messaging, offering robust email communication and calendaring capabilities. It supports collaboration through shared mailboxes and calendars, enhancing teamwork efficiency. Security features safeguard against email threats and ensure secure communication channels. Mobile access is seamless, integrating with Microsoft’s ecosystem for enhanced productivity on-the-go. Administrators benefit from comprehensive management tools and PowerShell automation, simplifying maintenance tasks. High availability features like database availability groups and clustering minimize downtime risks. Hybrid deployment options with Exchange Online enable phased migration to the cloud while maintaining on-premises services. Compliance and archiving features ensure regulatory adherence and data retention, making Exchange Server a versatile solution for businesses worldwide.
+            </p>
+            <div className="mb-12">
+              <button
+                onClick={() => navigate('/contact')}
+                className="bg-transparent border-2 border-[#da251d] text-[#da251d] font-bold py-2 px-6 rounded-md hover:bg-[#da251d] hover:text-white transition-colors inline-flex items-center gap-2"
+              >
+                <span>More Details</span>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </button>
+            </div>
+
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1f2937] mb-6">
+              SharePoint Server
+            </h2>
+            <p className="text-[#4b5563] text-[15px] sm:text-base leading-relaxed mb-10">
+              Microsoft SharePoint Server is a robust platform developed by Microsoft for enterprise collaboration, document management, and content organization. It enables organizations to create intranet sites where teams can securely share documents, collaborate on projects in real-time, manage workflows for business processes, and access comprehensive business intelligence reports. SharePoint offers advanced content management features, including metadata and tagging, to organize and categorize content efficiently. It also integrates seamlessly with other Microsoft 365 services like Teams, OneDrive, and Power BI, providing a unified experience. SharePoint provides granular security controls, allowing administrators to manage permissions at various levels. Whether deployed on-premises, in the cloud, or in a hybrid environment, SharePoint enhances organizational productivity by offering a secure, customizable, and integrated platform for effective teamwork and information management.
+            </p>
+            <div className="mb-12">
+              <button
+                onClick={() => navigate('/contact')}
+                className="bg-transparent border-2 border-[#da251d] text-[#da251d] font-bold py-2 px-6 rounded-md hover:bg-[#da251d] hover:text-white transition-colors inline-flex items-center gap-2"
+              >
+                <span>More Details</span>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </button>
+            </div>
+
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1f2937] mb-6">
+              Microsoft Intune Suite
+            </h2>
+            <p className="text-[#4b5563] text-[15px] sm:text-base leading-relaxed mb-10">
+              Microsoft Intune is a cloud-based service in Microsoft's Enterprise Mobility + Security suite, focusing on mobile device management (MDM), mobile application management (MAM), and PC management. It enables organizations to enforce policies, configure settings, and ensure compliance across iOS, Android, Windows, and macOS devices. Intune also manages application distribution, protection policies, and data wipe for corporate apps, while supporting Windows 10 and macOS PCs with features like Windows Autopilot integration. Tight integration with Azure Active Directory allows for conditional access policies, ensuring secure access to corporate resources. Its cloud-based approach provides scalability and flexibility in managing devices and applications across diverse environments, prioritizing productivity alongside stringent security measures.
+            </p>
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1f2937] mb-6 mt-12">
+              Dynamics 365
+            </h2>
+            <p className="text-[#4b5563] text-[15px] sm:text-base leading-relaxed mb-10">
+              Microsoft Dynamics 365 is a cloud-based suite of business applications by Microsoft, integrating ERP and CRM functionalities. It offers modules like Sales, Customer Service, Finance, and Operations, among others, which can be used individually or together. Built on Azure, it supports seamless integration with Office 365, Power Platform, and LinkedIn, enhancing productivity and data management. AI capabilities provide insights and predictive analytics, enabling data-driven decisions and personalized customer experiences. With a unified interface, extensive customization options, and scalability, Dynamics 365 caters to businesses of all sizes, ensuring security and compliance through industry-standard protocols and subscription-based pricing.
+            </p>
+            <div className="mb-12">
+              <button
+                onClick={() => navigate('/contact')}
+                className="bg-transparent border-2 border-[#da251d] text-[#da251d] font-bold py-2 px-6 rounded-md hover:bg-[#da251d] hover:text-white transition-colors inline-flex items-center gap-2"
+              >
+                <span>More Details</span>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </button>
+            </div>
+
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1f2937] mb-6">
+              MicroSoft Defender
+            </h2>
+            <p className="text-[#4b5563] text-[15px] sm:text-base leading-relaxed mb-10">
+              Microsoft Defender, formerly known as Windows Defender, is a built-in antivirus and anti-malware component of Microsoft Windows. It provides real-time protection against a variety of threats, including viruses, malware, spyware, and other malicious software. Here are some key aspects of Microsoft Defender:
+            </p>
+            <div className="mb-12">
+              <button
+                onClick={() => navigate('/contact')}
+                className="bg-transparent border-2 border-[#da251d] text-[#da251d] font-bold py-2 px-6 rounded-md hover:bg-[#da251d] hover:text-white transition-colors inline-flex items-center gap-2"
+              >
+                <span>More Details</span>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </button>
+            </div>
+
+            <p className="text-[#4b5563] text-[15px] sm:text-base leading-relaxed mb-10">
+              Microsoft Defender is a comprehensive security solution designed to protect Windows users from a wide range of threats. Its integration with the Windows operating system, combined with cloud-based threat intelligence and real-time protection features, makes it a robust choice for both individual and enterprise-level security.
+            </p>
+
+            <h3 className="text-xl sm:text-2xl font-bold text-[#1f2937] mb-6">Features</h3>
+            <div className="space-y-6 mb-10">
+              <div>
+                <h4 className="font-bold text-[#1f2937] text-[15px] sm:text-base mb-2">1. Real-Time Protection:</h4>
+                <ul className="list-disc list-inside text-[#4b5563] text-[15px] sm:text-base leading-relaxed space-y-1">
+                  <li>Continuously scans files and processes for threats.</li>
+                  <li>Automatically takes action on detected threats, such as quarantining or removing malware.</li>
+                </ul>
               </div>
-            ))}
+              <div>
+                <h4 className="font-bold text-[#1f2937] text-[15px] sm:text-base mb-2">2. Cloud-Based Protection:</h4>
+                <ul className="list-disc list-inside text-[#4b5563] text-[15px] sm:text-base leading-relaxed space-y-1">
+                  <li>Utilizes Microsoft's cloud infrastructure to quickly identify and respond to new threats.</li>
+                  <li>Shares threat data anonymously to enhance the overall security database.</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-bold text-[#1f2937] text-[15px] sm:text-base mb-2">3. Firewall and Network Protection:</h4>
+                <ul className="list-disc list-inside text-[#4b5563] text-[15px] sm:text-base leading-relaxed space-y-1">
+                  <li>Manages network settings and monitors network traffic for suspicious activity.</li>
+                  <li>Provides tools for configuring firewall rules and settings.</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-bold text-[#1f2937] text-[15px] sm:text-base mb-2">4. Device Security:</h4>
+                <ul className="list-disc list-inside text-[#4b5563] text-[15px] sm:text-base leading-relaxed space-y-1">
+                  <li>Ensures that hardware security features like Secure Boot and TPM (Trusted Platform Module) are properly configured and functional.</li>
+                </ul>
+              </div>
+            </div>
+
+            <h3 className="text-xl sm:text-2xl font-bold text-[#1f2937] mb-6">Integration and Compatibility</h3>
+            <ul className="text-[#4b5563] text-[15px] sm:text-base leading-relaxed mb-10 space-y-4">
+              <li>
+                <strong className="text-[#1f2937]">Seamless Integration with Windows:</strong> Being a built-in component, Microsoft Defender is tightly integrated with the Windows operating system, providing a seamless and efficient security solution.
+              </li>
+              <li>
+                <strong className="text-[#1f2937]">Cross-Platform Support:</strong> Microsoft Defender is available for other platforms, including macOS, iOS, and Android, offering consistent protection across multiple devices.
+              </li>
+              <li>
+                <strong className="text-[#1f2937]">Enterprise-Level Solutions:</strong> For businesses, Microsoft Defender Advanced Threat Protection (ATP) provides enhanced security features, such as threat analytics, automated investigation, and response capabilities.
+              </li>
+            </ul>
+
+            <h3 className="text-xl sm:text-2xl font-bold text-[#1f2937] mb-6">User Experience</h3>
+            <ul className="text-[#4b5563] text-[15px] sm:text-base leading-relaxed mb-10 space-y-4">
+              <li>
+                <strong className="text-[#1f2937]">User-Friendly Interface:</strong> The interface is straightforward and easy to navigate, making it accessible for users with varying levels of technical expertise.
+              </li>
+              <li>
+                <strong className="text-[#1f2937]">Minimal Performance Impact:</strong> Designed to work efficiently without significantly affecting system performance.
+              </li>
+              <li>
+                <strong className="text-[#1f2937]">Automatic Updates:</strong> Regular updates ensure that the antivirus definitions are current, protecting against the latest threats.
+              </li>
+            </ul>
+
+            <div>
+              <button
+                onClick={() => navigate('/contact')}
+                className="bg-transparent border-2 border-[#da251d] text-[#da251d] font-bold py-2 px-6 rounded-md hover:bg-[#da251d] hover:text-white transition-colors inline-flex items-center gap-2"
+              >
+                <span>More Details</span>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>

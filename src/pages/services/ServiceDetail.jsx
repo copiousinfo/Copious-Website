@@ -45,6 +45,41 @@ const serviceContent = {
     ],
   },
 
+  'it-consulting': {
+    badge: 'Consulting',
+    hero: 'IT Consulting Services',
+    heroSub:
+      'In order to thrive in today\'s digital era and navigate the intricate technology environment, a customized IT strategy that aligns with your business\'s expansion is essential.',
+    whatTitle: 'Expert IT Planning and Consultancy Solutions',
+    whatDesc: [
+      'IT consulting services offer advisory support to clients in evaluating various technology strategies and aligning them with their business or process strategies. These services encompass strategic, architectural, operational, and implementation planning to assist customers in achieving their IT goals effectively.',
+      'Strategic planning involves assessing IT needs and developing system implementation plans, while architecture planning combines strategic plans with knowledge of emerging technologies to design the system and supporting infrastructure. Operational assessment and benchmarking evaluate the efficiency and capacity of a client\'s IT environment, and implementation planning guides customers through the deployment and testing of new solutions.',
+    ],
+    purposeTitle: 'The Distinctive Copious Infotech Advantage',
+    purposeDesc:
+      'We excel at simplifying IT consulting. Although technology is our expertise, we recognize that an effective IT strategy involves more than just implementing IT solutions. It should seamlessly align with your business objectives and daily operations, without adding unnecessary complexities.',
+    purposePoints: [
+      'Tailored IT solutions that go beyond standard consultations.',
+      'Comprehensive exploration procedure outlining SLAs, roles, budgets, and life cycles.',
+      'Anticipate future requirements through disaster recovery and business continuity planning.',
+      'Identify optimal solutions keeping your business objectives at the forefront.',
+    ],
+    planTitle: 'IT Consulting Plans',
+    plans: [
+      { price: 'Custom', label: 'Strategic Planning', features: ['Assess IT needs', 'System implementation plans', 'Technology evaluation', 'Basic support'] },
+      { price: 'Custom', label: 'Architecture Planning', features: ['Design system infrastructure', 'Integrate emerging technologies', 'Operational assessment', 'Priority support'] },
+      { price: 'Custom', label: 'Implementation Planning', features: ['Deployment guidance', 'Testing of new solutions', 'Disaster recovery planning', '24/7 support'] },
+    ],
+    features: [
+      { title: 'Strategic Planning', subtitle: 'Assessing IT needs and developing system implementation plans.' },
+      { title: 'Architecture Planning', subtitle: 'Designing the system and supporting infrastructure.' },
+      { title: 'Operational Assessment', subtitle: 'Evaluating the efficiency and capacity of your IT environment.' },
+      { title: 'Implementation Planning', subtitle: 'Guiding deployment and testing of new solutions.' },
+      { title: 'Goal-Setting', subtitle: 'Aligning IT strategy with your business goals.' },
+      { title: 'Resource Planning', subtitle: 'Efficient allocation of IT resources and budgets.' },
+    ],
+  },
+
   'cloud-service': {
     badge: 'Services',
     hero: 'Bulk Sms Services',
@@ -210,7 +245,7 @@ export default function ServiceDetail() {
             {content.plans.map((plan, i) => (
               <div
                 key={i}
-                className="rounded-xl border border-gray-100 bg-white p-6 sm:p-8 lg:p-10 flex flex-col shadow-sm hover:shadow-md transition-shadow"
+                className="site-card rounded-xl border border-gray-100 bg-white p-6 sm:p-8 lg:p-10 flex flex-col shadow-sm cursor-pointer"
               >
                 <div className="text-center mb-6 sm:mb-8">
                   <p className="text-[28px] sm:text-[32px] lg:text-[36px] font-bold text-[#1f2937] mb-2">{plan.price}<span className="text-[24px] sm:text-[28px] lg:text-[32px] font-bold">/mth</span></p>

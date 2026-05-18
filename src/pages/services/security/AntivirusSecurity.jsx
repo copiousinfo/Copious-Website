@@ -139,7 +139,7 @@ export default function AntivirusSecurity() {
                 {deviceLinks.map((d) => (
                   <div
                     key={d.label}
-                    className="flex items-center gap-3 border border-gray-200 rounded-lg px-4 py-3 hover:border-[#da251d] hover:bg-red-50 transition-all duration-200 cursor-pointer group"
+                    className="site-card flex items-center gap-3 border border-gray-200 rounded-lg px-4 py-3 hover:border-[#da251d] hover:bg-red-50 cursor-pointer group"
                   >
                     <span className="text-xl">{d.icon}</span>
                     <span className="text-[#374151] text-[14px] font-semibold group-hover:text-[#da251d] transition-colors">
@@ -179,7 +179,7 @@ export default function AntivirusSecurity() {
             {advantages.map((label, i) => (
               <button
                 key={i}
-                className="border border-[#da251d] text-[#da251d] font-semibold text-[13px] sm:text-[14px] py-3.5 sm:py-4 px-4 rounded-lg hover:bg-[#da251d] hover:text-white transition-all duration-200"
+                className="site-card border border-[#da251d] text-[#da251d] font-semibold text-[13px] sm:text-[14px] py-3.5 sm:py-4 px-4 rounded-lg hover:bg-[#da251d] hover:text-white transition-colors duration-300 cursor-pointer"
               >
                 {label}
               </button>

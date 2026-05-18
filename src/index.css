@@ -9,3 +9,13 @@
     @apply bg-white text-gray-900 antialiased selection:bg-red-500/30;
   }
 }
+
+@layer components {
+  .site-card {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .site-card:hover {
+    @apply -translate-y-0.5 shadow-md;
+  }
+}

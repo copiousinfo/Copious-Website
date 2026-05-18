@@ -120,7 +120,7 @@ export default function Career() {
             {jobs.map((job) => (
               <div
                 key={job.id}
-                className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden"
+                className="site-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden cursor-pointer"
               >
                 <div className="grid grid-cols-1 lg:grid-cols-2">
                   {/* Left: Text Content */}

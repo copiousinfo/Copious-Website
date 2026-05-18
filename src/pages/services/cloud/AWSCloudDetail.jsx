@@ -19,30 +19,42 @@ const categories = {
   ],
   'industry': [
     {
-      title: 'Healthcare & Life Sciences',
-      desc: 'Accelerate research and innovation with AWS cloud solutions designed to meet the strict compliance and security requirements of healthcare and life sciences organizations worldwide.',
+      title: 'Telecommunication',
+      desc: "It's commonly referred to as telecom, involves the transmission of information across long distances using electronic methods. It encompasses various forms of communication such as voice, data, and video transmission. This extensive concept encompasses a diverse array of technologies and infrastructures that facilitate the exchange of information.",
     },
     {
-      title: 'Financial Services',
-      desc: 'Enable agility, innovation, and security in financial services with scalable AWS cloud infrastructure, helping banks, insurers, and capital markets firms drive transformation.',
+      title: 'Automotive',
+      desc: 'AWS accelerates the automotive industry’s digital transformation through the most comprehensive set of purpose-built cloud capabilities, unmatched experience, and broadest partner and developer community.',
     },
     {
-      title: 'Education & Research',
-      desc: 'Empower educators, students, and researchers with scalable, cost-effective AWS tools for collaboration, data analytics, and digital learning environments at any scale.',
+      title: 'Advertising & Marketing',
+      desc: 'The advertising and marketing technology sector is currently undergoing a significant transformation as businesses strive to enhance compatibility between different platforms and deliver enhanced, more personalized experiences, all while safeguarding consumer data.',
+    },
+    {
+      title: 'Game',
+      desc: 'Game developers are adopting a widespread transformation within the industry, as studios are pushing the boundaries of the latest technology and providing constantly updated gaming experiences that cater to millions of players.',
     },
   ],
   'org': [
     {
-      title: 'Startups',
-      desc: 'AWS provides startups with the infrastructure, credits, and support they need to move fast, build smart, and scale globally without large upfront infrastructure investments.',
-    },
-    {
       title: 'Enterprise',
-      desc: 'Large enterprises trust AWS to run mission-critical workloads, providing the reliability, security, and global footprint needed to operate at scale across every region.',
+      desc: 'Prepare for impactful transformation by reconsidering the concept of one-time reinventions. Delve into our carefully selected perspectives to understand why contemporary innovation is more of a continuous process rather than a final destination.',
     },
     {
-      title: 'Government & Public Sector',
-      desc: 'AWS supports government agencies with secure, compliant cloud infrastructure that meets the regulatory requirements of public sector organizations around the world.',
+      title: 'Public Sector',
+      desc: 'Government, education, nonprofit, and healthcare organizations around the world face unique challenges to accomplish complex missions with limited resources. National, regional, and local governments and GovTech companies. Educational institutions, EdTech companies, and students. Public sector healthcare organizations.',
+    },
+    {
+      title: 'Small and Medium Business',
+      desc: 'Discover Cloud for Small and Medium Businesses. Effectively control IT expenses, bolster data protection, and expand utilizing the capabilities of cloud technology.',
+    },
+    {
+      title: 'Startup',
+      desc: 'Grow your startup with Copious. Enroll in Copious Activate, the premier startup program, to launch your concept in the market - supported by the most reliable cloud platform.',
+    },
+    {
+      title: 'Software Companies',
+      desc: 'Create a more robust future driven by Copious. Thousands of software developers rely on Copious to fuel their rapid expansion with cloud services that enable quick scalability and secure innovation.',
     },
   ],
 };

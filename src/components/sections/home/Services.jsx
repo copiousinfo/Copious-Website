@@ -42,7 +42,7 @@ export default function Services() {
           {servicesData.map((service) => (
             <div
               key={service.id}
-              className="w-full max-w-[340px] sm:max-w-none h-full bg-white rounded-[24px] px-6 py-9 text-center shadow-sm border border-gray-100 flex flex-col items-center hover:shadow-md transition-shadow duration-300"
+              className="site-card w-full max-w-[340px] sm:max-w-none h-full bg-white rounded-[24px] px-6 py-9 text-center shadow-sm border border-gray-100 flex flex-col items-center cursor-pointer"
             >
               {/* Icon Circle */}
               <div className="w-20 h-20 bg-[#fff1f0] rounded-full flex items-center justify-center mb-6">

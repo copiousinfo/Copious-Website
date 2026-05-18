@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import heroBg from '../../../assets/images/services/cloud/cloud-hero.jpg'; 
 import sectionImg from '../../../assets/images/about/about-section.jpg';
-import { FiCheckCircle, FiCloud, FiShield, FiZap, FiDatabase, FiGlobe, FiTrendingUp } from 'react-icons/fi';
+import { FiCheckCircle, FiCloud, FiShield, FiZap, FiDatabase, FiGlobe, FiTrendingUp, FiCpu, FiLayers, FiBox } from 'react-icons/fi';
 
 /* ─── Cloud Provider Cards ─────────────────────────────────────── */
 const providers = [
@@ -50,56 +50,42 @@ const providers = [
   },
 ];
 
-/* ─── What We Offer Items ──────────────────────────────────────── */
-const offerings = [
+/* ─── Advantage Items ─────────────────────────────────────────── */
+const advantages = [
   {
-    icon: <FiCloud size={24} className="text-[#da251d]" />,
-    title: 'Cloud Migration',
-    desc: 'Seamlessly migrate your existing on-premise infrastructure to the cloud with zero downtime and full data integrity.',
+    title: 'Agility',
+    icon: <FiZap size={22} />,
+    text: 'The cloud provides convenient access to a wide array of technologies, enabling you to accelerate innovation and create virtually anything you can envision. You have the ability to rapidly deploy resources as required, ranging from infrastructure services like computing, storage, and databases, to Internet of Things, machine learning, data lakes, analytics, and beyond. With the ability to deploy technology services within minutes, you can now accelerate the process of going from idea to implementation by several orders of magnitude compared to the past.'
   },
   {
-    icon: <FiShield size={24} className="text-[#da251d]" />,
-    title: 'Cloud Security',
-    desc: 'End-to-end cloud security solutions including identity management, threat detection, and compliance management.',
+    title: 'Cost-Saving',
+    icon: <FiTrendingUp size={22} />,
+    text: 'The cloud enables you to exchange fixed costs, like data centers and physical servers, for flexible expenses, where you only pay for IT services as you use them. Moreover, the variable expenses are significantly lower compared to the costs you would incur if you were to handle it on your own, thanks to the advantages of economies of scale.'
   },
   {
-    icon: <FiZap size={24} className="text-[#da251d]" />,
-    title: 'Cloud Optimization',
-    desc: 'Reduce cloud costs by up to 40% with our expert optimization strategies and right-sizing recommendations.',
-  },
-  {
-    icon: <FiDatabase size={24} className="text-[#da251d]" />,
-    title: 'Managed Databases',
-    desc: 'Fully managed database services on AWS, Azure, and JIO Cloud — always available, always backed up.',
-  },
-  {
-    icon: <FiGlobe size={24} className="text-[#da251d]" />,
-    title: 'Multi-Cloud Strategy',
-    desc: 'Avoid vendor lock-in with our multi-cloud approach. Run workloads across AWS, Azure, and JIO simultaneously.',
-  },
-  {
-    icon: <FiTrendingUp size={24} className="text-[#da251d]" />,
-    title: '24/7 Cloud Support',
-    desc: 'Round-the-clock monitoring and support from our certified cloud engineers across all major platforms.',
-  },
+    title: 'Flexibility',
+    icon: <FiGlobe size={22} />,
+    text: 'Cloud computing allows you to avoid over-provisioning resources in advance for potential spikes in business activity. Instead, you can provision only the necessary amount of resources. This flexibility enables you to easily adjust resource levels to match your evolving business requirements. Leveraging cloud technology enables businesses to quickly scale into different geographical areas and establish a global presence within minutes.'
+  }
 ];
 
-/* ─── Why Choose Us ────────────────────────────────────────────── */
-const whyPoints = [
-  'Certified experts on AWS, Azure, and JIO Cloud platforms.',
-  'End-to-end implementation from planning to deployment.',
-  'Custom cloud architecture tailored to your business needs.',
-  '99.9% uptime SLA with proactive monitoring and alerts.',
-  'Transparent pricing with no hidden costs or surprises.',
-  'Post-deployment support and continuous optimization.',
-];
-
-/* ─── Stats ─────────────────────────────────────────────────────── */
-const stats = [
-  { value: '500+', label: 'Businesses Migrated' },
-  { value: '99.9%', label: 'Uptime Guaranteed' },
-  { value: '3', label: 'Cloud Platforms' },
-  { value: '24/7', label: 'Expert Support' },
+/* ─── Type Items ─────────────────────────────────────────────── */
+const cloudTypes = [
+  {
+    title: 'Iaas (Infrastructure as a Service)',
+    icon: <FiCpu size={24} className="text-[#da251d]" />,
+    desc: 'The platform offers scalable and virtualized computing resources such as servers, storage, and networking via the internet. Users are granted complete control over the infrastructure, allowing for customization and management access to virtual machines, storage, and networking elements.'
+  },
+  {
+    title: 'Paas (Platform as a Service)',
+    icon: <FiLayers size={24} className="text-[#da251d]" />,
+    desc: 'Platform as a Service (PaaS) eliminates the requirement for managing the underlying infrastructure, typically hardware and operating systems. Instead, it enables you to concentrate on deploying and overseeing your applications. This streamlines your operations by relieving you of concerns such as resource acquisition and updates.'
+  },
+  {
+    title: 'Saas (Software as a Service)',
+    icon: <FiBox size={24} className="text-[#da251d]" />,
+    desc: 'Software as a Service (SaaS) offers a fully managed product provided by the service provider. Typically, when discussing SaaS, individuals are talking about end-user applications like web-based email. Users are relieved from concerns regarding service maintenance, allowing them to focus solely on utilizing the software.'
+  }
 ];
 
 /* ─── Component ─────────────────────────────────────────────────── */
@@ -112,118 +98,152 @@ export default function CloudServiceHome() {
       {/* ── Hero Banner ───────────────────────────────────────── */}
       <section className="w-full">
         <div
-          className="relative w-full min-h-[420px] sm:min-h-[480px] lg:min-h-[540px] bg-cover bg-center flex items-center justify-center py-16"
+          className="relative w-full min-h-[400px] sm:min-h-[460px] lg:min-h-[500px] bg-cover bg-center flex items-center justify-center py-16"
           style={{ backgroundImage: `url(${heroBg})` }}
         >
           <div className="absolute inset-0 bg-black/65" />
           <div className="relative z-10 text-center px-4 sm:px-8 max-w-4xl mx-auto">
             <span className="bg-[#da251d] text-white text-[11px] sm:text-xs font-semibold px-4 py-1.5 rounded-full mb-5 inline-block tracking-widest uppercase">
-              Cloud Services
+              Cloud Solutions
             </span>
             <h1 className="text-white text-[28px] sm:text-[40px] lg:text-[54px] font-bold leading-tight mb-5">
-              Power Your Business With <span className="text-[#da251d]">Intelligent</span> Cloud Solutions
+              Revolutionize Your Business with Our Cloud Services
             </h1>
             <p className="text-gray-200 text-[14px] sm:text-[16px] leading-relaxed mb-8 max-w-2xl mx-auto">
-              Copious Info delivers end-to-end cloud services on AWS, JIO Cloud, and Microsoft Azure — helping businesses scale, secure, and innovate faster than ever before.
+              Scalable, secure, and flexible cloud infrastructure managed by Copious Info to accelerate your digital transformation.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button
-                onClick={() => navigate('/contact')}
-                className="bg-[#da251d] text-white px-8 py-3 rounded-lg font-bold text-[15px] hover:bg-[#c02019] transition-all shadow-md"
-              >
-                Get Free Consultation
-              </button>
-              <button
-                onClick={() => document.getElementById('cloud-providers').scrollIntoView({ behavior: 'smooth' })}
-                className="bg-white/10 border border-white/40 text-white px-8 py-3 rounded-lg font-bold text-[15px] hover:bg-white/20 transition-all backdrop-blur-sm"
-              >
-                Explore Platforms ↓
-              </button>
-            </div>
+            <button
+              onClick={() => navigate('/contact')}
+              className="bg-[#da251d] text-white px-10 py-3.5 rounded-lg font-bold text-[15px] hover:bg-[#c02019] transition-all shadow-md active:scale-95"
+            >
+              Free Live Demo
+            </button>
           </div>
         </div>
       </section>
 
-      {/* ── Stats Bar ─────────────────────────────────────────── */}
-      <section className="w-full bg-[#da251d] py-8">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center text-white">
-            {stats.map((s, i) => (
-              <div key={i}>
-                <p className="text-[28px] sm:text-[36px] font-black leading-none mb-1">{s.value}</p>
-                <p className="text-[12px] sm:text-[14px] text-white/80 font-medium">{s.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── What Are Cloud Services ───────────────────────────── */}
+      {/* ── About Cloud Computing ───────────────────────────── */}
       <section className="w-full bg-white py-14 sm:py-16 lg:py-20">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
-              <span className="text-[#da251d] text-[13px] font-bold uppercase tracking-widest mb-3 inline-block">What We Do</span>
-              <h2 className="text-[#1f2937] text-[26px] sm:text-[30px] lg:text-[36px] font-bold mb-5 leading-snug">
-                What Are Cloud Services?
+              <h2 className="text-[#1f2937] text-[26px] sm:text-[30px] lg:text-[36px] font-bold mb-6 leading-snug">
+                About Cloud Computing?
               </h2>
               <div className="space-y-4">
                 <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8]">
-                  Cloud services are infrastructure, platforms, or software hosted by third-party providers and made available to users over the internet. Instead of maintaining servers or data centers on-site, businesses can access computing power, storage, and applications on demand — paying only for what they use.
+                  Cloud computing is the utilization of services provided by a third-party, where data storage, servers, databases, networking, and software are accessed over the internet. The physical servers responsible for storing the data are managed by a cloud service provider.
                 </p>
                 <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8]">
-                  At Copious Info, we are an authorized partner for AWS, Microsoft Azure, and JIO Cloud — offering migration, management, optimization, and support services to businesses of all sizes across India and globally.
+                  In cloud computing, computer system resources, including data storage and computing power, can be accessed as needed without the user having to directly oversee their management.
                 </p>
               </div>
-              <ul className="mt-6 space-y-3">
-                {['Reduce capital expenditure on physical hardware.', 'Scale resources instantly up or down as needed.', 'Access data and applications from anywhere in the world.', 'Built-in redundancy and disaster recovery capabilities.'].map((pt, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <FiCheckCircle className="text-[#da251d] mt-0.5 shrink-0" size={17} />
-                    <span className="text-[#4b5563] text-[14px] sm:text-[15px]">{pt}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
             <div className="w-full">
               <img
                 src={sectionImg}
-                alt="Cloud Services Overview"
-                className="w-full h-[280px] sm:h-[340px] lg:h-[400px] object-cover rounded-2xl shadow-md"
+                alt="About Cloud Computing"
+                className="w-full h-[280px] sm:h-[340px] lg:h-[380px] object-cover rounded-2xl shadow-sm"
               />
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── Cloud Providers ───────────────────────────────────── */}
-      <section id="cloud-providers" className="w-full bg-[#f8f9fa] py-14 sm:py-16 lg:py-20">
+      {/* ── Why we use Cloud Computing ───────────────────────── */}
+      <section className="w-full bg-[#f8f9fa] py-14 sm:py-16 lg:py-20">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16">
+          <div className="max-w-4xl">
+            <h2 className="text-[#1f2937] text-[26px] sm:text-[30px] lg:text-[36px] font-bold mb-6 leading-tight">
+              Why we use Cloud Computing?
+            </h2>
+            <div className="space-y-5">
+              <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8]">
+                Cloud computing is being utilized by organizations across various sectors for different purposes, including data backup, disaster recovery, email services, virtual desktops, software development and testing, big data analytics, and customer-facing web applications.
+              </p>
+              <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8]">
+                Healthcare companies are leveraging the cloud to create customized treatment plans for patients, while financial services companies are utilizing it for real-time fraud detection and prevention.
+              </p>
+              <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8]">
+                Video game developers are harnessing the power of the cloud to provide online gaming experiences to a global audience of millions of players.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Advantage of Cloud Computing ─────────────────────── */}
+      <section className="w-full bg-white py-14 sm:py-16 lg:py-20">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16">
+          <h2 className="text-[#1f2937] text-[26px] sm:text-[30px] lg:text-[36px] font-bold mb-10 leading-tight text-center">
+            Advantage of Cloud Computing?
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {advantages.map((adv, i) => (
+              <div key={i} className="site-card bg-white p-7 rounded-2xl border border-gray-100 shadow-sm cursor-pointer">
+                <div className="w-12 h-12 bg-red-50 text-[#da251d] rounded-xl flex items-center justify-center mb-6">
+                  {adv.icon}
+                </div>
+                <h3 className="text-[#1f2937] font-bold text-[20px] mb-4">{adv.title}</h3>
+                <p className="text-[#4b5563] text-[14px] leading-[1.8]">
+                  {adv.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Types of Cloud Computing ─────────────────────────── */}
+      <section className="w-full bg-[#f8f9fa] py-14 sm:py-16 lg:py-20">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16">
           <div className="text-center mb-12">
-            <span className="text-[#da251d] text-[13px] font-bold uppercase tracking-widest mb-3 inline-block">Our Platforms</span>
-            <h2 className="text-[#1f2937] text-[26px] sm:text-[30px] lg:text-[36px] font-bold mb-4">
-              Choose Your Cloud Platform
+            <h2 className="text-[#1f2937] text-[26px] sm:text-[30px] lg:text-[36px] font-bold mb-5">
+              Types of Cloud Computing
+            </h2>
+            <p className="text-[#4b5563] text-[14px] sm:text-[15px] max-w-3xl mx-auto leading-[1.8]">
+              There are three primary categories of cloud computing, namely Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). Each category offers varying degrees of control, flexibility, and management.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {cloudTypes.map((type, i) => (
+              <div key={i} className="site-card bg-white rounded-xl p-8 border border-gray-100 shadow-sm cursor-pointer">
+                <div className="mb-6">{type.icon}</div>
+                <h3 className="text-[#1f2937] font-bold text-[18px] mb-4">{type.title}</h3>
+                <p className="text-[#4b5563] text-[13.5px] leading-[1.8]">
+                  {type.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Cloud Providers ───────────────────────────────────── */}
+      <section id="cloud-providers" className="w-full bg-white py-14 sm:py-16 lg:py-20">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16">
+          <div className="text-center mb-12">
+            <h2 className="text-[#1f2937] text-[26px] sm:text-[30px] lg:text-[36px] font-bold mb-4 uppercase">
+              Our Cloud Service Provided By:
             </h2>
             <p className="text-[#4b5563] text-[14px] sm:text-[15px] max-w-2xl mx-auto leading-relaxed">
-              We partner with the world's leading cloud providers to deliver the right solution for your specific business requirements.
+              Choose Your Cloud Platform — We partner with the world's leading cloud providers to deliver the right solution.
             </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
             {providers.map((p, i) => (
               <div
                 key={i}
-                className="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col overflow-hidden group"
+                className="site-card group bg-white rounded-2xl border border-gray-100 shadow-sm flex flex-col overflow-hidden cursor-pointer"
               >
-                {/* Top accent bar */}
                 <div className="h-1.5 w-full" style={{ backgroundColor: p.color }} />
                 <div className="p-7 sm:p-8 flex flex-col flex-grow">
-                  {/* Logo placeholder */}
                   <div className="mb-5">
                     {p.logo}
                     <p className="text-[#6b7280] text-[12px] mt-1">{p.subtitle}</p>
                   </div>
                   <h3 className="text-[#1f2937] font-bold text-[20px] sm:text-[22px] mb-3">{p.name}</h3>
                   <p className="text-[#4b5563] text-[13.5px] sm:text-[14px] leading-[1.8] mb-6 flex-grow">{p.description}</p>
-                  {/* Highlights */}
                   <ul className="space-y-2 mb-7">
                     {p.highlights.map((h, hi) => (
                       <li key={hi} className="flex items-center gap-2.5 text-[13px] text-[#4b5563]">
@@ -234,7 +254,7 @@ export default function CloudServiceHome() {
                   </ul>
                   <button
                     onClick={() => navigate(`/services/${p.slug}`)}
-                    className="w-full py-3 rounded-lg font-bold text-[14px] sm:text-[15px] transition-all text-white hover:opacity-90"
+                    className="w-full py-3 rounded-lg font-bold text-[14px] sm:text-[15px] transition-all text-white hover:opacity-90 active:scale-95"
                     style={{ backgroundColor: p.color }}
                   >
                     Explore {p.name} →
@@ -242,93 +262,6 @@ export default function CloudServiceHome() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── What We Offer ─────────────────────────────────────── */}
-      <section className="w-full bg-white py-14 sm:py-16 lg:py-20">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16">
-          <div className="text-center mb-12">
-            <span className="text-[#da251d] text-[13px] font-bold uppercase tracking-widest mb-3 inline-block">Our Services</span>
-            <h2 className="text-[#1f2937] text-[26px] sm:text-[30px] lg:text-[36px] font-bold mb-4">
-              What Copious Info Provides
-            </h2>
-            <p className="text-[#4b5563] text-[14px] sm:text-[15px] max-w-2xl mx-auto leading-relaxed">
-              From migration to optimization, we cover every aspect of your cloud journey with expert guidance and hands-on support.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {offerings.map((item, i) => (
-              <div
-                key={i}
-                className="bg-[#f8f9fa] rounded-xl p-6 sm:p-7 border border-gray-100 hover:border-[#da251d]/30 hover:shadow-sm transition-all group"
-              >
-                <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#da251d] transition-colors">
-                  <span className="group-hover:[&>svg]:text-white transition-colors">{item.icon}</span>
-                </div>
-                <h3 className="text-[#1f2937] font-bold text-[16px] sm:text-[17px] mb-3">{item.title}</h3>
-                <p className="text-[#4b5563] text-[13.5px] sm:text-[14px] leading-[1.8]">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Why Choose Us ─────────────────────────────────────── */}
-      <section className="w-full bg-[#f8f9fa] py-14 sm:py-16 lg:py-20">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="w-full">
-              <img
-                src={heroBg}
-                alt="Why Choose Copious Cloud"
-                className="w-full h-[280px] sm:h-[340px] lg:h-[400px] object-cover rounded-2xl shadow-md"
-              />
-            </div>
-            <div>
-              <span className="text-[#da251d] text-[13px] font-bold uppercase tracking-widest mb-3 inline-block">Why Us</span>
-              <h2 className="text-[#1f2937] text-[26px] sm:text-[30px] lg:text-[36px] font-bold mb-5 leading-snug">
-                Why Choose Copious Info For Cloud?
-              </h2>
-              <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8] mb-7">
-                We are not just a reseller — we are your long-term cloud partner. Our team of certified architects, engineers, and support specialists work alongside your business to design, deploy, and continuously optimize cloud environments that deliver measurable results.
-              </p>
-              <ul className="space-y-4">
-                {whyPoints.map((pt, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <FiCheckCircle className="text-[#da251d] mt-0.5 shrink-0" size={18} />
-                    <span className="text-[#4b5563] text-[14px] sm:text-[15px] leading-relaxed">{pt}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── CTA Banner ────────────────────────────────────────── */}
-      <section className="w-full bg-[#da251d] py-14 sm:py-16">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16 text-center">
-          <h2 className="text-white text-[24px] sm:text-[30px] lg:text-[38px] font-bold mb-4 leading-snug">
-            Ready To Move To The Cloud?
-          </h2>
-          <p className="text-white/80 text-[14px] sm:text-[16px] mb-8 max-w-xl mx-auto leading-relaxed">
-            Talk to our cloud experts today. Get a free consultation and custom cloud roadmap for your business.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              onClick={() => navigate('/contact')}
-              className="bg-white text-[#da251d] px-8 py-3 rounded-lg font-bold text-[15px] hover:bg-gray-50 transition-all shadow-md"
-            >
-              Get Free Consultation
-            </button>
-            <button
-              onClick={() => document.getElementById('cloud-providers').scrollIntoView({ behavior: 'smooth' })}
-              className="border-2 border-white text-white px-8 py-3 rounded-lg font-bold text-[15px] hover:bg-white/10 transition-all"
-            >
-              View Our Plans
-            </button>
           </div>
         </div>
       </section>
