@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import heroBg from '../../../assets/images/services/security/email.jpg';
 import sectionImg from '../../../assets/images/about/about-section.jpg';
 import { FiCheckCircle } from 'react-icons/fi';
@@ -15,6 +16,7 @@ const advantages = [
 ];
 
 export default function EmailSecurity() {
+  const navigate = useNavigate();
   return (
     <div className="w-full pt-[92px] bg-white">
 
@@ -38,7 +40,10 @@ export default function EmailSecurity() {
             <p className="text-gray-300 text-[12px] sm:text-[13px] max-w-xl mx-auto leading-relaxed mb-6 sm:mb-8 px-2">
               Tata Tele Business Services (TTBS) Email Security's incredibly dependable, expandable, feature-rich solutions support secure communication within your organization.
             </p>
-            <button className="bg-[#da251d] text-white px-8 sm:px-10 py-2.5 sm:py-3 rounded-lg font-bold text-[14px] sm:text-[15px] hover:bg-[#c02019] transition-all shadow-md">
+            <button 
+              onClick={() => navigate('/contact')}
+              className="bg-[#da251d] text-white px-8 sm:px-10 py-2.5 sm:py-3 rounded-lg font-bold text-[14px] sm:text-[15px] hover:bg-[#c02019] transition-all shadow-md active:scale-95"
+            >
               Free Live Demo
             </button>
           </div>
@@ -62,7 +67,10 @@ export default function EmailSecurity() {
                   Tata Tele Business Services (TTBS) Email Security's incredibly dependable, expandable, feature-rich solutions support secure communication within your organization.
                 </p>
               </div>
-              <button className="mt-6 bg-[#da251d] text-white px-8 py-2.5 rounded-lg font-bold text-[14px] sm:text-[15px] hover:bg-[#c02019] transition-all shadow-sm">
+              <button 
+                onClick={() => navigate('/contact')}
+                className="mt-6 bg-[#da251d] text-white px-8 py-2.5 rounded-lg font-bold text-[14px] sm:text-[15px] hover:bg-[#c02019] transition-all shadow-sm active:scale-95"
+              >
                 More Details
               </button>
             </div>
@@ -106,7 +114,10 @@ export default function EmailSecurity() {
                   </li>
                 ))}
               </ul>
-              <button className="bg-[#da251d] text-white px-8 py-2.5 rounded-lg font-bold text-[14px] sm:text-[15px] hover:bg-[#c02019] transition-all shadow-sm">
+              <button 
+                onClick={() => navigate('/contact')}
+                className="bg-[#da251d] text-white px-8 py-2.5 rounded-lg font-bold text-[14px] sm:text-[15px] hover:bg-[#c02019] transition-all shadow-sm active:scale-95"
+              >
                 More Details
               </button>
             </div>
