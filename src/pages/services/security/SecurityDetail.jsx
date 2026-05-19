@@ -1,9 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import heroBg from '../../../assets/images/services/security/endpoint.jpg';
 import sectionImg from '../../../assets/images/about/about-section.jpg';
 import { FiCheckCircle } from 'react-icons/fi';
 
 export default function SecurityDetail() {
+  const navigate = useNavigate();
+
   return (
     <div className="w-full pt-[92px] bg-white">
 
@@ -27,7 +30,10 @@ export default function SecurityDetail() {
             <p className="text-gray-300 text-[12px] sm:text-[13px] max-w-xl mx-auto leading-relaxed mb-6 sm:mb-8 px-2">
               Its primary objective is to identify, neutralize attacks, and eliminate risks to reinforce ongoing cyber threats, ensuring the security and integrity of these devices. Endpoint security involves safeguarding all devices linked to a network to prevent them from being exploited as entry points by cybercriminals.
             </p>
-            <button className="bg-[#da251d] text-white px-8 sm:px-10 py-2.5 sm:py-3 rounded-lg font-bold text-[14px] sm:text-[15px] hover:bg-[#c02019] transition-all shadow-md">
+            <button 
+              onClick={() => navigate('/contact')}
+              className="bg-[#da251d] text-white px-8 sm:px-10 py-2.5 sm:py-3 rounded-lg font-bold text-[14px] sm:text-[15px] hover:bg-[#c02019] transition-all shadow-md active:scale-95"
+            >
               Free Live Demo
             </button>
           </div>
@@ -87,7 +93,10 @@ export default function SecurityDetail() {
               <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8] mb-6">
                 The utilization of endpoint security enforces significant advantages to businesses. Endpoint security enforces encompasses features such as application control, data loss protection (DLP), and advanced antivirus protection. Now, let us delve into the interconnected benefits of implementing endpoint security, which serves as an excellent means to safeguard your business.
               </p>
-              <button className="bg-[#da251d] text-white px-8 py-2.5 rounded-lg font-bold text-[14px] sm:text-[15px] hover:bg-[#c02019] transition-all shadow-sm">
+              <button 
+                onClick={() => navigate('/contact')}
+                className="bg-[#da251d] text-white px-8 py-2.5 rounded-lg font-bold text-[14px] sm:text-[15px] hover:bg-[#c02019] transition-all shadow-sm active:scale-95"
+              >
                 More Details
               </button>
             </div>
@@ -110,7 +119,10 @@ export default function SecurityDetail() {
               <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8] mb-6">
                 The utilization of endpoint security enforces significant advantages to businesses. Endpoint security enforces encompasses features such as application control, data loss protection (DLP), and advanced antivirus protection. Now, let us delve into the interconnected benefits of implementing endpoint security, which serves as an excellent means to safeguard your business.
               </p>
-              <button className="bg-[#da251d] text-white px-8 py-2.5 rounded-lg font-bold text-[14px] sm:text-[15px] hover:bg-[#c02019] transition-all shadow-sm">
+              <button 
+                onClick={() => navigate('/contact')}
+                className="bg-[#da251d] text-white px-8 py-2.5 rounded-lg font-bold text-[14px] sm:text-[15px] hover:bg-[#c02019] transition-all shadow-sm active:scale-95"
+              >
                 More Details
               </button>
             </div>
