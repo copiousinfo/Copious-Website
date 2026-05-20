@@ -12,13 +12,13 @@ import SolutionsDetail from './pages/solutions/SolutionsDetail'
 import BillingDetail from './pages/solutions/BillingDetail'
 import ParkingDetail from './pages/solutions/ParkingDetail'
 import EventManagementDetail from './pages/solutions/EventManagementDetail'
+import AcurestroDetail from './pages/solutions/AcurestroDetail'
+import DevarpanDetail from './pages/solutions/DevarpanDetail'
 import ServiceDetail from './pages/services/ServiceDetail'
 import SecurityDetail from './pages/services/security/SecurityDetail'
 import EmailSecurity from './pages/services/security/EmailSecurity'
 import AntivirusSecurity from './pages/services/security/AntivirusSecurity'
 import BulkWebWhatsApp from './pages/services/BulkWebWhatsApp'
-import ITConsultingDetail from './pages/services/consulting/ITConsultingDetail'
-import BusinessConsultingDetail from './pages/services/consulting/BusinessConsultingDetail'
 import MicrosoftDetail from './pages/services/MicrosoftDetail'
 import BackupDetail from './pages/services/BackupDetail'
 import AWSCloudDetail from './pages/services/cloud/AWSCloudDetail'
@@ -53,6 +53,8 @@ function App() {
           <Route path="/solutions/billing" element={<BillingDetail />} />
           <Route path="/solutions/parking" element={<ParkingDetail />} />
           <Route path="/solutions/event-management" element={<EventManagementDetail />} />
+          <Route path="/solutions/acurestro" element={<AcurestroDetail />} />
+          <Route path="/solutions/devarpan" element={<DevarpanDetail />} />
           <Route path="/solutions/:slug" element={<SolutionsDetail />} />
           <Route path="/services/security" element={<SecurityDetail />} />
           <Route path="/security/email" element={<EmailSecurity />} />
@@ -63,8 +65,6 @@ function App() {
           <Route path="/services/cloud-service_azure" element={<AzureCloudDetail />} />
           <Route path="/services/cloud-service_jio" element={<JioCloudDetail />} />
           <Route path="/services/bulk-web-whatsapp" element={<BulkWebWhatsApp />} />
-          <Route path="/services/it-consulting" element={<ITConsultingDetail />} />
-          <Route path="/services/business-consulting" element={<BusinessConsultingDetail />} />
           <Route path="/services/microsoft" element={<MicrosoftDetail />} />
           <Route path="/services/backup" element={<BackupDetail />} />
           <Route path="/services/:slug" element={<ServiceDetail />} />
