@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import heroBg from '../../../assets/images/services/cloud/cloud-hero.jpg'; 
-import sectionImg from '../../../assets/images/about/about-section.jpg';
+import cloud2Img from '../../../assets/images/services/cloud/cloud2.jpg';
 import { FiCheckCircle, FiCloud, FiShield, FiZap, FiDatabase, FiGlobe, FiTrendingUp, FiCpu, FiLayers, FiBox } from 'react-icons/fi';
 
 /* ─── Cloud Provider Cards ─────────────────────────────────────── */
@@ -141,9 +141,9 @@ export default function CloudServiceHome() {
             </div>
             <div className="w-full">
               <img
-                src={sectionImg}
+                src={cloud2Img}
                 alt="About Cloud Computing"
-                className="w-full h-[280px] sm:h-[340px] lg:h-[380px] object-cover rounded-2xl shadow-sm"
+                className="w-full h-[280px] sm:h-[340px] lg:h-[380px] object-contain bg-[#f8f9fa] rounded-2xl shadow-sm"
               />
             </div>
           </div>

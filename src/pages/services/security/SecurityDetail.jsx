@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import heroBg from '../../../assets/images/services/security/endpoint.jpg';
-import sectionImg from '../../../assets/images/about/about-section.jpg';
+import endpoint1Img from '../../../assets/images/services/security/endpoint1.jpg';
 import { FiCheckCircle } from 'react-icons/fi';
 
 export default function SecurityDetail() {
@@ -61,9 +61,9 @@ export default function SecurityDetail() {
             {/* Right: Image */}
             <div className="w-full">
               <img
-                src={sectionImg}
+                src={endpoint1Img}
                 alt="What Is Endpoint Security"
-                className="w-full h-[240px] sm:h-[290px] lg:h-[320px] object-cover rounded-xl shadow-sm"
+                className="w-full h-[240px] sm:h-[290px] lg:h-[320px] object-contain bg-[#f8f9fa] rounded-xl shadow-sm"
               />
             </div>
           </div>
@@ -77,9 +77,9 @@ export default function SecurityDetail() {
             {/* Left: Image */}
             <div className="w-full order-2 lg:order-1">
               <img
-                src={sectionImg}
+                src={endpoint1Img}
                 alt="Endpoint Security For SMBs"
-                className="w-full h-[240px] sm:h-[290px] lg:h-[340px] object-cover rounded-xl shadow-sm"
+                className="w-full h-[240px] sm:h-[290px] lg:h-[340px] object-contain bg-[#f8f9fa] rounded-xl shadow-sm"
               />
             </div>
             {/* Right: Text */}
@@ -129,9 +129,9 @@ export default function SecurityDetail() {
             {/* Right: Image */}
             <div className="w-full">
               <img
-                src={sectionImg}
+                src={endpoint1Img}
                 alt="Improve Security Measures"
-                className="w-full h-[240px] sm:h-[290px] lg:h-[340px] object-cover rounded-xl shadow-sm"
+                className="w-full h-[240px] sm:h-[290px] lg:h-[340px] object-contain bg-[#f8f9fa] rounded-xl shadow-sm"
               />
             </div>
           </div>

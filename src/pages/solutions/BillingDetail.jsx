@@ -1,21 +1,16 @@
 import React from 'react';
 import billingImg from '../../assets/images/solutions/billing/billing-section.jpg';
-import aboutImage from '../../assets/images/about/about-section.jpg';
+import billing2Img from '../../assets/images/solutions/billing/billing2.jpg';
 
 const tabData = [
   'Ticket Booking & Billing',
-  'Automated Billing Management Software',
 ];
 
 const featureCards = [
   { title: "Customer Management", subtitle: "Send booking confirmations and reminders via email or SMS." },
   { title: "Customer Support", subtitle: "Sync customer data with CRM systems" },
   { title: "Payment Integration", subtitle: "Self Managed MOP like Cash, Wallets, UPI etc" },
-  { title: "Automation", subtitle: "Make Ticcket automation by Mobile" },
-  { title: "Multi-Currency Support", subtitle: "Handle transactions in different currencies." },
   { title: "Import & Export", subtitle: "You can easly data import and export" },
-  { title: "Tax Management", subtitle: "Tax Management Reports Format & Excel Export" },
-  { title: "Multilingual", subtitle: "It's provided multipal language" },
   { title: "Data-transfar", subtitle: "Data transfar with security" },
   { title: "Searching", subtitle: "Records find easly and fast" },
 ];
@@ -34,7 +29,7 @@ export default function BillingDetail() {
             About Us
           </span>
           <h1 className="text-white text-3xl sm:text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-            Smart Solutions For Modern Ticketing, Billing, And Parking
+            Smart Solutions For Modern Billing
           </h1>
           <p className="text-gray-200 text-sm sm:text-base leading-relaxed max-w-[800px]">
             Simplify Your Events, Boost Efficiency, And Serve Attendees Faster - All From Your Mobile.
@@ -72,17 +67,17 @@ export default function BillingDetail() {
               </p>
             </div>
             <img
-              src={aboutImage}
+              src={billing2Img}
               alt="Solution management"
-              className="w-full rounded-md object-cover h-[240px] sm:h-[300px] lg:h-[320px]"
+              className="w-full rounded-md object-contain bg-[#f8f9fa] h-[240px] sm:h-[300px] lg:h-[320px]"
             />
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10 mt-10 items-start">
             <img
-              src={aboutImage}
+              src={billing2Img}
               alt="Online booking"
-              className="w-full rounded-md object-cover h-[240px] sm:h-[300px] lg:h-[320px]"
+              className="w-full rounded-md object-contain bg-[#f8f9fa] h-[240px] sm:h-[300px] lg:h-[320px]"
             />
             <div>
               <h3 className="text-3xl font-semibold text-[#1f2937] mb-4">

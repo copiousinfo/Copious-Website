@@ -13,7 +13,7 @@ import BillingDetail from './pages/solutions/BillingDetail'
 import ParkingDetail from './pages/solutions/ParkingDetail'
 import EventManagementDetail from './pages/solutions/EventManagementDetail'
 import AcurestroDetail from './pages/solutions/AcurestroDetail'
-import DevarpanDetail from './pages/solutions/DevarpanDetail'
+import VyoriseDetail from './pages/solutions/VyoriseDetail'
 import ServiceDetail from './pages/services/ServiceDetail'
 import SecurityDetail from './pages/services/security/SecurityDetail'
 import EmailSecurity from './pages/services/security/EmailSecurity'
@@ -54,7 +54,7 @@ function App() {
           <Route path="/solutions/parking" element={<ParkingDetail />} />
           <Route path="/solutions/event-management" element={<EventManagementDetail />} />
           <Route path="/solutions/acurestro" element={<AcurestroDetail />} />
-          <Route path="/solutions/devarpan" element={<DevarpanDetail />} />
+          <Route path="/solutions/vyorise" element={<VyoriseDetail />} />
           <Route path="/solutions/:slug" element={<SolutionsDetail />} />
           <Route path="/services/security" element={<SecurityDetail />} />
           <Route path="/security/email" element={<EmailSecurity />} />

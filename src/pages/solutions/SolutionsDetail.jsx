@@ -1,11 +1,10 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import ticketImg from '../../assets/images/solutions/ticketing/ticket-section.jpg';
-import aboutImg from '../../assets/images/about/about-section.jpg';
+import ticket1Img from '../../assets/images/solutions/ticketing/ticket1.jpg';
 
 const tabData = [
   'Ticket Management Software',
-  'Automated Ticket Management Software',
 ];
 
 const titleMap = {
@@ -44,7 +43,7 @@ export default function SolutionsDetail() {
             About Us
           </span>
           <h1 className="text-white text-3xl sm:text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-            Smart Solutions For Modern Ticketing, Billing, And Parking
+            Smart Solutions For Modern {currentTitle}
           </h1>
           <p className="text-gray-200 text-sm sm:text-base leading-relaxed max-w-[800px]">
             Simplify Your Events, Boost Efficiency, And Serve Attendees Faster - All From Your Mobile.
@@ -84,18 +83,18 @@ export default function SolutionsDetail() {
               </p>
             </div>
             <img
-              src={aboutImg}
+              src={ticket1Img}
               alt="Ticket Management"
-              className="w-full rounded-md object-cover h-[200px] sm:h-[260px] lg:h-[320px] mt-2 lg:mt-0"
+              className="w-full rounded-md object-contain bg-[#f8f9fa] h-[200px] sm:h-[260px] lg:h-[320px] mt-2 lg:mt-0"
             />
           </div>
 
           {/* Purpose of Online Booking row */}
           <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5 lg:gap-10 mt-6 sm:mt-10 items-start">
             <img
-              src={aboutImg}
+              src={ticket1Img}
               alt="Online booking"
-              className="w-full rounded-md object-cover h-[200px] sm:h-[260px] lg:h-[320px]"
+              className="w-full rounded-md object-contain bg-[#f8f9fa] h-[200px] sm:h-[260px] lg:h-[320px]"
             />
             <div>
               <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#1f2937] mb-3 sm:mb-4">

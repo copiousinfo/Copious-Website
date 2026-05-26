@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import heroBg from '../../../assets/images/services/security/email.jpg';
-import sectionImg from '../../../assets/images/about/about-section.jpg';
+import email1Img from '../../../assets/images/services/security/email1.jpg';
 import { FiCheckCircle } from 'react-icons/fi';
 
 const advantages = [
@@ -77,9 +77,9 @@ export default function EmailSecurity() {
             {/* Right: Image */}
             <div className="w-full">
               <img
-                src={sectionImg}
+                src={email1Img}
                 alt="Email Security for Safe Office Communication"
-                className="w-full h-[240px] sm:h-[290px] lg:h-[320px] object-cover rounded-xl shadow-sm"
+                className="w-full h-[240px] sm:h-[290px] lg:h-[320px] object-contain bg-[#f8f9fa] rounded-xl shadow-sm"
               />
             </div>
           </div>
@@ -93,9 +93,9 @@ export default function EmailSecurity() {
             {/* Left: Image */}
             <div className="w-full order-2 lg:order-1">
               <img
-                src={heroBg}
+                src={email1Img}
                 alt="Advantages of Email Security"
-                className="w-full h-[240px] sm:h-[290px] lg:h-[340px] object-cover rounded-xl shadow-sm"
+                className="w-full h-[240px] sm:h-[290px] lg:h-[340px] object-contain bg-[#f8f9fa] rounded-xl shadow-sm"
               />
             </div>
             {/* Right: Text */}

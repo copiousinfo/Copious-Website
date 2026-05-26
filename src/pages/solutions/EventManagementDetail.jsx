@@ -1,10 +1,9 @@
 import React from 'react';
 import aboutHero from '../../assets/images/solutions/event/event-hero.jpg';
-import aboutImage from '../../assets/images/about/about-section.jpg';
+import eventmgmImg from '../../assets/images/solutions/event/eventmgm.jpg';
 
 const tabData = [
   'Event Management Software',
-  'Automated Event Management Software',
 ];
 
 const featureCards = [
@@ -34,7 +33,7 @@ export default function EventManagementDetail() {
               About Us
             </span>
             <h1 className="text-white text-3xl sm:text-5xl lg:text-[64px] font-semibold leading-[1.08] mb-0 max-w-[1320px]">
-              Smart Solutions For Modern Ticketing, Billing, And Parking
+              Smart Solutions For Modern Event Management
             </h1>
             <p className="text-gray-100 text-xs sm:text-sm max-w-3xl mt-5 sm:mt-6">
               Simplify Your Events, Boost Efficiency, And Serve Attendees Faster - All From Your Mobile.
@@ -68,17 +67,17 @@ export default function EventManagementDetail() {
               </p>
             </div>
             <img
-              src={aboutImage}
+              src={eventmgmImg}
               alt="Solution management"
-              className="w-full rounded-md object-cover h-[240px] sm:h-[300px] lg:h-[320px]"
+              className="w-full rounded-md object-contain bg-[#f8f9fa] h-[240px] sm:h-[300px] lg:h-[320px]"
             />
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10 mt-10 items-start">
             <img
-              src={aboutImage}
+              src={eventmgmImg}
               alt="Online booking"
-              className="w-full rounded-md object-cover h-[240px] sm:h-[300px] lg:h-[320px]"
+              className="w-full rounded-md object-contain bg-[#f8f9fa] h-[240px] sm:h-[300px] lg:h-[320px]"
             />
             <div>
               <h3 className="text-3xl font-semibold text-[#1f2937] mb-4">

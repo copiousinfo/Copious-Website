@@ -1,21 +1,17 @@
 import React from 'react';
 import acurestroImg from '../../assets/images/solutions/acurestro/acurestro.jpg';
-import aboutImage from '../../assets/images/about/about-section.jpg';
+import acurestro2Img from '../../assets/images/solutions/acurestro/acurestro2.jpg';
 
 const tabData = [
-  'Acurestro Software',
-  'Automated Management Software',
+  'Acurestro Software',   
 ];
 
 const featureCards = [
   { title: "Customer Management", subtitle: "Manage customers easily and effectively." },
   { title: "Customer Support", subtitle: "Sync customer data with CRM systems" },
   { title: "Payment Integration", subtitle: "Self Managed MOP like Cash, Wallets, UPI etc" },
-  { title: "Automation", subtitle: "Make tasks automation by Mobile" },
-  { title: "Multi-Currency Support", subtitle: "Handle transactions in different currencies." },
   { title: "Import & Export", subtitle: "You can easly data import and export" },
   { title: "Tax Management", subtitle: "Tax Management Reports Format & Excel Export" },
-  { title: "Multilingual", subtitle: "It's provided multipal language" },
   { title: "Data-transfar", subtitle: "Data transfar with security" },
   { title: "Searching", subtitle: "Records find easly and fast" },
 ];
@@ -69,17 +65,17 @@ export default function AcurestroDetail() {
               </p>
             </div>
             <img
-              src={aboutImage}
+              src={acurestro2Img}
               alt="Solution management"
-              className="w-full rounded-md object-cover h-[240px] sm:h-[300px] lg:h-[320px]"
+              className="w-full rounded-md object-contain bg-[#f8f9fa] h-[240px] sm:h-[300px] lg:h-[320px]"
             />
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10 mt-10 items-start">
             <img
-              src={aboutImage}
+              src={acurestro2Img}
               alt="Online booking"
-              className="w-full rounded-md object-cover h-[240px] sm:h-[300px] lg:h-[320px]"
+              className="w-full rounded-md object-contain bg-[#f8f9fa] h-[240px] sm:h-[300px] lg:h-[320px]"
             />
             <div>
               <h3 className="text-3xl font-semibold text-[#1f2937] mb-4">

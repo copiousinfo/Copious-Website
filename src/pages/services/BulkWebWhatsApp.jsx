@@ -1,41 +1,41 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import aboutHero from '../../assets/images/services/general/whatsapp.jpg';
-import aboutImage from '../../assets/images/about/about-section.jpg'; // Using existing images as fallbacks
+import whatapp1Img from '../../assets/images/services/general/whatapp1.jpg';
 
 export default function BulkWebWhatsApp() {
   const navigate = useNavigate();
 
   const plans = [
     {
-      price: '$10/mth',
+      price: '₹299/mth',
       name: 'One Month Plan',
       billing: 'Billed monthly.',
       features: [
         'Monthly Cost for IVR',
-        'Fully automated IVR at $0.06/min',
+        'Fully automated IVR at 0.6 p/min',
         'Basic reporting and analytics',
         'Basic chat and email support',
       ],
     },
     {
-      price: '$12/mth',
+      price: '₹899/mth',
       name: 'Three Month Plan',
       billing: 'Billed quarterly.',
       features: [
         'Monthly Cost for IVR',
-        'Fully automated IVR at $0.06/min',
+        'Fully automated IVR at 0.6 p/min',
         'Basic reporting and analytics',
         'Basic chat and email support',
       ],
     },
     {
-      price: '$16/mth',
+      price: '₹1449/mth',
       name: 'Six Month Plan',
       billing: 'Billed semi-annually.',
       features: [
         'Monthly Cost for IVR',
-        'Fully automated IVR at $0.06/min',
+        'Fully automated IVR at 0.6 p/min',
         'Basic reporting and analytics',
         'Basic chat and email support',
       ],
@@ -67,8 +67,8 @@ export default function BulkWebWhatsApp() {
           <span className="bg-[#da251d] text-white text-[11px] sm:text-xs font-semibold px-4 sm:px-5 py-1.5 rounded-full mb-4 sm:mb-5 inline-block">
             Services
           </span>
-          <h1 className="text-white text-[28px] sm:text-4xl lg:text-[52px] font-bold leading-tight mb-3 sm:mb-4 max-w-3xl mx-auto px-2">
-            Bulk Web Whatsapp Services
+          <h1 className="text-white text-[28px] sm:text-4xl lg:text-[52px] font-bold leading-snug lg:leading-[1.4] mb-3 sm:mb-4 max-w-3xl mx-auto px-2">
+            Bulk Whatsapp Business Services
           </h1>
           <p className="text-gray-200 text-[13px] sm:text-[15px] max-w-2xl mx-auto leading-relaxed mb-6 sm:mb-8 px-2">
             Bulk Web WhatsApp enables businesses to send mass messages via WhatsApp Web. It automates messaging, allowing companies to reach numerous customers simultaneously for marketing, notifications, and customer service efficiently.
@@ -87,7 +87,7 @@ export default function BulkWebWhatsApp() {
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center px-4 lg:px-12">
           <div>
             <h2 className="text-[#1f2937] text-2xl sm:text-3xl lg:text-[36px] font-bold mb-6 leading-snug">
-              What is Bulk Web WhatsApp?
+              What is Bulk Whatsapp Business?
             </h2>
             <div className="space-y-4">
               <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8]">
@@ -100,9 +100,9 @@ export default function BulkWebWhatsApp() {
           </div>
           <div className="w-full">
             <img
-              src={aboutImage}
+              src={whatapp1Img}
               alt="Team joining hands"
-              className="w-full h-[260px] sm:h-[320px] lg:h-[380px] object-cover rounded-xl shadow-sm"
+              className="w-full h-[260px] sm:h-[320px] lg:h-[380px] object-contain bg-[#f8f9fa] rounded-xl shadow-sm"
             />
           </div>
         </div>
@@ -112,7 +112,7 @@ export default function BulkWebWhatsApp() {
       <section className="bg-white pb-14 sm:pb-16 lg:pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-[1440px] mx-auto px-4 lg:px-12">
           <h2 className="text-[#1f2937] text-2xl sm:text-3xl lg:text-[40px] font-bold text-center mb-12">
-            Feature of Bulk Whatsapp SMS
+            Feature of Bulk Whatsapp Business    
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {featuresList.map((item, index) => (

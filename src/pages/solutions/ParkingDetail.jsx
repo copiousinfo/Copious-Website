@@ -1,10 +1,9 @@
 import React from 'react';
 import parkingImg from '../../assets/images/solutions/parking/parking1.jpg';
-import aboutImage from '../../assets/images/about/about-section.jpg';
+import parking3Img from '../../assets/images/solutions/parking/parking3.jpg';
 
 const tabData = [
   'Parking Management Software',
-  'Automated Parking Management Software',
 ];
 
 const featureCards = [
@@ -15,7 +14,6 @@ const featureCards = [
   { title: "Import & Export", subtitle: "You can easily data import and export" },
   { title: "Searching", subtitle: "Records find easily and fast" },
   { title: "Payment of Method", subtitle: "Self Managed MOP like Cash, Wallets, UPI etc" },
-  { title: "Multilingual", subtitle: "It's provided multiple language" },
   { title: "Data-transfer", subtitle: "Data transfer with security" },
 ];
 
@@ -33,7 +31,7 @@ export default function ParkingDetail() {
             About Us
           </span>
           <h1 className="text-white text-3xl sm:text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-            Smart Solutions For Modern Ticketing, Billing, And Parking
+            Smart Solutions For Modern Parking
           </h1>
           <p className="text-gray-200 text-sm sm:text-base leading-relaxed max-w-[800px]">
             Simplify Your Events, Boost Efficiency, And Serve Attendees Faster - All From Your Mobile.
@@ -66,9 +64,9 @@ export default function ParkingDetail() {
               </p>
             </div>
             <img
-              src={aboutImage}
+              src={parking3Img}
               alt="Solution management"
-              className="w-full rounded-md object-cover h-[240px] sm:h-[300px] lg:h-[320px]"
+              className="w-full rounded-md object-contain bg-[#f8f9fa] h-[240px] sm:h-[300px] lg:h-[320px]"
             />
           </div>
 

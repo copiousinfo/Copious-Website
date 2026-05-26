@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import heroBg from '../../../assets/images/services/cloud/jio.jpg';
-import sectionImg from '../../../assets/images/about/about-section.jpg';
+import jiocloud1Img from '../../../assets/images/services/cloud/jiocloud1.jpg';
 
 const features = [
   {
@@ -119,9 +119,9 @@ export default function JioCloudDetail() {
             {/* Right: Image */}
             <div className="w-full">
               <img
-                src={sectionImg}
+                src={jiocloud1Img}
                 alt="What Is JioCloud"
-                className="w-full h-[250px] sm:h-[290px] lg:h-[320px] object-cover rounded-xl shadow-sm"
+                className="w-full h-[250px] sm:h-[290px] lg:h-[320px] object-contain bg-[#f8f9fa] rounded-xl shadow-sm"
               />
             </div>
           </div>
