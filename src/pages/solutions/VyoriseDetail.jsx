@@ -1,32 +1,27 @@
 import React from 'react';
-import devarpanImg from '../../assets/images/solutions/devarpan/devarpan.jpg';
-import aboutImage from '../../assets/images/about/about-section.jpg';
+import vyoriseImg from '../../assets/images/solutions/vyorise/vyorise.jpg';
+import vyorise1Img from '../../assets/images/solutions/vyorise/vyorise1.png';
 
 const tabData = [
-  'Devarpan Software',
-  'Automated Management Software',
+  'Vyorise Software',
 ];
 
 const featureCards = [
   { title: "Customer Management", subtitle: "Manage customers easily and effectively." },
   { title: "Customer Support", subtitle: "Sync customer data with CRM systems" },
   { title: "Payment Integration", subtitle: "Self Managed MOP like Cash, Wallets, UPI etc" },
-  { title: "Automation", subtitle: "Make tasks automation by Mobile" },
-  { title: "Multi-Currency Support", subtitle: "Handle transactions in different currencies." },
   { title: "Import & Export", subtitle: "You can easly data import and export" },
-  { title: "Tax Management", subtitle: "Tax Management Reports Format & Excel Export" },
-  { title: "Multilingual", subtitle: "It's provided multipal language" },
   { title: "Data-transfar", subtitle: "Data transfar with security" },
   { title: "Searching", subtitle: "Records find easly and fast" },
 ];
 
-export default function DevarpanDetail() {
+export default function VyoriseDetail() {
   return (
     <div className="w-full pt-[92px] bg-[#efefef]">
       {/* ── Hero Section ── */}
       <section
         className="relative h-[300px] sm:h-[400px] lg:h-[480px] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: `url(${devarpanImg})` }}
+        style={{ backgroundImage: `url(${vyoriseImg})` }}
       >
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 flex flex-col items-center text-center px-4 max-w-[1000px]">
@@ -34,7 +29,7 @@ export default function DevarpanDetail() {
             About Us
           </span>
           <h1 className="text-white text-3xl sm:text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-            Smart Solutions For Modern Devarpan Management
+            Smart Solutions For Modern Vyorise Management
           </h1>
           <p className="text-gray-200 text-sm sm:text-base leading-relaxed max-w-[800px]">
             Simplify Your Business, Boost Efficiency, And Serve Customers Faster - All From Your Mobile.
@@ -59,7 +54,7 @@ export default function DevarpanDetail() {
                 ))}
               </div>
               <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
-                Devarpan software streamlines the operations through automation, including tasks like creation, tracking, and management.
+                Vyorise software streamlines the operations through automation, including tasks like creation, tracking, and management.
               </p>
               <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
                 This eradicates the necessity for manual input of data, minimizing the chances of mistakes and conserving precious time for businesses and their customers.
@@ -69,24 +64,24 @@ export default function DevarpanDetail() {
               </p>
             </div>
             <img
-              src={aboutImage}
+              src={vyorise1Img}
               alt="Solution management"
-              className="w-full rounded-md object-cover h-[240px] sm:h-[300px] lg:h-[320px]"
+              className="w-full rounded-md object-contain bg-[#f8f9fa] h-[240px] sm:h-[300px] lg:h-[320px]"
             />
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10 mt-10 items-start">
             <img
-              src={aboutImage}
+              src={vyorise1Img}
               alt="Online booking"
-              className="w-full rounded-md object-cover h-[240px] sm:h-[300px] lg:h-[320px]"
+              className="w-full rounded-md object-contain bg-[#f8f9fa] h-[240px] sm:h-[300px] lg:h-[320px]"
             />
             <div>
               <h3 className="text-3xl font-semibold text-[#1f2937] mb-4">
-                The Purpose Of Devarpan Systems
+                The Purpose Of Vyorise Systems
               </h3>
               <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
-                By automating tasks such as tracking and reporting, Devarpan software makes the process more efficient and less prone to errors, ultimately saving time for both businesses and their clients.
+                By automating tasks such as tracking and reporting, Vyorise software makes the process more efficient and less prone to errors, ultimately saving time for both businesses and their clients.
               </p>
             </div>
           </div>
@@ -96,7 +91,7 @@ export default function DevarpanDetail() {
       <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pb-12 sm:pb-14 lg:pb-16">
         <div className="bg-white rounded-md p-5 sm:p-7 lg:p-8">
           <h2 className="text-center text-3xl sm:text-4xl lg:text-[56px] font-semibold text-[#1f2937] flex flex-col lg:gap-4 mb-12">
-            <span>Devarpan Management</span>
+            <span>Vyorise Management</span>
             <span>Feature</span>
           </h2>
 

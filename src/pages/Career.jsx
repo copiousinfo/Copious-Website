@@ -7,12 +7,12 @@ import jobImg from '../assets/images/about/about-section.jpg';
 const jobs = [
   {
     id: 1,
-    title: 'Python Developer',
+    title: 'Business Development Executive',
     desc: [
-      'A Python developer is part of the company\'s backend team, responsible for writing, testing, and maintaining Python code.',
-      'The roles and responsibilities of Python developers include preparing the server-side logic, managing database connections, and assuring high performance and responsiveness to requests from the front end. They also participate in front-end development to ensure quality in the overall experience.',
-      'A Python developer collaborates with cross-functional teams to define, design, and develop new features. He or she is adept at solving problems and writing quality code. They are responsible for building backend code and APIs. They also participate in the design and testing process.',
-      'A Python developer is also referred to as a Python expert or Python programmer. Sometimes, jobs also require the developer to be experienced in front-end technologies and building desktop and web applications.',
+      'A Business Development Executive is a key part of the company\'s growth team, responsible for identifying new business opportunities, building client relationships, and driving revenue.',
+      'The roles and responsibilities include conducting market research to identify new prospects, managing the sales pipeline, and assuring high conversion rates by understanding client needs. They also participate in strategic planning to ensure quality in the overall sales experience.',
+      'A Business Development Executive collaborates with cross-functional teams to define, design, and develop targeted outreach strategies. He or she is adept at negotiating contracts and delivering persuasive pitches. They are responsible for building long-term partnerships and driving B2B sales. They also participate in networking events and client meetings.',
+      'A Business Development Executive is also referred to as a Sales Executive or Growth Specialist. Sometimes, jobs also require the professional to be experienced in digital marketing strategies and building comprehensive market analysis reports.',
     ],
   },
   {
@@ -27,16 +27,6 @@ const jobs = [
   {
     id: 3,
     title: 'PHP Developers', 
-    desc: [
-      'A Python developer is part of the company\'s backend team, responsible for writing, testing, and maintaining Python code.',
-      'The roles and responsibilities of Python developers include preparing the server-side logic, managing database connections, and assuring high performance and responsiveness to requests from the front end. They also participate in front-end development to ensure quality in the overall experience.',
-      'A Python developer collaborates with cross-functional teams to define, design, and develop new features. He or she is adept at solving problems and writing quality code. They are responsible for building backend code and APIs. They also participate in the design and testing process.',
-      'A Python developer is also referred to as a Python expert or Python programmer. Sometimes, jobs also require the developer to be experienced in front-end technologies and building desktop and web applications.',
-    ],
-  },
-  {
-    id: 4,
-    title: 'Python Developer',
     desc: [
       'A Python developer is part of the company\'s backend team, responsible for writing, testing, and maintaining Python code.',
       'The roles and responsibilities of Python developers include preparing the server-side logic, managing database connections, and assuring high performance and responsiveness to requests from the front end. They also participate in front-end development to ensure quality in the overall experience.',

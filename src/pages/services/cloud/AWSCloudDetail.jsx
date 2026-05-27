@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import heroBg from '../../../assets/images/services/cloud/aws.jpg'; 
-import sectionImg from '../../../assets/images/about/about-section.jpg';
+import aws1Img from '../../../assets/images/services/cloud/aws1.jpg';
 
 const categories = {
   'use-case': [
@@ -99,9 +99,9 @@ export default function AWSCloudDetail() {
             {/* Right: Image */}
             <div className="w-full">
               <img
-                src={sectionImg}
+                src={aws1Img}
                 alt="AWS Cloud Computing"
-                className="w-full h-[250px] sm:h-[290px] lg:h-[320px] object-cover rounded-xl shadow-sm"
+                className="w-full h-[250px] sm:h-[290px] lg:h-[320px] object-contain bg-[#f8f9fa] rounded-xl shadow-sm"
               />
             </div>
           </div>
@@ -141,9 +141,9 @@ export default function AWSCloudDetail() {
             {/* Left: Image */}
             <div className="w-full">
               <img
-                src={sectionImg}
+                src={aws1Img}
                 alt="Cloud Categories"
-                className="w-full h-[280px] sm:h-[340px] lg:h-[380px] object-cover rounded-xl shadow-sm"
+                className="w-full h-[280px] sm:h-[340px] lg:h-[380px] object-contain bg-[#f8f9fa] rounded-xl shadow-sm"
               />
             </div>
             {/* Right: Category List */}

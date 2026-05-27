@@ -15,14 +15,14 @@ export const navLinks = [
       { name: 'Parking',           path: '/solutions/parking' },
       { name: 'Event Management',  path: '/solutions/event-management' },
       { name: 'Acurestro',         path: '/solutions/acurestro' },
-      { name: 'Devarpan',          path: '/solutions/devarpan' },
+      { name: 'Vyorise',           path: '/solutions/vyorise' },
     ],
   },
   {
     name: 'Services',
     children: [
       { name: 'Bulk SMS',           path: '/services/bulk-sms' },
-      { name: 'Bulk Web WhatsApp',  path: '/services/bulk-web-whatsapp' },
+      { name: 'Bulk Whatsapp Business', path: '/services/bulk-web-whatsapp' },
       { name: 'Microsoft',      path: '/services/microsoft' },
       { name: 'Cloud Service',  path: '/services/cloud-service' },
       { name: 'Backup',         path: '/services/backup' },

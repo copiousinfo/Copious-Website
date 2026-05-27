@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import heroBg from '../../../assets/images/services/security/antivirus.jpg';
-import sectionImg from '../../../assets/images/about/about-section.jpg';
+import antivirus1Img from '../../../assets/images/services/security/antivirus1.jpg';
 import { FiCheckCircle } from 'react-icons/fi';
 
 const deviceLinks = [
@@ -78,9 +78,9 @@ export default function AntivirusSecurity() {
             {/* Right: Image */}
             <div className="w-full">
               <img
-                src={sectionImg}
+                src={antivirus1Img}
                 alt="What is Antivirus"
-                className="w-full h-[240px] sm:h-[290px] lg:h-[320px] object-cover rounded-xl shadow-sm"
+                className="w-full h-[240px] sm:h-[290px] lg:h-[320px] object-contain bg-[#f8f9fa] rounded-xl shadow-sm"
               />
             </div>
           </div>
@@ -94,9 +94,9 @@ export default function AntivirusSecurity() {
             {/* Left: Image */}
             <div className="w-full order-2 lg:order-1">
               <img
-                src={heroBg}
+                src={antivirus1Img}
                 alt="Why We Use Antivirus"
-                className="w-full h-[240px] sm:h-[290px] lg:h-[340px] object-cover rounded-xl shadow-sm"
+                className="w-full h-[240px] sm:h-[290px] lg:h-[340px] object-contain bg-[#f8f9fa] rounded-xl shadow-sm"
               />
             </div>
             {/* Right: Text */}
@@ -166,9 +166,9 @@ export default function AntivirusSecurity() {
             {/* Right: Image */}
             <div className="w-full">
               <img
-                src={sectionImg}
+                src={antivirus1Img}
                 alt="Antivirus on All Devices"
-                className="w-full h-[240px] sm:h-[290px] lg:h-[340px] object-cover rounded-xl shadow-sm"
+                className="w-full h-[240px] sm:h-[290px] lg:h-[340px] object-contain bg-[#f8f9fa] rounded-xl shadow-sm"
               />
             </div>
           </div>

@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import heroBg from '../../assets/images/about/about-hero.jpg';
 import bulkSmsImg from '../../assets/images/services/general/bulksms1.jpg';
 import sectionImg from '../../assets/images/about/about-section.jpg';
+import bulkSmsWhatImg from '../../assets/images/services/general/bulksms1.png';
 import { FiCheckCircle } from 'react-icons/fi';
 
 /* ─── Per-Service Content ─────────────────────────────────────── */
@@ -28,9 +29,9 @@ const serviceContent = {
     ],
     planTitle: 'Bulk Sms Our Best Plans',
     plans: [
-      { price: '$10', label: 'One Month Plan', features: ['Monthly Cost for IVR', 'Fully automated IVR at $0.06/min', 'Basic reporting and analytics', 'Basic chat and email support'] },
-      { price: '$12', label: 'Three Month Plan', features: ['Monthly Cost for IVR', 'Fully automated IVR at $0.06/min', 'Basic reporting and analytics', 'Basic chat and email support'] },
-      { price: '$16', label: 'Six Month Plan', features: ['Monthly Cost for IVR', 'Fully automated IVR at $0.06/min', 'Basic reporting and analytics', 'Basic chat and email support'] },
+      { price: '₹299', label: 'One Month Plan', features: ['Monthly Cost for IVR', 'Fully automated IVR at 0.6 p/min', 'Basic reporting and analytics', 'Basic chat and email support'] },
+      { price: '₹899', label: 'Three Month Plan', features: ['Monthly Cost for IVR', 'Fully automated IVR at 0.6 p/min', 'Basic reporting and analytics', 'Basic chat and email support'] },
+      { price: '₹1449', label: 'Six Month Plan', features: ['Monthly Cost for IVR', 'Fully automated IVR at 0.6 p/min', 'Basic reporting and analytics', 'Basic chat and email support'] },
     ],
     features: [
       { title: 'Instant Delivery', subtitle: 'Messages reach recipients within seconds of sending.' },
@@ -126,6 +127,7 @@ const serviceContent = {
 export default function ServiceDetail() {
   const { slug } = useParams();
   const content = serviceContent[slug];
+  const currentWhatImg = slug === 'bulk-sms' ? bulkSmsWhatImg : sectionImg;
 
   if (!content) {
     return (
@@ -190,9 +192,9 @@ export default function ServiceDetail() {
             </div>
             <div className="w-full">
               <img
-                src={sectionImg}
+                src={currentWhatImg}
                 alt={content.whatTitle}
-                className="w-full h-[260px] sm:h-[320px] lg:h-[380px] object-cover rounded-xl shadow-sm"
+                className="w-full h-[260px] sm:h-[320px] lg:h-[380px] object-contain bg-[#f8f9fa] rounded-xl shadow-sm"
               />
             </div>
           </div>
@@ -225,11 +227,12 @@ export default function ServiceDetail() {
                     </li>
                   ))}
                 </ul>
-                <button
-                  className="w-full py-3 sm:py-3.5 rounded-md font-bold text-[14px] sm:text-[15px] transition-all bg-[#da251d] text-white hover:bg-[#c02019]"
+                <Link
+                  to="/contact"
+                  className="w-full block text-center py-3 sm:py-3.5 rounded-md font-bold text-[14px] sm:text-[15px] transition-all bg-[#da251d] text-white hover:bg-[#c02019]"
                 >
                   Get Started
-                </button>
+                </Link>
               </div>
             ))}
           </div>
