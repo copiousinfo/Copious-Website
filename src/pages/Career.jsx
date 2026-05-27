@@ -2,12 +2,16 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import heroBg from '../assets/images/about/about-hero.jpg';
 import jobImg from '../assets/images/about/about-section.jpg';
+import bdaImg from '../assets/images/about/bda.jpg';
+import androidImg from '../assets/images/about/android.jpg';
+import phpImg from '../assets/images/about/php.jpg';
 
 /* ─── Job Listings Data ───────────────────────────────────────── */
 const jobs = [
   {
     id: 1,
     title: 'Business Development Executive',
+    img: bdaImg,
     desc: [
       'A Business Development Executive is a key part of the company\'s growth team, responsible for identifying new business opportunities, building client relationships, and driving revenue.',
       'The roles and responsibilities include conducting market research to identify new prospects, managing the sales pipeline, and assuring high conversion rates by understanding client needs. They also participate in strategic planning to ensure quality in the overall sales experience.',
@@ -18,6 +22,7 @@ const jobs = [
   {
     id: 2,
     title: 'Android Develoer',  
+    img: androidImg,
     desc: [ 
       'Copious Infotech is a leading technology company specializing in innovative mobile solutions. We are dedicated to creating high-quality apps that provide exceptional user experiences. Join our team and gain hands-on experience in a dynamic and fast-paced environment.',
 
@@ -27,6 +32,7 @@ const jobs = [
   {
     id: 3,
     title: 'PHP Developers', 
+    img: phpImg,
     desc: [
       'A Python developer is part of the company\'s backend team, responsible for writing, testing, and maintaining Python code.',
       'The roles and responsibilities of Python developers include preparing the server-side logic, managing database connections, and assuring high performance and responsiveness to requests from the front end. They also participate in front-end development to ensure quality in the overall experience.',
@@ -148,9 +154,9 @@ export default function Career() {
                   {/* Right: Image */}
                   <div className="w-full h-[220px] lg:h-auto">
                     <img
-                      src={jobImg}
+                      src={job.img || jobImg}
                       alt={job.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain bg-[#f8f9fa] rounded-xl"
                     />
                   </div>
                 </div>

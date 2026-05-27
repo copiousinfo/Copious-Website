@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import ticketImg from '../../assets/images/solutions/ticketing/ticket-section.jpg';
-import ticket1Img from '../../assets/images/solutions/ticketing/ticket1.jpg';
+import ticketing2Img from '../../assets/images/solutions/ticketing/ticketing2.jpg';
 
 const tabData = [
   'Ticket Management Software',
@@ -12,17 +12,15 @@ const titleMap = {
   ticketing: 'Ticketing',
   parking: 'Parking',
 };
-
+ 
 const featureCards = [
   { id: 1, title: 'Create & Manage', subtitle: 'Tickets are create and manage very Easy' },
   { id: 2, title: 'Records', subtitle: 'We can multipal Records store.' },
-  { id: 3, title: 'Payment of Method', subtitle: 'Self Managed MOP like Cash, Wallets, UPI etc' },
+  { id: 3, title: 'Payment of Method', subtitle: 'Self Managed MOP like Cash, UPI etc' },
   { id: 4, title: 'Account Statement', subtitle: 'Indivisual Statement Record Print' },
   { id: 5, title: 'Import & Export', subtitle: 'You can easly data import and export' },
   { id: 6, title: 'GST', subtitle: 'GST Reports Format & Excel Export' },
-  { id: 7, title: 'Multilingual', subtitle: "It's provided multipal language" },
-  { id: 8, title: 'Data-transfar', subtitle: 'Data transfar with security' },
-  { id: 9, title: 'Searching', subtitle: 'Records find easly and fast' },
+  { id: 7, title: 'Searching', subtitle: 'Records find easly and fast' },
 ];
 
 export default function SolutionsDetail() {
@@ -83,7 +81,7 @@ export default function SolutionsDetail() {
               </p>
             </div>
             <img
-              src={ticket1Img}
+              src={ticketing2Img}
               alt="Ticket Management"
               className="w-full rounded-md object-contain bg-[#f8f9fa] h-[200px] sm:h-[260px] lg:h-[320px] mt-2 lg:mt-0"
             />
@@ -92,7 +90,7 @@ export default function SolutionsDetail() {
           {/* Purpose of Online Booking row */}
           <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5 lg:gap-10 mt-6 sm:mt-10 items-start">
             <img
-              src={ticket1Img}
+              src={ticketing2Img}
               alt="Online booking"
               className="w-full rounded-md object-contain bg-[#f8f9fa] h-[200px] sm:h-[260px] lg:h-[320px]"
             />
