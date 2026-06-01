@@ -1,17 +1,16 @@
 import React from 'react';
 import billingImg from '../../assets/images/solutions/billing/billing-section.jpg';
-import billing2Img from '../../assets/images/solutions/billing/billing2.jpg';
+import billing3Img from '../../assets/images/solutions/billing/billing3.jpg';
 
 const tabData = [
-  'Ticket Booking & Billing',
+  'Billing', 
 ];
 
 const featureCards = [
   { title: "Customer Management", subtitle: "Send booking confirmations and reminders via email or SMS." },
   { title: "Customer Support", subtitle: "Sync customer data with CRM systems" },
-  { title: "Payment Integration", subtitle: "Self Managed MOP like Cash, Wallets, UPI etc" },
+  { title: "Payment Integration", subtitle: "Self Managed MOP like Cash, UPI etc" },
   { title: "Import & Export", subtitle: "You can easly data import and export" },
-  { title: "Data-transfar", subtitle: "Data transfar with security" },
   { title: "Searching", subtitle: "Records find easly and fast" },
 ];
 
@@ -67,7 +66,7 @@ export default function BillingDetail() {
               </p>
             </div>
             <img
-              src={billing2Img}
+              src={billing3Img}
               alt="Solution management"
               className="w-full rounded-md object-contain bg-[#f8f9fa] h-[240px] sm:h-[300px] lg:h-[320px]"
             />
@@ -75,7 +74,7 @@ export default function BillingDetail() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10 mt-10 items-start">
             <img
-              src={billing2Img}
+              src={billing3Img}
               alt="Online booking"
               className="w-full rounded-md object-contain bg-[#f8f9fa] h-[240px] sm:h-[300px] lg:h-[320px]"
             />

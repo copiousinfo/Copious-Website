@@ -1,20 +1,16 @@
 import React from 'react';
 import parkingImg from '../../assets/images/solutions/parking/parking1.jpg';
-import parking3Img from '../../assets/images/solutions/parking/parking3.jpg';
+import parking4Img from '../../assets/images/solutions/parking/parking4.jpg';
 
 const tabData = [
-  'Parking Management Software',
+  'Parking',
 ];
 
 const featureCards = [
   { title: "Easy & Fast Billing", subtitle: "Fastest Way to Create Invoices / Bills" },
   { title: "BarCode Scanner", subtitle: "BarCode Scanner Auto-Detection, Image Upload and High-Accuracy Readings" },
-  { title: "GST", subtitle: "GST Reports Format & Excel Export" },
-  { title: "Account Statement", subtitle: "Individual Statement Record Print" },
-  { title: "Import & Export", subtitle: "You can easily data import and export" },
   { title: "Searching", subtitle: "Records find easily and fast" },
-  { title: "Payment of Method", subtitle: "Self Managed MOP like Cash, Wallets, UPI etc" },
-  { title: "Data-transfer", subtitle: "Data transfer with security" },
+  { title: "Payment of Method", subtitle: "Self Managed MOP like Cash, UPI etc" },
 ];
 
 export default function ParkingDetail() {
@@ -64,7 +60,7 @@ export default function ParkingDetail() {
               </p>
             </div>
             <img
-              src={parking3Img}
+              src={parking4Img}
               alt="Solution management"
               className="w-full rounded-md object-contain bg-[#f8f9fa] h-[240px] sm:h-[300px] lg:h-[320px]"
             />

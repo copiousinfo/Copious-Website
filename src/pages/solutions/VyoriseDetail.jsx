@@ -1,18 +1,16 @@
 import React from 'react';
 import vyoriseImg from '../../assets/images/solutions/vyorise/vyorise.jpg';
-import vyorise1Img from '../../assets/images/solutions/vyorise/vyorise1.png';
+import vyorise2Img from '../../assets/images/solutions/vyorise/vyorise2.jpg';
 
 const tabData = [
   'Vyorise Software',
 ];
 
 const featureCards = [
-  { title: "Customer Management", subtitle: "Manage customers easily and effectively." },
-  { title: "Customer Support", subtitle: "Sync customer data with CRM systems" },
-  { title: "Payment Integration", subtitle: "Self Managed MOP like Cash, Wallets, UPI etc" },
-  { title: "Import & Export", subtitle: "You can easly data import and export" },
-  { title: "Data-transfar", subtitle: "Data transfar with security" },
-  { title: "Searching", subtitle: "Records find easly and fast" },
+  { title: "Charan Sewa", subtitle: "A dedicated service management solution designed to organize and streamline Charan Sewa operations efficiently." },
+  { title: "Locker System", subtitle: "A secure digital locker management system for safe storage, tracking, and access control." },
+  { title: "Bhandara Management", subtitle: "An efficient platform to manage Bhandara operations, food distribution, and volunteer coordination seamlessly." },
+  { title: "Prashadam Donation", subtitle: "A smart donation management system for handling Prashadam contributions and distribution efficiently." },
 ];
 
 export default function VyoriseDetail() {
@@ -64,7 +62,7 @@ export default function VyoriseDetail() {
               </p>
             </div>
             <img
-              src={vyorise1Img}
+              src={vyorise2Img}
               alt="Solution management"
               className="w-full rounded-md object-contain bg-[#f8f9fa] h-[240px] sm:h-[300px] lg:h-[320px]"
             />
@@ -72,7 +70,7 @@ export default function VyoriseDetail() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10 mt-10 items-start">
             <img
-              src={vyorise1Img}
+              src={vyorise2Img}
               alt="Online booking"
               className="w-full rounded-md object-contain bg-[#f8f9fa] h-[240px] sm:h-[300px] lg:h-[320px]"
             />

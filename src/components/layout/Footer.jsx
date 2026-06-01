@@ -54,19 +54,19 @@ export default function Footer() {
                 <div className="mt-1 w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#1F1F1F] shrink-0">
                   <FaPhoneAlt size={10} />
                 </div>
-                <span>+xxxxxxxxxx</span>
+                <span>8882320033</span>
               </li>
               <li className="flex items-start gap-3">
                 <div className="mt-1 w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#1F1F1F] shrink-0">
                   <FaEnvelope size={10} />
                 </div>
-                <span>info@companyname.com</span>
+                <span>Connect@copiousinfo.com</span>
               </li>
               <li className="flex items-start gap-3">
                 <div className="mt-1 w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#1F1F1F] shrink-0">
                   <FaMapMarkerAlt size={10} />
                 </div>
-                <span>Noida, India</span>
+                <span>H-141 sector-63 noida</span>
               </li>
             </ul>
           </div>

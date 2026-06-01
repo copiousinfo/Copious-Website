@@ -9,10 +9,9 @@ const tabData = [
 const featureCards = [
   { title: "Customer Management", subtitle: "Manage customers easily and effectively." },
   { title: "Customer Support", subtitle: "Sync customer data with CRM systems" },
-  { title: "Payment Integration", subtitle: "Self Managed MOP like Cash, Wallets, UPI etc" },
+  { title: "Payment Integration", subtitle: "Self Managed MOP like Cash, UPI etc" },
   { title: "Import & Export", subtitle: "You can easly data import and export" },
-  { title: "Tax Management", subtitle: "Tax Management Reports Format & Excel Export" },
-  { title: "Data-transfar", subtitle: "Data transfar with security" },
+  { title: "Product Transfer", subtitle: "Fast and secure product transfer with reliable tracking and management" },
   { title: "Searching", subtitle: "Records find easly and fast" },
 ];
 
