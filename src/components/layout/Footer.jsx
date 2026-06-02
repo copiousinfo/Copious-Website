@@ -73,10 +73,27 @@ export default function Footer() {
 
         </div>
 
+        {/* Google Map */}
+        <div className="mb-10">
+          <h4 className="font-bold text-lg mb-4">Our Location</h4>
+          <div className="w-full rounded-xl overflow-hidden border border-gray-700" style={{ height: '260px' }}>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.1304655175595!2d77.3762794742933!3d28.62585168438619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cefe52eb05379%3A0x8e9c143bfb81a1a9!2sCopious%20Infotech!5e0!3m2!1sen!2sin!4v1780427978835!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Copious Infotech Location"
+            />
+          </div>
+        </div>
+
         {/* Bottom Copyright */}
         <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row items-center justify-between">
           <p className="text-gray-500 text-xs">
-            © 2023 All Rights Reserved By Copious Info
+            © 2026 All Rights Reserved By Copious Info
           </p>
         </div>
 

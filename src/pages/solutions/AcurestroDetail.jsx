@@ -1,6 +1,7 @@
 import React from 'react';
 import acurestroImg from '../../assets/images/solutions/acurestro/acurestro.jpg';
 import acurestro2Img from '../../assets/images/solutions/acurestro/acurestro2.jpg';
+import acurestro1Img from '../../assets/images/solutions/acurestro/Acurestro1.jpg';
 
 const tabData = [
   'Acurestro Software',   
@@ -72,9 +73,9 @@ export default function AcurestroDetail() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10 mt-10 items-start">
             <img
-              src={acurestro2Img}
+              src={acurestro1Img}
               alt="Online booking"
-              className="w-full rounded-md object-contain bg-[#f8f9fa] h-[240px] sm:h-[300px] lg:h-[320px]"
+              className="w-full rounded-md object-cover h-[240px] sm:h-[300px] lg:h-[320px]"
             />
             <div>
               <h3 className="text-3xl font-semibold text-[#1f2937] mb-4">

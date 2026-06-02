@@ -1,6 +1,7 @@
 import React from 'react';
 import vyoriseImg from '../../assets/images/solutions/vyorise/vyorise.jpg';
 import vyorise2Img from '../../assets/images/solutions/vyorise/vyorise2.jpg';
+import vyorise3Img from '../../assets/images/solutions/vyorise/vyorise3.jpg';
 
 const tabData = [
   'Vyorise Software',
@@ -70,9 +71,9 @@ export default function VyoriseDetail() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10 mt-10 items-start">
             <img
-              src={vyorise2Img}
+              src={vyorise3Img}
               alt="Online booking"
-              className="w-full rounded-md object-contain bg-[#f8f9fa] h-[240px] sm:h-[300px] lg:h-[320px]"
+              className="w-full rounded-md object-cover h-[240px] sm:h-[300px] lg:h-[320px]"
             />
             <div>
               <h3 className="text-3xl font-semibold text-[#1f2937] mb-4">

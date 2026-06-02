@@ -23,7 +23,6 @@ import MicrosoftDetail from './pages/services/MicrosoftDetail'
 import BackupDetail from './pages/services/BackupDetail'
 import AWSCloudDetail from './pages/services/cloud/AWSCloudDetail'
 import AzureCloudDetail from './pages/services/cloud/AzureCloudDetail'
-import JioCloudDetail from './pages/services/cloud/JioCloudDetail'
 import CloudServiceHome from './pages/services/cloud/CloudServiceHome'
 import Career from './pages/Career'
 
@@ -63,7 +62,6 @@ function App() {
           <Route path="/services/cloud-service" element={<CloudServiceHome />} />
           <Route path="/services/cloud-service_aws" element={<AWSCloudDetail />} />
           <Route path="/services/cloud-service_azure" element={<AzureCloudDetail />} />
-          <Route path="/services/cloud-service_jio" element={<JioCloudDetail />} />
           <Route path="/services/bulk-web-whatsapp" element={<BulkWebWhatsApp />} />
           <Route path="/services/microsoft" element={<MicrosoftDetail />} />
           <Route path="/services/backup" element={<BackupDetail />} />
