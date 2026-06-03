@@ -1,23 +1,20 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import SectionHeading from '../../ui/SectionHeading';
-import jennyImg from '../../../assets/images/home/jenny.png';
 import bgImg from '../../../assets/images/home/hero-bg.jpg';
 
 const testimonialsData = [
   {
     id: 1,
-    name: 'Jonny Wilson',
+    name: 'Uttam Kumar',
     role: 'Director',
-    image: jennyImg,
-    quote: '"We love Landingfolio! Our designers were using it for their projects, so we already knew what kind of design they want."'
+    quote: '"Overall, the two reports were very clear and helpful so thank you for the suggestion to do the focus group. We are currently working with our developer to implement some of these suggestions"'
   },
   {
     id: 2,
-    name: 'Jonny Wilson',
-    role: 'Director',
-    image: jennyImg,
-    quote: '"We love Landingfolio! Our designers were using it for their projects, so we already knew what kind of design they want."'
+    name: 'M. Kapoor',
+    role: 'Haryana Tourism',
+    quote: '"We are very happy and satisfied with Copious service. Our account manager is efficient and very knowledgeable. It was able to create a vast fan base within very short period of time. We would highly recommend Copious to anyone."'
   }
 ];
 
@@ -37,11 +34,8 @@ export default function Testimonials() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {testimonialsData.map((testimonial) => (
-            <div key={testimonial.id} className="site-card bg-white rounded-2xl p-6 flex flex-col sm:flex-row gap-6 items-center sm:items-start shadow-lg border border-transparent">
-              <div className="w-40 h-40 sm:w-32 sm:h-32 rounded-xl overflow-hidden shrink-0">
-                <img src={testimonial.image} alt={testimonial.name} className="w-full h-full object-cover" />
-              </div>
-              <div className="flex flex-col text-center sm:text-left h-full">
+            <div key={testimonial.id} className="site-card bg-white rounded-2xl p-6 flex flex-col gap-6 shadow-lg border border-transparent">
+              <div className="flex flex-col h-full text-left">
                 <div className="flex text-[#1E50FF] mb-4 justify-center sm:justify-start">
                   <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
                 </div>

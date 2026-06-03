@@ -1,6 +1,7 @@
 import React from 'react';
 import billingImg from '../../assets/images/solutions/billing/billing-section.jpg';
 import billing3Img from '../../assets/images/solutions/billing/billing3.jpg';
+import billing4Img from '../../assets/images/solutions/billing/billing4.jpg';
 
 const tabData = [
   'Billing', 
@@ -74,9 +75,9 @@ export default function BillingDetail() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10 mt-10 items-start">
             <img
-              src={billing3Img}
+              src={billing4Img}
               alt="Online booking"
-              className="w-full rounded-md object-contain bg-[#f8f9fa] h-[240px] sm:h-[300px] lg:h-[320px]"
+              className="w-full rounded-md object-cover h-[240px] sm:h-[300px] lg:h-[320px]"
             />
             <div>
               <h3 className="text-3xl font-semibold text-[#1f2937] mb-4">

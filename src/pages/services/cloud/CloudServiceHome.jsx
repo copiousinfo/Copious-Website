@@ -21,20 +21,6 @@ const providers = [
     ),
   },
   {
-    name: 'JIO Cloud',
-    subtitle: 'Reliance Jio Cloud',
-    description:
-      'India\'s own cloud platform built on Jio\'s nationwide 5G and fiber backbone. Perfect for Indian businesses needing data sovereignty and low-latency access.',
-    slug: 'cloud-service_jio',
-    color: '#003087',
-    highlights: ['Made in India', 'Data Sovereignty', '5G Powered Network', 'Competitive Pricing'],
-    logo: (
-      <svg viewBox="0 0 80 48" className="h-8 w-auto" fill="none">
-        <text x="0" y="36" fontSize="24" fontWeight="900" fill="#003087" fontFamily="Arial">JIO</text>
-      </svg>
-    ),
-  },
-  {
     name: 'Azure Cloud',
     subtitle: 'Microsoft Azure',
     description:

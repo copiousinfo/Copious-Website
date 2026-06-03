@@ -41,7 +41,6 @@ export const navLinks = [
     children: [
       { name: 'AWS',      path: '/services/cloud-service_aws' },
       { name: 'Azure',    path: '/services/cloud-service_azure' },
-      { name: 'JioCloud', path: '/services/cloud-service_jio' },
     ],
   },
   { name: 'Blog', path: '/blog' },

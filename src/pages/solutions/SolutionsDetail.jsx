@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import ticketImg from '../../assets/images/solutions/ticketing/ticket-section.jpg';
 import ticketing2Img from '../../assets/images/solutions/ticketing/ticketing2.jpg';
+import ticketing3Img from '../../assets/images/solutions/ticketing/ticketing3.jpg';
 
 const tabData = [
   'Ticket Management Software',
@@ -90,9 +91,9 @@ export default function SolutionsDetail() {
           {/* Purpose of Online Booking row */}
           <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5 lg:gap-10 mt-6 sm:mt-10 items-start">
             <img
-              src={ticketing2Img}
+              src={ticketing3Img}
               alt="Online booking"
-              className="w-full rounded-md object-contain bg-[#f8f9fa] h-[200px] sm:h-[260px] lg:h-[320px]"
+              className="w-full rounded-md object-cover h-[200px] sm:h-[260px] lg:h-[320px]"
             />
             <div>
               <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#1f2937] mb-3 sm:mb-4">
