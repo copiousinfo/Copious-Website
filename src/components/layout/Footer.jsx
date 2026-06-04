@@ -93,7 +93,7 @@ export default function Footer() {
         {/* Bottom Copyright */}
         <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row items-center justify-between">
           <p className="text-gray-500 text-xs">
-            © 2026 All Rights Reserved By Copious Info
+            © 2026 All Rights Reserved By Copious Infotech
           </p>
         </div>
 
