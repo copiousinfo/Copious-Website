@@ -251,7 +251,7 @@ export default function Contact() {
               {/* Submit button */}
               <button
                 type="submit"
-                disabled={loading}
+                disabled={loading || !formData.privacy}
                 className="w-full h-11 bg-[#da251d] text-white text-sm font-medium rounded-md hover:bg-[#c6221a] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
               >
                 {loading ? 'Sending...' : 'Send message'}
