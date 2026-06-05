@@ -27,12 +27,7 @@ const serviceContent = {
       'Run large-scale marketing campaigns with ease and high delivery rates.',
       'Track message delivery and engagement with real-time analytics.',
     ],
-    planTitle: 'Bulk Sms Our Best Plans',
-    plans: [
-      { price: '₹299', label: 'One Month Plan', features: ['Monthly Cost for IVR', 'Fully automated IVR at 0.6 p/min', 'Basic reporting and analytics', 'Basic chat and email support'] },
-      { price: '₹899', label: 'Three Month Plan', features: ['Monthly Cost for IVR', 'Fully automated IVR at 0.6 p/min', 'Basic reporting and analytics', 'Basic chat and email support'] },
-      { price: '₹1449', label: 'Six Month Plan', features: ['Monthly Cost for IVR', 'Fully automated IVR at 0.6 p/min', 'Basic reporting and analytics', 'Basic chat and email support'] },
-    ],
+
     features: [
       { title: 'Instant Delivery', subtitle: 'Messages reach recipients within seconds of sending.' },
       { title: 'High Open Rate', subtitle: '98%+ open rates compared to email or social media.' },
@@ -65,12 +60,7 @@ const serviceContent = {
       'Reduce capital expenditure on physical hardware and infrastructure.',
       'Ensure business continuity with automated backups and failover.',
     ],
-    planTitle: 'Bulk Sms Our Best Plans',
-    plans: [
-      { price: '$10', label: 'Basic plan', features: ['Access to all basic features', 'Basic reporting and analytics', 'Up to 10 individual users', '20GB individual data each user', 'Basic chat and email support'] },
-      { price: '$10', label: 'Basic plan', features: ['Access to all basic features', 'Basic reporting and analytics', 'Up to 10 individual users', '20GB individual data each user', 'Basic chat and email support'] },
-      { price: '$10', label: 'Basic plan', features: ['Access to all basic features', 'Basic reporting and analytics', 'Up to 10 individual users', '20GB individual data each user', 'Basic chat and email support'] },
-    ],
+
     features: [
       { title: 'Elastic Scaling', subtitle: 'Auto-scale resources based on real-time traffic demands.' },
       { title: 'Data Backup', subtitle: 'Automated daily backups with one-click restore.' },
@@ -203,41 +193,43 @@ export default function ServiceDetail() {
 
 
       {/* ── Plans Section ────────────────────────────────────────── */}
-      <section className="w-full bg-white py-14 sm:py-16 lg:py-20">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
-          <h2 className="text-[#1f2937] text-2xl sm:text-3xl lg:text-[40px] font-bold text-center mb-12">
-            {content.planTitle}
-          </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 max-w-md lg:max-w-none mx-auto">
-            {content.plans.map((plan, i) => (
-              <div
-                key={i}
-                className="site-card rounded-xl border border-gray-100 bg-white p-6 sm:p-8 lg:p-10 flex flex-col shadow-sm cursor-pointer"
-              >
-                <div className="text-center mb-6 sm:mb-8">
-                  <p className="text-[28px] sm:text-[32px] lg:text-[36px] font-bold text-[#1f2937] mb-2">{plan.price}<span className="text-[24px] sm:text-[28px] lg:text-[32px] font-bold">/mth</span></p>
-                  <p className="text-[15px] sm:text-[16px] font-bold text-[#1f2937] mb-1.5">{plan.label}</p>
-                  <p className="text-[13px] text-[#9ca3af]">Billed annually.</p>
-                </div>
-                <ul className="space-y-3 sm:space-y-4 mb-8 sm:mb-10 flex-grow w-full max-w-[280px] mx-auto">
-                  {plan.features.map((f, fi) => (
-                    <li key={fi} className="flex items-start gap-3 text-[13.5px] text-[#6b7280]">
-                      <FiCheckCircle size={18} className="text-[#86efac] mt-0.5 shrink-0" />
-                      <span>{f}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Link
-                  to="/contact"
-                  className="w-full block text-center py-3 sm:py-3.5 rounded-md font-bold text-[14px] sm:text-[15px] transition-all bg-[#da251d] text-white hover:bg-[#c02019]"
+      {content.plans && (
+        <section className="w-full bg-white py-14 sm:py-16 lg:py-20">
+          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
+            <h2 className="text-[#1f2937] text-2xl sm:text-3xl lg:text-[40px] font-bold text-center mb-12">
+              {content.planTitle}
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 max-w-md lg:max-w-none mx-auto">
+              {content.plans.map((plan, i) => (
+                <div
+                  key={i}
+                  className="site-card rounded-xl border border-gray-100 bg-white p-6 sm:p-8 lg:p-10 flex flex-col shadow-sm cursor-pointer"
                 >
-                  Get Started
-                </Link>
-              </div>
-            ))}
+                  <div className="text-center mb-6 sm:mb-8">
+                    <p className="text-[28px] sm:text-[32px] lg:text-[36px] font-bold text-[#1f2937] mb-2">{plan.price}<span className="text-[24px] sm:text-[28px] lg:text-[32px] font-bold">/mth</span></p>
+                    <p className="text-[15px] sm:text-[16px] font-bold text-[#1f2937] mb-1.5">{plan.label}</p>
+                    <p className="text-[13px] text-[#9ca3af]">Billed annually.</p>
+                  </div>
+                  <ul className="space-y-3 sm:space-y-4 mb-8 sm:mb-10 flex-grow w-full max-w-[280px] mx-auto">
+                    {plan.features.map((f, fi) => (
+                      <li key={fi} className="flex items-start gap-3 text-[13.5px] text-[#6b7280]">
+                        <FiCheckCircle size={18} className="text-[#86efac] mt-0.5 shrink-0" />
+                        <span>{f}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Link
+                    to="/contact"
+                    className="w-full block text-center py-3 sm:py-3.5 rounded-md font-bold text-[14px] sm:text-[15px] transition-all bg-[#da251d] text-white hover:bg-[#c02019]"
+                  >
+                    Get Started
+                  </Link>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
 
     </div>

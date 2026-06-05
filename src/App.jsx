@@ -24,6 +24,8 @@ import BackupDetail from './pages/services/BackupDetail'
 import AWSCloudDetail from './pages/services/cloud/AWSCloudDetail'
 import AzureCloudDetail from './pages/services/cloud/AzureCloudDetail'
 import CloudServiceHome from './pages/services/cloud/CloudServiceHome'
+import ManagedServiceDetail from './pages/services/ManagedServiceDetail'
+import DRServiceDetail from './pages/services/DRServiceDetail'
 import Career from './pages/Career'
 
 import BulkWhatsAppBlog from './pages/blog/BulkWhatsAppBlog'
@@ -65,6 +67,8 @@ function App() {
           <Route path="/services/bulk-web-whatsapp" element={<BulkWebWhatsApp />} />
           <Route path="/services/microsoft" element={<MicrosoftDetail />} />
           <Route path="/services/backup" element={<BackupDetail />} />
+          <Route path="/services/managed-service" element={<ManagedServiceDetail />} />
+          <Route path="/services/dr-service" element={<DRServiceDetail />} />
           <Route path="/services/:slug" element={<ServiceDetail />} />
 
 

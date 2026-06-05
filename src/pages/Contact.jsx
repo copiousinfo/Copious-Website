@@ -3,7 +3,8 @@ import axios from 'axios';
 import contactHero from '../assets/images/contact/contact-hero.jpg';
 
 // API endpoint
-const API_URL = 'https://copiousinfo.com/api/usercreate';
+const API_URL = import.meta.env.VITE_API_URL;
+
 
 export default function Contact() {
   // ── Form field state ──────────────────────────────────────────

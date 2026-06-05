@@ -4,7 +4,7 @@ import logoImg from '../../assets/images/shared/copious.png';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1F1F1F] text-white pt-20 pb-10">
+    <footer className="bg-[#0e1626] text-white pt-20 pb-10">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
         
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 mb-16 items-start">
@@ -39,13 +39,13 @@ export default function Footer() {
             
             <h4 className="font-bold text-lg mb-4">Stay In Touch</h4>
             <div className="flex items-center gap-4">
-              <a href="#" className="w-8 h-8 rounded-full bg-white text-[#1F1F1F] flex items-center justify-center hover:bg-[#E42A23] hover:text-white transition-colors">
+              <a href="#" className="w-8 h-8 rounded-full bg-white text-[#0e1626] flex items-center justify-center hover:bg-[#E42A23] hover:text-white transition-colors">
                 <FaFacebookF size={14} />
               </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-white text-[#1F1F1F] flex items-center justify-center hover:bg-[#E42A23] hover:text-white transition-colors">
+              <a href="#" className="w-8 h-8 rounded-full bg-white text-[#0e1626] flex items-center justify-center hover:bg-[#E42A23] hover:text-white transition-colors">
                 <FaInstagram size={14} />
               </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-white text-[#1F1F1F] flex items-center justify-center hover:bg-[#E42A23] hover:text-white transition-colors">
+              <a href="#" className="w-8 h-8 rounded-full bg-white text-[#0e1626] flex items-center justify-center hover:bg-[#E42A23] hover:text-white transition-colors">
                 <FaPinterestP size={14} />
               </a>
             </div>
@@ -59,7 +59,7 @@ export default function Footer() {
               <li><Link to="/about" className="hover:text-white transition-colors">My Story</Link></li>
               <li><Link to="/blog" className="hover:text-white transition-colors">Blogs</Link></li>
               <li><Link to="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
-              <li><Link to="/" className="hover:text-white transition-colors">Policy</Link></li>
+              <li><Link to="/" className="hover:text-white transition-colors">Privacy Policy</Link></li>
             </ul>
           </div>
 
@@ -68,19 +68,19 @@ export default function Footer() {
             <h4 className="font-bold text-lg mb-6">Reach Me</h4>
             <ul className="space-y-4 text-sm text-gray-400">
               <li className="flex items-start gap-3">
-                <div className="mt-1 w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#1F1F1F] shrink-0">
+                <div className="mt-1 w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#0e1626] shrink-0">
                   <FaPhoneAlt size={10} />
                 </div>
                 <span>8882320033</span>
               </li>
               <li className="flex items-start gap-3">
-                <div className="mt-1 w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#1F1F1F] shrink-0">
+                <div className="mt-1 w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#0e1626] shrink-0">
                   <FaEnvelope size={10} />
                 </div>
                 <span>Connect@copiousinfo.com</span>
               </li>
               <li className="flex items-start gap-3">
-                <div className="mt-1 w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#1F1F1F] shrink-0">
+                <div className="mt-1 w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#0e1626] shrink-0">
                   <FaMapMarkerAlt size={10} />
                 </div>
                 <span>H-141 sector-63 noida</span>

@@ -26,6 +26,8 @@ export const navLinks = [
       { name: 'Microsoft',      path: '/services/microsoft' },
       { name: 'Cloud Service',  path: '/services/cloud-service' },
       { name: 'Backup',         path: '/services/backup' },
+      { name: 'Manage Service', path: '/services/managed-service' },
+      { name: 'DR Service',     path: '/services/dr-service' },
     ],
   },
   {
