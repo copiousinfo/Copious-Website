@@ -108,8 +108,7 @@ export default function SolutionsDetail() {
               <ul className="list-disc pl-5 sm:pl-6 text-[#4b5563] text-[13px] sm:text-[14px] leading-6 sm:leading-7 space-y-1 marker:text-[#da251d]">
                 <li>Enhance the quality of online interactions for your customers.</li>
                 <li>Increase the speed of online transactions for your customers.</li>
-                <li>Efficiently gather crucial information to support various aspects of business.</li>
-                <li>Including your organization and promotional activities.</li>
+                <li>Efficiently gather crucial information to support various aspects.</li>
               </ul>
             </div>
           </div>

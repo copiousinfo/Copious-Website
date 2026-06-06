@@ -6,42 +6,6 @@ import whatapp1Img from '../../assets/images/services/general/whatapp1.jpg';
 export default function BulkWebWhatsApp() {
   const navigate = useNavigate();
 
-  const plans = [
-    {
-      price: '₹299/mth',
-      name: 'One Month Plan',
-      billing: 'Billed monthly.',
-      features: [
-        'Monthly Cost for IVR',
-        'Fully automated IVR at 0.6 p/min',
-        'Basic reporting and analytics',
-        'Basic chat and email support',
-      ],
-    },
-    {
-      price: '₹899/mth',
-      name: 'Three Month Plan',
-      billing: 'Billed quarterly.',
-      features: [
-        'Monthly Cost for IVR',
-        'Fully automated IVR at 0.6 p/min',
-        'Basic reporting and analytics',
-        'Basic chat and email support',
-      ],
-    },
-    {
-      price: '₹1449/mth',
-      name: 'Six Month Plan',
-      billing: 'Billed semi-annually.',
-      features: [
-        'Monthly Cost for IVR',
-        'Fully automated IVR at 0.6 p/min',
-        'Basic reporting and analytics',
-        'Basic chat and email support',
-      ],
-    },
-  ];
-
   const featuresList = [
     { title: 'Mass Messaging', desc: 'Send a single message to hundreds or thousands of recipients at once.' },
     { title: 'Multimedia Support', desc: 'Send text, images, videos, documents, and other media formats.' },
@@ -140,51 +104,7 @@ export default function BulkWebWhatsApp() {
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section className="bg-[#f8f9fa] py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-[1200px] mx-auto">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#1f2937]">
-              Bulk Sms Our Best Plans
-            </h2>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {plans.map((plan, index) => (
-              <div
-                key={index}
-                className="site-card bg-white rounded-2xl shadow-sm border border-gray-100 p-8 flex flex-col cursor-pointer"
-              >
-                <div className="text-center mb-8">
-                  <h3 className="text-4xl font-bold text-[#1f2937] mb-2">{plan.price}</h3>
-                  <p className="text-[#1f2937] font-semibold text-lg">{plan.name}</p>
-                  <p className="text-[#6b7280] text-sm mt-1">{plan.billing}</p>
-                </div>
-
-                <div className="flex-grow space-y-4 mb-8">
-                  {plan.features.map((feature, idx) => (
-                    <div key={idx} className="flex items-start gap-3">
-                      <div className="text-[#10b981] shrink-0 mt-1">
-                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                      <span className="text-[#4b5563] text-sm">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-
-                <button
-                  onClick={() => navigate('/contact')}
-                  className="w-full bg-[#da251d] text-white font-bold py-3.5 rounded-lg hover:bg-[#c02019] transition-colors"
-                >
-                  Get Started
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

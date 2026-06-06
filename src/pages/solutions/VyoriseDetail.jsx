@@ -1,7 +1,7 @@
 import React from 'react';
-import vyoriseImg from '../../assets/images/solutions/vyorise/vyorise.jpg';
-import vyorise2Img from '../../assets/images/solutions/vyorise/vyorise2.jpg';
-import vyorise3Img from '../../assets/images/solutions/vyorise/vyorise3.jpg';
+import vyoriseImg from '../../assets/images/solutions/vyorise/vyorise_header.jpg';
+import vyorise2Img from '../../assets/images/solutions/vyorise/vyorise_1.png';
+import vyorise3Img from '../../assets/images/solutions/vyorise/vyorise_2.png';
 
 const tabData = [
   'Vyorise Software',
@@ -11,7 +11,10 @@ const featureCards = [
   { title: "Charan Sewa", subtitle: "A dedicated service management solution designed to organize and streamline Charan Sewa operations efficiently." },
   { title: "Locker System", subtitle: "A secure digital locker management system for safe storage, tracking, and access control." },
   { title: "Bhandara Management", subtitle: "An efficient platform to manage Bhandara operations, food distribution, and volunteer coordination seamlessly." },
-  { title: "Prashadam Donation", subtitle: "A smart donation management system for handling Prashadam contributions and distribution efficiently." },
+  { title: "Prashadam", subtitle: "A streamlined system for managing Prashadam preparation, inventory, and distribution efficiently." },
+  { title: "Donation", subtitle: "A secure and transparent system for managing donations, tracking contributions, and maintaining donor records." },
+  { title: "Event", subtitle: "A centralized platform for planning, organizing, and managing events efficiently from start to finish." },
+  { title: "Special Sewa", subtitle: "A dedicated platform for managing special seva bookings, schedules, and devotee participation seamlessly." },
 ];
 
 export default function VyoriseDetail() {
@@ -24,15 +27,15 @@ export default function VyoriseDetail() {
       >
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 flex flex-col items-center text-center px-4 max-w-[1000px]">
-          <span className="bg-[#da251d] text-white text-xs font-semibold px-5 py-1.5 rounded-full mb-6">
+          {/* <span className="bg-[#da251d] text-white text-xs font-semibold px-5 py-1.5 rounded-full mb-6">
             About Us
-          </span>
-          <h1 className="text-white text-3xl sm:text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+          </span> */}
+          {/* <h1 className="text-white text-3xl sm:text-4xl lg:text-6xl font-bold mb-6 leading-tight">
             Smart Solutions For Modern Vyorise Management
-          </h1>
-          <p className="text-gray-200 text-sm sm:text-base leading-relaxed max-w-[800px]">
+          // </h1> */}
+          {/* <p className="text-gray-200 text-sm sm:text-base leading-relaxed max-w-[800px]">
             Simplify Your Business, Boost Efficiency, And Serve Customers Faster - All From Your Mobile.
-          </p>
+          </p> */}
         </div>
       </section>
 
@@ -65,7 +68,7 @@ export default function VyoriseDetail() {
             <img
               src={vyorise2Img}
               alt="Solution management"
-              className="w-full rounded-md object-contain bg-[#f8f9fa] h-[240px] sm:h-[300px] lg:h-[320px]"
+              className="w-full rounded-md object-contain bg-[#f8f9fa] h-[240px] sm:h-[300px] lg:h-[400px]"
             />
           </div>
 
@@ -73,7 +76,7 @@ export default function VyoriseDetail() {
             <img
               src={vyorise3Img}
               alt="Online booking"
-              className="w-full rounded-md object-cover h-[240px] sm:h-[300px] lg:h-[320px]"
+              className="w-full rounded-md object-contain bg-[#f8f9fa] h-[240px] sm:h-[300px] lg:h-[400px]"
             />
             <div>
               <h3 className="text-3xl font-semibold text-[#1f2937] mb-4">
@@ -82,6 +85,22 @@ export default function VyoriseDetail() {
               <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
                 By automating tasks such as tracking and reporting, Vyorise software makes the process more efficient and less prone to errors, ultimately saving time for both businesses and their clients.
               </p>
+              <h4 className="text-xl font-semibold text-[#1f2937] mb-3 mt-6">
+                Simplify Events. Elevate Experiences.
+              </h4>
+              <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
+                Vyorise makes event management seamless, smart, and stress-free through our comprehensive suite of features:
+              </p>
+              <ul className="space-y-3 mb-6">
+                <li className="flex items-start gap-3 text-[#4b5563] text-[14px] leading-6">
+                  <svg className="w-5 h-5 text-[#da251d] mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <span><strong>Create & Manage Events:</strong> Easily create events and manage every detail from a unified dashboard.</span>
+                </li>
+                <li className="flex items-start gap-3 text-[#4b5563] text-[14px] leading-6">
+                  <svg className="w-5 h-5 text-[#da251d] mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                  <span><strong>Multiple Event Types:</strong> Comprehensive support for organizing both paid and unpaid events.</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

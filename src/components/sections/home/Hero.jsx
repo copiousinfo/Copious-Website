@@ -24,18 +24,9 @@ export default function Hero() {
           Ticketing, And Parking Needs
         </h1>
         
-        <p className="text-gray-200 text-sm md:text-[16px] max-w-3xl mx-auto mb-10 font-medium">
+        <p className="text-gray-200 text-sm md:text-[16px] max-w-3xl mx-auto mb-0 font-medium">
           Simplify Your Billing, Boost Efficiency, And Serve Customers Faster — All From Your Mobile.
         </p>
-        
-        <div className="flex flex-col sm:flex-row gap-5 justify-center w-full sm:w-auto">
-          <button className="bg-[#da251d] text-white px-10 py-3 rounded-lg font-bold text-[16px] hover:bg-[#c02019] transition-all">
-            Download App
-          </button>
-          <button className="bg-transparent border-2 border-white text-white px-10 py-3 rounded-lg font-bold text-[16px] hover:bg-white/10 transition-all">
-            Free Live Demo
-          </button>
-        </div>
       </div>
     </section>
   );

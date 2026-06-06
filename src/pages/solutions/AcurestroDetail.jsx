@@ -61,7 +61,7 @@ export default function AcurestroDetail() {
                 This eradicates the necessity for manual input of data, minimizing the chances of mistakes and conserving precious time for businesses and their customers.
               </p>
               <p className="text-[#4b5563] text-[14px] leading-7">
-                Our comprehensive Software efficiently handles all aspects of your business. With our user-friendly software, you will have access to a wide range of tools that will streamline your business operations effortlessly.
+                Our comprehensive Software efficiently handles all aspects of your business.
               </p>
             </div>
             <img
@@ -83,6 +83,12 @@ export default function AcurestroDetail() {
               </h3>
               <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
                 By automating tasks such as tracking and reporting, Acurestro software makes the process more efficient and less prone to errors, ultimately saving time for both businesses and their clients.
+              </p>
+              <h4 className="text-xl font-semibold text-[#1f2937] mb-3 mt-6">
+                Intuitive Point of Sale & Self-Checkout
+              </h4>
+              <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
+                Acurestro delivers a modern, touch-friendly interface designed to accelerate transactions and improve the customer experience:
               </p>
             </div>
           </div>

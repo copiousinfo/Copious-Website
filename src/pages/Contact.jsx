@@ -3,7 +3,8 @@ import axios from 'axios';
 import contactHero from '../assets/images/contact/contact-hero.jpg';
 
 // API endpoint
-const API_URL = 'https://copiousinfo.com/api/usercreate';
+const API_URL = import.meta.env.VITE_API_URL;
+
 
 export default function Contact() {
   // ── Form field state ──────────────────────────────────────────
@@ -251,7 +252,7 @@ export default function Contact() {
               {/* Submit button */}
               <button
                 type="submit"
-                disabled={loading}
+                disabled={loading || !formData.privacy}
                 className="w-full h-11 bg-[#da251d] text-white text-sm font-medium rounded-md hover:bg-[#c6221a] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
               >
                 {loading ? 'Sending...' : 'Send message'}
