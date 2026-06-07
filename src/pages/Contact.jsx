@@ -5,6 +5,10 @@ import contactHero from '../assets/images/contact/contact-hero.jpg';
 // API endpoint
 const API_URL = import.meta.env.VITE_API_URL;
 
+if (!API_URL) {
+  console.error('[Contact Form] VITE_API_URL is not defined. Check your .env file.');
+}
+
 
 export default function Contact() {
   // ── Form field state ──────────────────────────────────────────
@@ -75,8 +79,30 @@ export default function Contact() {
       message: formData.message.trim(),
     };
 
+    // ── Helper: single attempt with a 15 s timeout ─────────────
+    const attempt = () =>
+      axios.post(API_URL, payload, { timeout: 15000 });
+
+    // ── Helper: detect timeout / network errors ─────────────────
+    const isRetryable = (err) =>
+      err.code === 'ECONNABORTED' ||   // axios timeout
+      err.code === 'ERR_NETWORK' ||    // network offline
+      err.code === 'ERR_BAD_RESPONSE'; // 5xx type network drop
+
     try {
-      await axios.post(API_URL, payload);
+      let response;
+      try {
+        response = await attempt();
+      } catch (firstErr) {
+        // ── One automatic retry after 2 s for slow / flaky servers
+        if (isRetryable(firstErr)) {
+          console.warn('[Contact Form] First attempt failed, retrying in 2 s…', firstErr.code);
+          await new Promise((res) => setTimeout(res, 2000));
+          response = await attempt(); // throws again if still failing
+        } else {
+          throw firstErr; // validation / 4xx – do not retry
+        }
+      }
 
       // ── Success ───────────────────────────────────────────────
       showToast('success', 'Message sent successfully.');
@@ -93,7 +119,19 @@ export default function Contact() {
       setErrors({});
     } catch (error) {
       // ── Failure ───────────────────────────────────────────────
-      showToast('error', 'Failed to send message. Please try again.');
+      console.error('[Contact Form] API error:', error?.code, error?.response?.status, error?.response?.data || error?.message);
+
+      let userMsg = 'Failed to send message. Please try again.';
+      if (error.code === 'ECONNABORTED') {
+        userMsg = 'Request timed out. Please check your connection and try again.';
+      } else if (error.code === 'ERR_NETWORK') {
+        userMsg = 'Network error. Please check your internet connection.';
+      } else {
+        const serverMsg = error?.response?.data?.message;
+        if (serverMsg && serverMsg !== 'validation Error!!') userMsg = serverMsg;
+      }
+
+      showToast('error', userMsg);
     } finally {
       setLoading(false);
     }
