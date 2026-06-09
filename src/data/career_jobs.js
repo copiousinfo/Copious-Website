@@ -10,9 +10,9 @@ import phpImg from '../assets/images/about/php.jpg';
  *  2. Add a new entry below with a unique `id` and matching `pdf` filename
  *
  * PDF files (place in public/job-descriptions/):
- *  - jd Bde.pdf
- *  - jd Android Developer_EX.pdf
- *  - Jd php.pdf
+ *  - business-development-executive.pdf
+ *  - android-developer.pdf
+ *  - php-developer.pdf
  */
 export const careerJobs = [
   {

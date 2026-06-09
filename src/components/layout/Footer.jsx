@@ -44,12 +44,13 @@ export default function Footer() {
 
             <h4 className="font-bold text-lg mb-4">Stay In Touch</h4>
             <div className="flex items-center gap-4">
-              <Link
-                to
+              <a
+                href="#"
                 className="w-8 h-8 rounded-full bg-white text-[#0e1626] flex items-center justify-center hover:bg-[#E42A23] hover:text-white transition-colors"
+                aria-label="Instagram"
               >
                 <FaInstagram size={14} />
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -90,12 +91,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/"
-                  className="hover:text-white transition-colors cursor-pointer"
-                >
-                  Privacy Policy
-                </Link>
+              <Link
+                to="/privacy-policy"
+                className="hover:text-white transition-colors cursor-pointer"
+              >
+                Privacy Policy
+              </Link>
               </li>
             </ul>
           </div>
