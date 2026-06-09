@@ -92,19 +92,13 @@ export default function Career() {
                       ))}
                     </div>
                     <div className="flex flex-col sm:flex-row gap-3">
-                      <button
-                        type="button"
-                        onClick={() => openJobPdf(job.pdf)}
-                        className="border-2 border-[#da251d] text-[#da251d] font-bold text-[13.5px] sm:text-[14px] px-6 py-2.5 rounded-md hover:bg-[#da251d] hover:text-white transition-all duration-200"
-                      >
-                        View Details
-                      </button>
+                      
                       <button
                         type="button"
                         onClick={() => downloadJobPdf(job.pdf)}
                         className="border-2 border-[#da251d] text-[#da251d] font-bold text-[13.5px] sm:text-[14px] px-6 py-2.5 rounded-md hover:bg-[#da251d] hover:text-white transition-all duration-200"
                       >
-                        Download PDF
+                        Download JD
                       </button>
                       <button
                         type="button"

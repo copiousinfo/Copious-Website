@@ -14,10 +14,6 @@ export default function Hero() {
       </div>
  
       <div className="relative z-10 max-w-[1440px] mx-auto px-4 text-center flex flex-col items-center">
-        <div className="bg-[#da251d] text-white text-[14px] font-medium px-6 py-1.5 rounded-full mb-6 inline-block shadow-sm">
-          Trusted By 1000+ People In India
-        </div>
-        
         <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-[50px] font-bold text-white mb-6 leading-[1.25] md:leading-[1.1] tracking-tight max-w-[320px] sm:max-w-none">
           Unlock Seamless Experiences <br className="hidden sm:block" />
           With Our App For Your Booking, <br className="hidden sm:block" />

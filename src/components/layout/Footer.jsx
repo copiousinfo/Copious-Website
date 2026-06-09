@@ -1,14 +1,19 @@
-import { FaFacebookF, FaInstagram, FaPinterestP, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
-import logoImg from '../../assets/images/shared/copious.png';
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaPinterestP,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
+import logoImg from "../../assets/images/shared/copious.png";
 
 export default function Footer() {
   return (
     <footer className="bg-[#0e1626] text-white pt-20 pb-10">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
-        
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 mb-16 items-start">
-
           {/* Column 1: Google Map */}
           <div className="w-full lg:w-[300px] flex flex-col">
             <h4 className="font-bold text-lg mb-6">Our Location</h4>
@@ -32,22 +37,19 @@ export default function Footer() {
             <div className="bg-white p-2 rounded mb-6 inline-flex">
               <img src={logoImg} alt="Copious Logo" className="h-8" />
             </div>
-            
-            <p className="text-gray-400 text-sm leading-relaxed mb-8 max-w-sm">
-              Beautiful billing experience! Reports and sales tracking are well organized.
+
+            <p className="text-gray-400 text-lg leading-relaxed mb-8 max-w-sm">
+              Copious Infotech
             </p>
-            
+
             <h4 className="font-bold text-lg mb-4">Stay In Touch</h4>
             <div className="flex items-center gap-4">
-              <a href="#" className="w-8 h-8 rounded-full bg-white text-[#0e1626] flex items-center justify-center hover:bg-[#E42A23] hover:text-white transition-colors">
-                <FaFacebookF size={14} />
-              </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-white text-[#0e1626] flex items-center justify-center hover:bg-[#E42A23] hover:text-white transition-colors">
+              <Link
+                to
+                className="w-8 h-8 rounded-full bg-white text-[#0e1626] flex items-center justify-center hover:bg-[#E42A23] hover:text-white transition-colors"
+              >
                 <FaInstagram size={14} />
-              </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-white text-[#0e1626] flex items-center justify-center hover:bg-[#E42A23] hover:text-white transition-colors">
-                <FaPinterestP size={14} />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -55,11 +57,46 @@ export default function Footer() {
           <div className="w-full lg:w-[160px] flex flex-col">
             <h4 className="font-bold text-lg mb-6">Quick Links</h4>
             <ul className="space-y-4 text-sm text-gray-400">
-              <li><Link to="/" className="hover:text-white transition-colors">Home</Link></li>
-              <li><Link to="/about" className="hover:text-white transition-colors">My Story</Link></li>
-              <li><Link to="/blog" className="hover:text-white transition-colors">Blogs</Link></li>
-              <li><Link to="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
-              <li><Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li>
+                <Link
+                  to="/"
+                  className="hover:text-white transition-colors cursor-pointer"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/about"
+                  className="hover:text-white transition-colors cursor-pointer"
+                >
+                  My Story
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/blog"
+                  className="hover:text-white transition-colors cursor-pointer"
+                >
+                  Blogs
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="hover:text-white transition-colors cursor-pointer"
+                >
+                  Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/"
+                  className="hover:text-white transition-colors cursor-pointer"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -77,17 +114,16 @@ export default function Footer() {
                 <div className="mt-1 w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#0e1626] shrink-0">
                   <FaEnvelope size={10} />
                 </div>
-                <span>Connect@copiousinfo.com</span>
+                <span>connect@copiousinfo.com</span>
               </li>
               <li className="flex items-start gap-3">
                 <div className="mt-1 w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#0e1626] shrink-0">
                   <FaMapMarkerAlt size={10} />
                 </div>
-                <span>H-141 sector-63 noida</span>
+                <span>H-141, sector-63 Noida</span>
               </li>
             </ul>
           </div>
-
         </div>
 
         {/* Bottom Copyright */}
@@ -96,8 +132,7 @@ export default function Footer() {
             © 2026 All Rights Reserved By Copious Infotech
           </p>
         </div>
-
       </div>
     </footer>
-  )
+  );
 }
