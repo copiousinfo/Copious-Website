@@ -8,6 +8,7 @@ import Blog from './pages/blog/Blog'
 import BlogReading from './pages/blog/BlogReading'
 import Contact from './pages/Contact'
 import Faq from './pages/Faq'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 import SolutionsDetail from './pages/solutions/SolutionsDetail'
 import BillingDetail from './pages/solutions/BillingDetail'
 import ParkingDetail from './pages/solutions/ParkingDetail'
@@ -51,6 +52,7 @@ function App() {
           <Route path="/blog/:type" element={<BlogReading />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<Faq />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/solutions/billing" element={<BillingDetail />} />
           <Route path="/solutions/parking" element={<ParkingDetail />} />
           <Route path="/solutions/event-management" element={<EventManagementDetail />} />
