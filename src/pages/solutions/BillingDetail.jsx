@@ -29,7 +29,10 @@ export default function BillingDetail() {
   return (
     <div className="w-full pt-[92px] bg-[#efefef]">
       {/* ── Hero Section ── */}
-      <section className=" h-[300px] sm:h-[400px] lg:h-[800px] bg-[billingImg] bg-cover bg-center flex items-center justify-center">
+      <section
+        className=" h-[300px] sm:h-[400px] lg:h-[800px] bg-cover bg-center flex items-center justify-center"
+        style={{ backgroundImage: `url(${billingImg})` }}
+      >
         <div className=" absolute top-0 left-0 w-full bg-black/60" />
         <div className="relative z-10 flex flex-col items-center text-center px-4 max-w-[1000px]">
           {/* <span className="bg-[#da251d] text-white text-xs font-semibold px-5 py-1.5 rounded-full mb-6">

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,6 +7,10 @@
 @layer base {
   body {
     @apply bg-white text-gray-900 antialiased selection:bg-red-500/30;
+  }
+
+  img {
+    @apply max-w-full h-auto;
   }
 }
 

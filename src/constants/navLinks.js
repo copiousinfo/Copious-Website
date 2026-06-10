@@ -11,7 +11,7 @@ export const navLinks = [
     name: 'Solutions',
     children: [
       { name: 'Ticketing',         path: '/solutions/ticketing' },
-      { name: 'Billing',           path: '/solutions/billing' },
+      // { name: 'Billing',           path: '/solutions/billing' },
       { name: 'Parking',           path: '/solutions/parking' },
       { name: 'Event Management',  path: '/solutions/event-management' },
       { name: 'Acurestro',         path: '/solutions/acurestro' },
@@ -24,7 +24,7 @@ export const navLinks = [
       { name: 'Bulk SMS',           path: '/services/bulk-sms' },
       { name: 'Bulk Whatsapp Business', path: '/services/bulk-web-whatsapp' },
       { name: 'Microsoft',      path: '/services/microsoft' },
-      { name: 'Cloud Service',  path: '/services/cloud-service' },
+      // { name: 'Cloud Service',  path: '/services/cloud-service' },
       { name: 'Backup',         path: '/services/backup' },
       { name: 'Manage Service', path: '/services/managed-service' },
       { name: 'DR Service',     path: '/services/dr-service' },

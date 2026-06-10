@@ -1,9 +1,8 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import heroBg from '../assets/images/about/about-hero.jpg';
+import heroBg from '../assets/images/about/about-hero.jpeg';
 import jobImg from '../assets/images/about/about-section.jpg';
 import { careerJobs } from '../data/career_jobs';
-import { openJobPdf, downloadJobPdf } from '../utils/jobPdf';
+import { downloadJobPdf } from '../utils/jobPdf';
 
 export default function Career() {
   const navigate = useNavigate();
@@ -17,15 +16,8 @@ export default function Career() {
           className="relative w-full min-h-[340px] sm:min-h-[400px] lg:min-h-[460px] bg-cover bg-center flex items-center justify-center py-16"
           style={{ backgroundImage: `url(${heroBg})` }}
         >
-          <div className="absolute inset-0 bg-black/60" />
-          <div className="relative z-10 text-center px-4 sm:px-8 max-w-3xl mx-auto">
-            <span className="bg-[#da251d] text-white text-[11px] sm:text-xs font-semibold px-4 py-1.5 rounded-full mb-5 inline-block tracking-wide">
-              About
-            </span>
-            <h1 className="text-white text-[26px] sm:text-[36px] lg:text-[48px] font-bold leading-tight">
-              Craft Your Career Story<br className="hidden sm:block" /> Dream Big, Achieve Bigger
-            </h1>
-          </div>
+          <div className="absolute inset-0 bg-red-400/30" />
+
         </div>
       </section>
 
@@ -92,7 +84,7 @@ export default function Career() {
                       ))}
                     </div>
                     <div className="flex flex-col sm:flex-row gap-3">
-                      
+
                       <button
                         type="button"
                         onClick={() => downloadJobPdf(job.pdf)}

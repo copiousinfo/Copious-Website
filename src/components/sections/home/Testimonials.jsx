@@ -6,27 +6,27 @@ import bgImg from '../../../assets/images/home/hero-bg.jpg';
 const testimonialsData = [
   {
     id: 1,
-    name: 'Uttam Kumar',
-    role: 'Director',
+    name: 'Rajesh Kumar',
+    role: 'Acural Solutions',
     quote: '"Overall, the two reports were very clear and helpful so thank you for the suggestion to do the focus group. We are currently working with our developer to implement some of these suggestions"'
   },
   {
     id: 2,
     name: 'M. Kapoor',
     role: 'Haryana Tourism',
-    quote: '"We are very happy and satisfied with Copious service. Our account manager is efficient and very knowledgeable. It was able to create a vast fan base within very short period of time. We would highly recommend Copious to anyone."'
+    quote: '"We are very happy and satisfied with Copious service. Our account manager is efficient and very knowledgeable. It was able to create a vast fan base within very short period of time. We would highly recommend Copious to everyone."'
   }
 ];
 
 export default function Testimonials() {
   return (
-    <section className="relative w-full py-24 flex flex-col items-center">
+    <section className="relative w-full py-16 flex flex-col items-center">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${bgImg})` }}
       >
-        <div className="absolute inset-0 bg-dark/80"></div>
+        <div className="absolute inset-0 bg-red-400/40"></div>
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 w-full">

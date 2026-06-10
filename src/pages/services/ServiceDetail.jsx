@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import heroBg from '../../assets/images/about/about-hero.jpg';
+import heroBg from '../../assets/images/about/about-hero.jpeg';
 import bulkSmsImg from '../../assets/images/services/general/bulksms1.jpg';
 import sectionImg from '../../assets/images/about/about-section.jpg';
 import bulkSmsWhatImg from '../../assets/images/services/general/bulksms1.png';

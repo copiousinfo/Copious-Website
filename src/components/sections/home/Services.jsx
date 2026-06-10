@@ -34,9 +34,9 @@ export default function Services() {
   const navigate = useNavigate();
 
   return (
-    <section className="w-full bg-[#f8f9fa] py-24">
+    <section className="w-full bg-[#f0f2f4] py-10">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
-        <SectionHeading>Copious Services</SectionHeading>
+        <SectionHeading>Our Services</SectionHeading>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10 place-items-center sm:place-items-stretch auto-rows-fr">
           {servicesData.map((service) => (

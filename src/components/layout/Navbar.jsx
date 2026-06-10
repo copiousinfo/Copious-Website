@@ -213,9 +213,9 @@ export default function Navbar() {
   return (
     <header className="w-full z-[100] fixed top-0 left-0 right-0 shadow-sm bg-white">
       {/* Top Announcement Bar */}
-      <div className="bg-[#1A1A1A] w-full py-1.5 flex justify-center items-center">
-        <span className="text-white text-[11px] tracking-wider font-medium">
-          Welcome to Copious Info
+      <div className="bg-red-700 w-full py-1.5 flex justify-center items-center">
+        <span className="text-white text-[14px] tracking-wider font-medium">
+          Welcome to Copious Infotech
         </span>
       </div>
 

@@ -4,19 +4,19 @@ import ContentCard from '../../ui/ContentCard';
 import billingImg from '../../../assets/images/solutions/billing/billing-hero.jpg';
 import ticketingImg from '../../../assets/images/solutions/ticketing/ticket-hero.jpg';
 import parkingImg from '../../../assets/images/solutions/parking/parking-hero.jpg';
-import eventImg from '../../../assets/images/solutions/event/event header.png';
+import eventImg from '../../../assets/images/solutions/event/event header.jpeg';
 import acurestroImg from '../../../assets/images/solutions/acurestro/acurestro.jpg';
 import vyoriseImg from '../../../assets/images/solutions/vyorise/Vyorise3.jpg';
 
 const solutionsData = [
-  {
-    id: 1,
-    slug: 'billing',
-    title: 'Billing',
-    image: billingImg,
-    description:
-      'Simplify your billing processes with our advanced, automated billing software. Generate invoices, track payments, and manage financial records effortlessly to boost your business efficiency.',
-  },
+  // {
+  //   id: 1,
+  //   slug: 'billing',
+  //   title: 'Billing',
+  //   image: billingImg,
+  //   description:
+  //     'Simplify your billing processes with our advanced, automated billing software. Generate invoices, track payments, and manage financial records effortlessly to boost your business efficiency.',
+  // },
   {
     id: 2,
     slug: 'ticketing',
@@ -61,7 +61,7 @@ const solutionsData = [
 
 export default function Solutions() {
   return (
-    <section className="w-full bg-white py-24">
+    <section className="w-full bg-white py-12">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
         <SectionHeading>Our Solutions</SectionHeading>
 

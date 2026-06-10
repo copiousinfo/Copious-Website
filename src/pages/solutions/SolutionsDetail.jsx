@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import ticketImg from '../../assets/images/solutions/ticketing/ticket-section.jpg';
+import ticketImg from '../../assets/images/solutions/ticketing/ticket-section.jpeg';
 import ticketing2Img from '../../assets/images/solutions/ticketing/ticketing2.jpg';
 import ticketing3Img from '../../assets/images/solutions/ticketing/ticketing3.jpg';
 
@@ -29,25 +29,16 @@ export default function SolutionsDetail() {
   const currentTitle = titleMap[slug] || 'Solutions';
 
   return (
-    <div className="w-full pt-[72px] sm:pt-[80px] lg:pt-[92px] bg-[#efefef]">
+    <div className="w-full pt-[72px] sm:pt-[80px] lg:pt-[98px] bg-[#efefef]">
 
       {/* ── Hero Section ── */}
-      <section
-        className="relative h-[300px] sm:h-[400px] lg:h-[480px] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: `url(${ticketImg})` }}
-      >
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="relative z-10 flex flex-col items-center text-center px-4 max-w-[1000px]">
-          <span className="bg-[#da251d] text-white text-xs font-semibold px-5 py-1.5 rounded-full mb-6">
-            About Us
-          </span>
-          <h1 className="text-white text-3xl sm:text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-            Smart Solutions For Modern {currentTitle}
-          </h1>
-          <p className="text-gray-200 text-sm sm:text-base leading-relaxed max-w-[800px]">
-            Simplify Your Events, Boost Efficiency, And Serve Attendees Faster - All From Your Mobile.
-          </p>
-        </div>
+      <section className="relative h-[300px] sm:h-[400px] lg:h-[700px] overflow-hidden">
+        <img
+          src={ticketImg}
+          alt={currentTitle}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-red-400/30" />
       </section>
 
       {/* ── About + Purpose Section ── */}

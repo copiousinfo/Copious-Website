@@ -4,13 +4,13 @@ import heroBg from '../../../assets/images/home/hero-bg.jpg';
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-[565px] flex items-center justify-center pt-32 pb-20 md:py-20">
+    <section className="relative w-full min-h-[500px] flex items-center justify-center pt-32 pb-20 md:py-20">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBg})` }}
       >
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-red-500/40"></div>
       </div>
  
       <div className="relative z-10 max-w-[1440px] mx-auto px-4 text-center flex flex-col items-center">
