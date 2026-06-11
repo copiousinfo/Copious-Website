@@ -157,7 +157,7 @@ export default function Contact() {
       <section className="relative max-w-[1440px] mx-auto">
         <img
           src={contactHero}
-          className="w-full object-cover "
+          className="w-full md:h-[500px] object-cover "
         />
         <div className="absolute inset-0 bg-red-400/20" />
       </section>

@@ -4,8 +4,6 @@ import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Blog from "./pages/blog/Blog";
-import BlogReading from "./pages/blog/BlogReading";
 import Contact from "./pages/Contact";
 import Faq from "./pages/Faq";
 import SolutionsDetail from "./pages/solutions/SolutionsDetail";
@@ -23,15 +21,10 @@ import MicrosoftDetail from "./pages/services/MicrosoftDetail";
 import BackupDetail from "./pages/services/BackupDetail";
 import AWSCloudDetail from "./pages/services/cloud/AWSCloudDetail";
 import AzureCloudDetail from "./pages/services/cloud/AzureCloudDetail";
-import CloudServiceHome from "./pages/services/cloud/CloudServiceHome";
 import ManagedServiceDetail from "./pages/services/ManagedServiceDetail";
 import DRServiceDetail from "./pages/services/DRServiceDetail";
 import Career from "./pages/Career";
 
-import BulkWhatsAppBlog from "./pages/blog/BulkWhatsAppBlog";
-import CloudServiceBlog from "./pages/blog/CloudServiceBlog";
-import SecurityBlog from "./pages/blog/SecurityBlog";
-import BulkSMSBlog from "./pages/blog/BulkSMSBlog";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {
@@ -60,10 +53,7 @@ function App() {
           <Route path="/security/email" element={<EmailSecurity />} />
           <Route path="/security/antivirus" element={<AntivirusSecurity />} />
           <Route path="/career" element={<Career />} />
-          <Route
-            path="/services/cloud-service"
-            element={<CloudServiceHome />}
-          />
+
           <Route
             path="/services/cloud-service_aws"
             element={<AWSCloudDetail />}

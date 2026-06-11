@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import ticketImg from "../../assets/images/solutions/ticketing/ticketHero.jpeg";
+import ticketImg from "../../assets/images/solutions/ticketing/ticket-section.jpeg";
 import ticketing2Img from "../../assets/images/solutions/ticketing/playtrek_1.jpeg";
 import ticketing3Img from "../../assets/images/solutions/ticketing/playtrek_2.jpeg";
 import {
@@ -77,16 +77,16 @@ export default function SolutionsDetail() {
         <img
           src={ticketImg}
           alt={currentTitle}
-          className=" w-full h-[420px] object-fit"
+          className=" w-full md:h-[500px] object-fit"
         />
         <div className="absolute inset-0 bg-red-400/20" />
       </section>
 
       {/* ── About + Purpose Section ── */}
       <section className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-8 py-6 sm:py-10 lg:py-12">
-        <div className="bg-white p-2 sm:p-6 lg:p-6 rounded-md">
+        <div className="bg-white p-2 sm:p-4 lg:p-5 rounded-md">
           {/* About Us row */}
-          <div className="w-full flex flex-col-reverse md:flex-row  gap-5 lg:gap-10 items-start">
+          <div className="w-full flex flex-col-reverse md:flex-row  gap-5 lg:gap-20 mb-12 sm:mb-20">
             <div className="w-full md:w-1/2">
               <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#1f2937] mb-3 sm:mb-4">
                 About Us
@@ -125,7 +125,7 @@ export default function SolutionsDetail() {
           </div>
 
           {/* Purpose of Online Booking row */}
-          <div className="flex flex-col md:flex-row gap-5  mt-6 sm:mt-10">
+          <div className="flex flex-col md:flex-row gap-5 lg:gap-20  mt-6 sm:mt-10">
             <img
               src={ticketing3Img}
               alt="Online booking"

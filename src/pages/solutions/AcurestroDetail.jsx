@@ -1,5 +1,5 @@
 import React from "react";
-import acurestroImg from "../../assets/images/solutions/acurestro/acurestro.jpg";
+import acurestroImg from "../../assets/images/solutions/acurestro/acurestro hero.jpeg";
 import acurestro2Img from "../../assets/images/solutions/acurestro/acurestro2.jpg";
 import acurestro1Img from "../../assets/images/solutions/acurestro/Acurestro1.jpg";
 import { FaUsers } from "react-icons/fa";
@@ -48,17 +48,20 @@ export default function AcurestroDetail() {
   return (
     <div className="w-full pt-[92px] bg-[#efefef]">
       {/* ── Hero Section ── */}
-      <section
-        className="relative h-[300px] sm:h-[400px] lg:h-[480px] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: `url(${acurestroImg})` }}
-      >
+     <section className="relative w-full">
+       <img
+       src={acurestroImg}
+       alt="acurestro hero section image"
+        className="w-full md:h-[500px] object-cover"
+      />
         <div className="absolute inset-0 bg-red-400/20" />
+     </section>
         
-      </section>
+      
 
-      <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-8 sm:py-10 lg:py-12">
-        <div className="bg-white p-5 sm:p-7 lg:p-8 rounded-md">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10 items-start">
+      <section className="max-w-[1440px] mx-auto px-2 sm:px-6 lg:px-10 py-8 sm:py-10 lg:py-12">
+        <div className="bg-white p-2 sm:p-7 lg:p-8 rounded-md">
+          <div className="flex flex-col-reverse md:flex-row gap-7 lg:gap-10 mb-12 sm:mb-16 ">
             <div>
               <h2 className="text-3xl font-semibold text-[#1f2937] mb-4">
                 About Us
@@ -99,7 +102,7 @@ export default function AcurestroDetail() {
             />
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10 mt-10 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10">
             <img
               src={acurestro1Img}
               alt="Online booking"

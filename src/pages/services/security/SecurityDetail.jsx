@@ -1,9 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import heroBg from "../../../assets/images/services/security/end point header.jpeg";
-import endpoint1Img from "../../../assets/images/services/security/end point_1.png";
-import endPoint2Img from "../../../assets/images/services/security/end point_2.png";
-import endPoint3Img from "../../../assets/images/services/security/end point_3.png";
+import endpoint1Img from "../../../assets/images/services/security/end point_1.jpeg";
+import endPoint2Img from "../../../assets/images/services/security/end point_2.jpeg";
+import endPoint3Img from "../../../assets/images/services/security/end point_3.jpeg";
 import { FiCheckCircle } from "react-icons/fi";
 
 export default function SecurityDetail() {
@@ -15,7 +15,7 @@ export default function SecurityDetail() {
       <section className="relative w-full">
         <img
           src={heroBg}
-          className=" w-full h-full object-cover md:object-fit"
+          className=" w-full md:h-[500px] object-cover"
           alt="endpoint-security-hero-image"
         />
         <div className="absolute inset-0 bg-red-400/20" />

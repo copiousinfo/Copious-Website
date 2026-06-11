@@ -25,7 +25,7 @@ export default function EmailSecurity() {
       <section className="relative w-full">
         <img
           src={heroBg}
-          className=" w-full h-full object-cover"
+          className=" w-full md:h-[500px] object-cover"
           alt="Email security hero image"
         />
         <div className="absolute inset-0 bg-red-400/30" />

@@ -5,8 +5,8 @@ import billingImg from '../../../assets/images/solutions/billing/billing-hero.jp
 import ticketingImg from '../../../assets/images/solutions/ticketing/ticketHero.jpeg';
 import parkingImg from '../../../assets/images/solutions/parking/parkingheader.jpg';
 import eventImg from '../../../assets/images/solutions/event/event header.jpeg';
-import acurestroImg from '../../../assets/images/solutions/acurestro/acurestro header.jpeg';
-import vyoriseImg from '../../../assets/images/solutions/vyorise/vyorise_header.jpg';
+import acurestroImg from '../../../assets/images/solutions/acurestro/acurestro hero.jpeg';
+import vyoriseImg from '../../../assets/images/solutions/vyorise/vyorise header.jpeg';
 
 const solutionsData = [
   // {

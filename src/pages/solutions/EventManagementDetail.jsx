@@ -85,12 +85,12 @@ export default function EventManagementDetail() {
         <img
           src={aboutHero}
           alt="eventohub header image"
-          className="w-full md:h-[420px] object-fit"
+          className="w-full md:h-[500px] object-fit"
         />
         <div className="absolute inset-0 bg-red-400/20" />
       </section>
 
-      <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-8 sm:py-10 lg:py-12">
+      <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-8">
         <div className="bg-white p-5 sm:p-7 lg:p-8 rounded-md">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10 items-stretch">
             <div>
@@ -160,7 +160,7 @@ export default function EventManagementDetail() {
             />
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10 mt-10 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10 mt-3 items-stretch">
             <img
               src={eventmgmOriginalImg}
               alt="Online booking"

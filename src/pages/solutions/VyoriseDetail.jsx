@@ -1,6 +1,6 @@
 import React from "react";
 import vyoriseImg from "../../assets/images/solutions/vyorise/vyorise header.jpeg";
-import vyorise2Img from "../../assets/images/solutions/vyorise/vyorise_1.png";
+import vyorise2Img from "../../assets/images/solutions/vyorise/vyorise_1.jpeg";
 import vyorise3Img from "../../assets/images/solutions/vyorise/vyorise_2.jpeg";
 import {
   FaLock,
@@ -65,7 +65,7 @@ export default function VyoriseDetail() {
     <div className="w-full pt-[92px] bg-[#efefef]">
       {/* ── Hero Section ── */}
       <section className="relative w-full">
-        <img src={vyoriseImg} className=" w-full md:h-[450px] object-fit" />
+        <img src={vyoriseImg} className=" w-full md:h-[500px] object-fit" />
         <div className="absolute inset-0 bg-red-400/20" />
       </section>
 
