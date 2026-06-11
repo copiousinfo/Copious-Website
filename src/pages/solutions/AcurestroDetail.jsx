@@ -52,19 +52,8 @@ export default function AcurestroDetail() {
         className="relative h-[300px] sm:h-[400px] lg:h-[480px] bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: `url(${acurestroImg})` }}
       >
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="relative z-10 flex flex-col items-center text-center px-4 max-w-[1000px]">
-          <span className="bg-[#da251d] text-white text-xs font-semibold px-5 py-1.5 rounded-full mb-6">
-            About Us
-          </span>
-          <h1 className="text-white text-3xl sm:text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-            Smart Solutions For Modern Acurestro Management
-          </h1>
-          <p className="text-gray-200 text-sm sm:text-base leading-relaxed max-w-[800px]">
-            Simplify Your Business, Boost Efficiency, And Serve Customers Faster
-            - All From Your Mobile.
-          </p>
-        </div>
+        <div className="absolute inset-0 bg-red-400/20" />
+        
       </section>
 
       <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-8 sm:py-10 lg:py-12">
@@ -106,7 +95,7 @@ export default function AcurestroDetail() {
             <img
               src={acurestro2Img}
               alt="Solution management"
-              className="w-full rounded-md object-contain bg-[#f8f9fa] h-[240px] sm:h-[300px] lg:h-[320px]"
+              className="w-full rounded-md object-cover bg-[#f8f9fa] h-[240px] sm:h-[300px] lg:h-[320px]"
             />
           </div>
 

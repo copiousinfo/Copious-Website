@@ -1,86 +1,78 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import heroBg from '../../../assets/images/services/security/antivirus.jpg';
-import antivirus1Img from '../../../assets/images/services/security/antivirus1.jpg';
-import { FiCheckCircle } from 'react-icons/fi';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import heroBg from "../../../assets/images/services/security/antivirus.jpg";
+import antivirus1Img from "../../../assets/images/services/security/antivirus1.jpg";
+import antivirus2Img from "../../../assets/images/services/security/antivirus2.jpeg";
+
+import { FiCheckCircle } from "react-icons/fi";
 
 const deviceLinks = [
-  { label: 'Antivirus for Windows', icon: '🪟' },
-  { label: 'Antivirus for Linux', icon: '🐧' },
-  { label: 'Antivirus for Mac', icon: '🍎' },
-  { label: 'Antivirus for iOS', icon: '📱' },
+  { label: "Antivirus for Windows", icon: "🪟" },
+  { label: "Antivirus for Linux", icon: "🐧" },
+  { label: "Antivirus for Mac", icon: "🍎" },
+  { label: "Antivirus for iOS", icon: "📱" },
 ];
 
 const advantages = [
-  'Real-Time Malware Detection',
-  'Ransomware Protection',
-  'Spyware & Adware Removal',
-  'Automatic Software Updates',
-  'Multi-Device Protection',
-  'Scheduled Scans & Reports',
-  'Web & Email Threat Filtering',
-  'Zero-Day Threat Defense',
+  "Real-Time Malware Detection",
+  "Ransomware Protection",
+  "Spyware & Adware Removal",
+  "Automatic Software Updates",
+  "Multi-Device Protection",
+  "Scheduled Scans & Reports",
+  "Web & Email Threat Filtering",
+  "Zero-Day Threat Defense",
 ];
 
 export default function AntivirusSecurity() {
   const navigate = useNavigate();
   return (
     <div className="w-full pt-[92px] bg-white">
-
       {/* ── Hero Banner ─────────────────────────────────────────── */}
-      <section className="w-full">
-        <div
-          className="relative w-full min-h-[380px] sm:min-h-[440px] lg:min-h-[500px] bg-cover bg-center flex flex-col justify-center py-14 sm:py-16"
+      <section className="relative w-full">
+        <img
+          src={heroBg}
+          alt="antivirus security hero image"
+          className=" w-full h-[350px] object-cover"
           style={{ backgroundImage: `url(${heroBg})` }}
-        >
-          <div className="absolute inset-0 bg-black/60" />
-          <div className="relative z-10 w-full flex flex-col items-center justify-center text-center px-4 sm:px-6">
-            <span className="bg-[#da251d] text-white text-[11px] sm:text-xs font-semibold px-4 sm:px-5 py-1.5 rounded-full mb-4 sm:mb-5 inline-block tracking-wide">
-              Security
-            </span>
-            <h1 className="text-white text-[28px] sm:text-4xl lg:text-[52px] font-bold leading-tight mb-3 sm:mb-4 max-w-3xl mx-auto px-2">
-              Antivirus Security
-            </h1>
-            <p className="text-gray-200 text-[13px] sm:text-[14px] max-w-2xl mx-auto leading-relaxed mb-3 px-2">
-              Industry-leading antivirus protection for your data and devices. Award-winning protection for Windows, Mac, Android, and iOS.
-            </p>
-            <p className="text-gray-300 text-[12px] sm:text-[13px] max-w-xl mx-auto leading-relaxed mb-6 sm:mb-8 px-2">
-              Copious Serve Antivirus delivers comprehensive, real-time security against viruses, malware, ransomware, and other threats — keeping all your devices protected around the clock.
-            </p>
-            <button 
-              onClick={() => navigate('/contact')}
-              className="bg-[#da251d] text-white px-8 sm:px-10 py-2.5 sm:py-3 rounded-lg font-bold text-[14px] sm:text-[15px] hover:bg-[#c02019] transition-all shadow-md active:scale-95"
-            >
-              Free Live Demo
-            </button>
-          </div>
-        </div>
+        />
+        <div className="absolute inset-0 bg-red-400/20" />
       </section>
 
       {/* ── What is Antivirus? ──────────────────────────────────── */}
-      <section className="w-full bg-white py-12 sm:py-16 lg:py-20">
+      <section className="w-full bg-white py-12">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+          <div className="flex flex-col-reverse md:flex-row gap-5">
             {/* Left: Text */}
-            <div>
+            <div className="w-full md:w-1/2">
               <h2 className="text-[#1f2937] text-[24px] sm:text-[28px] lg:text-[32px] font-bold mb-5 leading-snug">
                 What is Antivirus?
               </h2>
               <div className="space-y-4">
                 <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8]">
-                  Antivirus software is a program designed to detect, prevent, and remove malicious software, commonly referred to as malware, from computers and other devices. Malware includes viruses, worms, trojans, ransomware, spyware, adware, and more.
+                  Antivirus software is a program designed to detect, prevent,
+                  and remove malicious software, commonly referred to as
+                  malware, from computers and other devices. Malware includes
+                  viruses, worms, trojans, ransomware, spyware, adware, and
+                  more.
                 </p>
                 <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8]">
-                  Anti-virus software can identify and block many viruses before they can infect your computer. Once you install anti-virus software, it is important to keep it up to date.
+                  Anti-virus software can identify and block many viruses before
+                  they can infect your computer. Once you install anti-virus
+                  software, it is important to keep it up to date. Select from
+                  the comprehensive range of cyber security solutions. Copious
+                  Infotech provides industry-leading antivirus protection across
+                  all your platforms — whether you're on Windows, Linux, Mac, or
+                  iOS.
                 </p>
               </div>
             </div>
             {/* Right: Image */}
-            <div className="w-full">
+            <div className="w-full md:w-1/2">
               <img
                 src={antivirus1Img}
                 alt="What is Antivirus"
-                className="w-full h-[240px] sm:h-[290px] lg:h-[320px] object-contain bg-[#f8f9fa] rounded-xl shadow-sm"
+                className="w-full h-[240px] sm:h-[290px] lg:h-[320px] object-cover bg-[#f8f9fa] rounded-xl shadow-sm"
               />
             </div>
           </div>
@@ -88,88 +80,53 @@ export default function AntivirusSecurity() {
       </section>
 
       {/* ── Why We Use Antivirus? ───────────────────────────────── */}
-      <section className="w-full bg-[#f8f9fa] py-12 sm:py-16 lg:py-20">
+      <section className="w-full bg-[#e9eaeb] py-12">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div className="flex flex-col-reverse md:flex-row gap-5">
             {/* Left: Image */}
-            <div className="w-full order-2 lg:order-1">
+            <div className="w-full md:w-1/2 order-2 lg:order-1">
               <img
-                src={antivirus1Img}
+                src={antivirus2Img}
                 alt="Why We Use Antivirus"
-                className="w-full h-[240px] sm:h-[290px] lg:h-[340px] object-contain bg-[#f8f9fa] rounded-xl shadow-sm"
+                className="w-full h-[240px] sm:h-[290px] lg:h-[340px] object-cover bg-[#f8f9fa] rounded-xl shadow-sm"
               />
             </div>
             {/* Right: Text */}
-            <div className="order-1 lg:order-2">
+            <div className="order-1 lg:order-2 w-full md:w-1/2">
               <h2 className="text-[#1f2937] text-[22px] sm:text-[26px] lg:text-[30px] font-bold mb-5 leading-snug">
                 Why We Use Antivirus?
               </h2>
               <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8] mb-5">
-                In order to stop malware from harming your device, antivirus programs identify, quarantine, and/or remove dangerous code. In order to protect users from the newest viruses and other infections, modern antivirus software updates itself automatically.
+                In order to stop malware from harming your device, antivirus
+                programs identify, quarantine, and/or remove dangerous code. In
+                order to protect users from the newest viruses and other
+                infections, modern antivirus software updates itself
+                automatically.
               </p>
               <ul className="space-y-3 mb-6">
                 {[
-                  'Detects and removes malware before it spreads',
-                  'Protects sensitive data from theft',
-                  'Prevents unauthorized system access',
-                  'Keeps your devices running safely and efficiently',
+                  "Detects and removes malware before it spreads",
+                  "Protects sensitive data from theft",
+                  "Prevents unauthorized system access",
                 ].map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-[#4b5563] text-[14px] sm:text-[15px]">
-                    <FiCheckCircle className="text-[#da251d] shrink-0" size={17} />
+                  <li
+                    key={item}
+                    className="flex items-center gap-3 text-[#4b5563] text-[14px] sm:text-[15px]"
+                  >
+                    <FiCheckCircle
+                      className="text-[#da251d] shrink-0"
+                      size={17}
+                    />
                     {item}
                   </li>
                 ))}
               </ul>
-              <button 
-                onClick={() => navigate('/contact')}
+              <button
+                onClick={() => navigate("/contact")}
                 className="bg-[#da251d] text-white px-8 py-2.5 rounded-lg font-bold text-[14px] sm:text-[15px] hover:bg-[#c02019] transition-all shadow-sm active:scale-95"
               >
                 More Details
               </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Get Antivirus On All Your Devices ──────────────────── */}
-      <section className="w-full bg-white py-12 sm:py-16 lg:py-20">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            {/* Left: Text */}
-            <div>
-              <h2 className="text-[#1f2937] text-[22px] sm:text-[26px] lg:text-[30px] font-bold mb-5 leading-snug">
-                GET ANTIVIRUS ON ALL YOUR DEVICES
-              </h2>
-              <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8] mb-6">
-                Select from the comprehensive range of cyber security solutions. Copious Infotech provides industry-leading antivirus protection across all your platforms — whether you're on Windows, Linux, Mac, or iOS.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
-                {deviceLinks.map((d) => (
-                  <div
-                    key={d.label}
-                    className="site-card flex items-center gap-3 border border-gray-200 rounded-lg px-4 py-3 hover:border-[#da251d] hover:bg-red-50 cursor-pointer group"
-                  >
-                    <span className="text-xl">{d.icon}</span>
-                    <span className="text-[#374151] text-[14px] font-semibold group-hover:text-[#da251d] transition-colors">
-                      {d.label}
-                    </span>
-                  </div>
-                ))}
-              </div>
-              <button 
-                onClick={() => navigate('/contact')}
-                className="bg-[#da251d] text-white px-8 py-2.5 rounded-lg font-bold text-[14px] sm:text-[15px] hover:bg-[#c02019] transition-all shadow-sm active:scale-95"
-              >
-                More Details
-              </button>
-            </div>
-            {/* Right: Image */}
-            <div className="w-full">
-              <img
-                src={antivirus1Img}
-                alt="Antivirus on All Devices"
-                className="w-full h-[240px] sm:h-[290px] lg:h-[340px] object-contain bg-[#f8f9fa] rounded-xl shadow-sm"
-              />
             </div>
           </div>
         </div>
@@ -179,10 +136,14 @@ export default function AntivirusSecurity() {
       <section className="w-full bg-[#f8f9fa] py-12 sm:py-16 lg:py-20">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16">
           <h2 className="text-[#1f2937] text-[22px] sm:text-[28px] lg:text-[34px] font-bold text-center mb-5 leading-snug max-w-3xl mx-auto">
-            Advantages Of Utilizing Antivirus Security Solution From Copious Infotech.
+            Advantages Of Utilizing Antivirus Security Solution From Copious
+            Infotech.
           </h2>
           <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8] text-center max-w-3xl mx-auto mb-10 sm:mb-12">
-            Copious Infotech Antivirus provides comprehensive protection for your business data and devices, defending against viruses, ransomware, spyware, trojans, and other sophisticated threats — keeping your organisation secure at all times.
+            Copious Infotech Antivirus provides comprehensive protection for
+            your business data and devices, defending against viruses,
+            ransomware, spyware, trojans, and other sophisticated threats —
+            keeping your organisation secure at all times.
           </p>
 
           {/* Advantages Grid */}
@@ -198,7 +159,6 @@ export default function AntivirusSecurity() {
           </div>
         </div>
       </section>
-
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import SectionHeading from '../../ui/SectionHeading';
-import bgImg from '../../../assets/images/home/hero-bg.jpg';
+import bgImg from '../../../assets/images/home/hero-bg.jpeg';
 
 const testimonialsData = [
   {

@@ -11,7 +11,7 @@ export default function Career() {
     <div className="w-full pt-[92px] bg-white">
       {/* ── Hero Banner ───────────────────────────────────────── */}
       <section className="relative w-full">
-        <img src={heroBg} className="w-full h-[350px] object-cover" />
+        <img src={heroBg} className="w-full h-auto md:h-[350px] object-cover" />
         <div className="absolute inset-0 bg-red-400/20" />
       </section>
 

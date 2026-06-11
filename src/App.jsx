@@ -44,13 +44,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/blog" element={<Blog />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/blog/bulk-whatsapp" element={<BulkWhatsAppBlog />} />
-          <Route path="/blog/cloud-service" element={<CloudServiceBlog />} />
-          <Route path="/blog/security" element={<SecurityBlog />} />
-          <Route path="/blog/bulk-sms" element={<BulkSMSBlog />} />
-          <Route path="/blog/:type" element={<BlogReading />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/solutions/billing" element={<BillingDetail />} />

@@ -1,32 +1,30 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import heroBg from '../../../assets/images/services/security/end point header.png';
-import endpoint1Img from '../../../assets/images/services/security/end point_1.png';
-import endPoint2Img from '../../../assets/images/services/security/end point_2.png';
-import endPoint3Img from '../../../assets/images/services/security/end point_3.png';
-import { FiCheckCircle } from 'react-icons/fi';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import heroBg from "../../../assets/images/services/security/end point header.jpeg";
+import endpoint1Img from "../../../assets/images/services/security/end point_1.png";
+import endPoint2Img from "../../../assets/images/services/security/end point_2.png";
+import endPoint3Img from "../../../assets/images/services/security/end point_3.png";
+import { FiCheckCircle } from "react-icons/fi";
 
 export default function SecurityDetail() {
   const navigate = useNavigate();
 
   return (
     <div className="w-full pt-[92px] bg-white">
-
       {/* ── Hero Banner ─────────────────────────────────────────── */}
-      <section className="w-full">
-        <div
-          className="relative w-full min-h-[380px] sm:min-h-[440px] lg:min-h-[490px] bg-cover bg-center flex flex-col justify-center py-14 sm:py-16"
-          style={{ backgroundImage: `url(${heroBg})` }}
-        >
-          <div className="absolute inset-0 bg-red-400/30" />
-          
-        </div>
+      <section className="relative w-full">
+        <img
+          src={heroBg}
+          className=" w-full h-[370px] object-cover md:object-fit"
+          alt="endpoint-security-hero-image"
+        />
+        <div className="absolute inset-0 bg-red-400/20" />
       </section>
 
       {/* ── What Is Endpoint Security ──────────────────────────── */}
-      <section className="w-full bg-white py-12 sm:py-16 lg:py-20">
+      <section className="w-full bg-white py-12 sm:py-12 lg:py-14">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+          <div className="flex flex-col-reverse md:flex-row gap-5">
             {/* Left: Text */}
             <div>
               <h2 className="text-[#1f2937] text-[24px] sm:text-[28px] lg:text-[32px] font-bold mb-5 leading-snug">
@@ -34,19 +32,34 @@ export default function SecurityDetail() {
               </h2>
               <div className="space-y-4">
                 <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8]">
-                  Endpoint protection is a security practice employed by cybersecurity experts to safeguard a wide array of devices, including laptops, mobile phones, printers, and servers. Its primary objective is to identify and neutralize ongoing cyber threats, ensuring the security and integrity of these devices.
+                  Endpoint security is a cybersecurity strategy that focuses on
+                  protecting individual devices—known as endpoints—that connect
+                  to a corporate network. These devices, including desktops,
+                  laptops, servers, and mobile devices, often serve as the
+                  primary entry points for cyberattacks.
                 </p>
                 <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8]">
-                  Endpoint security involves safeguarding all devices linked to a network to prevent them from being exploited as entry points by cybercriminals.
+                  By deploying security software directly on these devices,
+                  organizations can monitor for, detect, and block malicious
+                  activity, such as viruses, ransomware, and unauthorized access
+                  attempts, at the point of entry before they can propagate
+                  through the wider IT infrastructure.
+                </p>
+                <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8]">
+                  Modern endpoint security solutions have evolved beyond
+                  traditional antivirus, incorporating advanced features like
+                  AI-driven threat intelligence, real-time behavioral analysis,
+                  and cloud-based centralized management.
                 </p>
               </div>
             </div>
             {/* Right: Image */}
             <div className="w-full">
               <img
-                src={endpoint1Img}
+                src={endPoint3Img}
                 alt="What Is Endpoint Security"
-                className="w-full h-[240px] sm:h-[290px] lg:h-[320px] object-contain bg-[#f8f9fa] rounded-xl shadow-sm"
+                className="w-full h-[240px] sm:h-[290px] lg:h-[320px] object-fit
+                 bg-[#f8f9fa] rounded-xl shadow-sm"
               />
             </div>
           </div>
@@ -54,15 +67,15 @@ export default function SecurityDetail() {
       </section>
 
       {/* ── Comprehensive Endpoint Security For SMBs ──────────── */}
-      <section className="w-full bg-[#f8f9fa] py-12 sm:py-16 lg:py-20">
+      <section className="w-full bg-[#ebecec] py-12 sm:py-16 lg:py-20">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div className="flex flex-col-reverse md:flex-row gap-5">
             {/* Left: Image */}
             <div className="w-full order-2 lg:order-1">
               <img
                 src={endpoint1Img}
                 alt="Endpoint Security For SMBs"
-                className="w-full h-[240px] sm:h-[290px] lg:h-[340px] object-contain bg-[#f8f9fa] rounded-xl shadow-sm"
+                className="w-full h-[240px] sm:h-[290px] lg:h-[340px] object-fit bg-[#f8f9fa] rounded-xl shadow-sm"
               />
             </div>
             {/* Right: Text */}
@@ -71,13 +84,21 @@ export default function SecurityDetail() {
                 Comprehensive Endpoint Security For SMBs
               </h2>
               <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8] mb-4">
-                As the digital transformation of businesses continues, it becomes crucial to prioritize robust cyber protection due to the escalating cyber threats. Unfortunately, numerous enterprises still overlook the importance of securing their digital assets.
+                As the digital transformation of businesses continues, it
+                becomes crucial to prioritize robust cyber protection due to the
+                escalating cyber threats. Unfortunately, numerous enterprises
+                still overlook the importance of securing their digital assets.
               </p>
               <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8] mb-6">
-                The utilization of endpoint security enforces significant advantages to businesses. Endpoint security enforces encompasses features such as application control, data loss protection (DLP), and advanced antivirus protection. Now, let us delve into the interconnected benefits of implementing endpoint security, which serves as an excellent means to safeguard your business.
+                The utilization of endpoint security enforces significant
+                advantages to businesses. Endpoint security enforces encompasses
+                features such as application control, data loss protection
+                (DLP), and advanced antivirus protection. Now, let us delve into
+                the interconnected benefits of implementing endpoint security,
+                which serves as an excellent means to safeguard your business.
               </p>
-              <button 
-                onClick={() => navigate('/contact')}
+              <button
+                onClick={() => navigate("/contact")}
                 className="bg-[#da251d] text-white px-8 py-2.5 rounded-lg font-bold text-[14px] sm:text-[15px] hover:bg-[#c02019] transition-all shadow-sm active:scale-95"
               >
                 More Details
@@ -90,20 +111,28 @@ export default function SecurityDetail() {
       {/* ── Improve Security Measures ──────────────────────────── */}
       <section className="w-full bg-white py-12 sm:py-16 lg:py-20">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div className="flex flex-col-reverse md:flex-row gap-5">
             {/* Left: Text */}
             <div>
               <h2 className="text-[#1f2937] text-[22px] sm:text-[26px] lg:text-[30px] font-bold mb-5 leading-snug">
                 Improve Security Measures For Your Company
               </h2>
               <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8] mb-4">
-                As the digital transformation of businesses continues, it becomes crucial to prioritize robust cyber protection due to the escalating cyber threats. Unfortunately, numerous enterprises still overlook the importance of securing their digital assets.
+                As the digital transformation of businesses continues, it
+                becomes crucial to prioritize robust cyber protection due to the
+                escalating cyber threats. Unfortunately, numerous enterprises
+                still overlook the importance of securing their digital assets.
               </p>
               <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8] mb-6">
-                The utilization of endpoint security enforces significant advantages to businesses. Endpoint security enforces encompasses features such as application control, data loss protection (DLP), and advanced antivirus protection. Now, let us delve into the interconnected benefits of implementing endpoint security, which serves as an excellent means to safeguard your business.
+                The utilization of endpoint security enforces significant
+                advantages to businesses. Endpoint security enforces encompasses
+                features such as application control, data loss protection
+                (DLP), and advanced antivirus protection. Now, let us delve into
+                the interconnected benefits of implementing endpoint security,
+                which serves as an excellent means to safeguard your business.
               </p>
-              <button 
-                onClick={() => navigate('/contact')}
+              <button
+                onClick={() => navigate("/contact")}
                 className="bg-[#da251d] text-white px-8 py-2.5 rounded-lg font-bold text-[14px] sm:text-[15px] hover:bg-[#c02019] transition-all shadow-sm active:scale-95"
               >
                 More Details
@@ -112,9 +141,9 @@ export default function SecurityDetail() {
             {/* Right: Image */}
             <div className="w-full">
               <img
-                src={endpoint1Img}
+                src={endPoint2Img}
                 alt="Improve Security Measures"
-                className="w-full h-[240px] sm:h-[290px] lg:h-[340px] object-contain bg-[#f8f9fa] rounded-xl shadow-sm"
+                className="w-full h-[240px] sm:h-[290px] lg:h-[340px] object-cover bg-[#f8f9fa] rounded-xl shadow-sm"
               />
             </div>
           </div>
@@ -122,14 +151,20 @@ export default function SecurityDetail() {
       </section>
 
       {/* ── Advantages Section ─────────────────────────────────── */}
-      <section className="w-full bg-[#f8f9fa] py-12 sm:py-16 lg:py-20">
+      <section className="w-full bg-[#ebecec] py-12 sm:py-16 lg:py-20">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16">
           {/* Heading */}
           <h2 className="text-[#1f2937] text-[22px] sm:text-[28px] lg:text-[34px] font-bold text-center mb-5 leading-snug max-w-3xl mx-auto">
-            Advantages Of Utilizing End Point Security Solution From Copious Infotech.
+            Advantages Of Utilizing End Point Security Solution From Copious
+            Infotech.
           </h2>
           <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8] text-center max-w-3xl mx-auto mb-10 sm:mb-12">
-            Endpoint Security provides comprehensive protection for critical business data, ensuring defense against a wide range of threats such as virus spyware, pharming, hacking, IM, filtering, USB pen blocking, and data theft. With its known features, Copious Infotech Endpoint Security effectively safeguards all valuable information, offering peace of mind to businesses.
+            Endpoint Security provides comprehensive protection for critical
+            business data, ensuring defense against a wide range of threats such
+            as virus spyware, pharming, hacking, IM, filtering, USB pen
+            blocking, and data theft. With its known features, Copious Infotech
+            Endpoint Security effectively safeguards all valuable information,
+            offering peace of mind to businesses.
           </p>
 
           {/* Advantages Grid */}
@@ -142,7 +177,7 @@ export default function SecurityDetail() {
               "Flexible Policy Creation",
               "Real-Time Analysis & Reporting",
               "User Identification",
-              "DNS Firewall Security"
+              "DNS Firewall Security",
             ].map((feature, i) => (
               <div
                 key={i}
@@ -154,7 +189,6 @@ export default function SecurityDetail() {
           </div>
         </div>
       </section>
-
     </div>
   );
 }

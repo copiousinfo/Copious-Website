@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../ui/Button";
-import heroBg from "../../../assets/images/home/hero-bg.jpg";
+import heroBg from "../../../assets/images/home/hero-bg.jpeg";
 
 export default function Hero() {
   return (

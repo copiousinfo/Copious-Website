@@ -45,7 +45,7 @@ export const navLinks = [
       { name: 'Azure',    path: '/services/cloud-service_azure' },
     ],
   },
-  { name: 'Blog', path: '/blog' },
+  // { name: 'Blog', path: '/blog' },
   {
     name: 'Company',
     children: [

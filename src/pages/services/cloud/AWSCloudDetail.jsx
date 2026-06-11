@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import heroBg from "../../../assets/images/services/cloud/aws_2.png";
+import heroBg from "../../../assets/images/services/cloud/aws header.jpeg";
 import aws1Img from "../../../assets/images/services/cloud/aws_1.png";
+import aws2Img from "../../../assets/images/services/cloud/aws_2.png";
 
 const categories = {
   "use-case": [
@@ -55,39 +56,56 @@ export default function AWSCloudDetail() {
   return (
     <div className="w-full pt-[92px] bg-white">
       {/* ── Hero ─────────────────────────────────────────────── */}
-      <section className="w-full">
-        <div
-          className="relative w-full min-h-[340px] sm:min-h-[400px] lg:min-h-[600px] bg-cover bg-center flex items-center justify-center py-16"
-          style={{ backgroundImage: `url(${heroBg})` }}
-        >
-          <div className="absolute inset-0 bg-red-400/30" />
-        </div>
+      <section className="relative w-full">
+        <img
+          src={heroBg}
+          className=" w-full h-[350px] object-cover"
+          alt="aws-hero-image"
+        />
+        <div className="absolute inset-0 bg-red-400/30" />
       </section>
 
       {/* ── Cloud Computing Section ───────────────────────────── */}
       <section className="w-full bg-white py-12 sm:py-16 lg:py-20">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div className="flex flex-col-reverse md:flex-row gap-5">
             {/* Left: Text */}
-            <div>
+            <div className="w-full md:w-1/2">
               <h2 className="text-[#1f2937] text-[22px] sm:text-[26px] lg:text-[30px] font-bold mb-5 leading-snug">
                 Cloud Computing With AWS(Amazon Web Services)
               </h2>
               <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8]">
-                AWS, or Amazon Web Services, is a globally recognised cloud
-                platform that is widely embraced and utilized by numerous
-                customers worldwide. With a vast array of over 200
-                fully-equipped services available, AWS operates from data
-                centers across the globe. This platform caters to a diverse
-                range of customers, including rapidly expanding startups, larger
-                scale enterprises, and prominent government agencies. By
-                leveraging AWS, these customers are able to reduce expenses,
-                enhance their agility, and accelerate their innovation
-                processes.
+                Power Your Business with AWS Cloud Accelerate your business
+                growth with scalable, secure, and reliable cloud solutions built
+                entirely on Amazon Web Services. Our cloud-native infrastructure
+                is designed to empower your organization by adapting dynamically
+                to your evolving requirements. Through seamless scalability, you
+                can easily expand or adjust your digital infrastructure to match
+                your precise business needs. Security is deeply embedded into
+                our framework, providing enterprise-grade protection that
+                rigorously incorporates built-in AWS best practices to safeguard
+                your critical data and assets.{" "}
+              </p>
+
+              <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8]">
+                Performance and efficiency remain at the forefront of our
+                digital ecosystem. We deliver high-performance architecture
+                coupled with exceptional availability, ensuring your core
+                applications consistently run smoothly and without interruption.
+                To maximize your financial efficiency, our strategic cost
+                optimization processes help you eliminate waste, letting you
+                optimize overall operational costs and get the absolute most
+                value from your cloud investment.
+              </p>
+              <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8]">
+                Transitioning to the cloud is effortless with the right partner
+                by your side. Let our dedicated AWS experts help you seamlessly
+                migrate, modernize, and manage your diverse workloads in the
+                cloud.
               </p>
             </div>
             {/* Right: Image */}
-            <div className="w-full">
+            <div className="w-full md:w-1/2">
               <img
                 src={aws1Img}
                 alt="AWS Cloud Computing"
@@ -99,7 +117,7 @@ export default function AWSCloudDetail() {
       </section>
 
       {/* ── Categories Section ───────────────────────────────── */}
-      <section className="w-full bg-[#f8f9fa] py-12 sm:py-16 lg:py-20">
+      <section className="w-full bg-[#e9ebec] py-12 sm:py-16 lg:py-20">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16">
           <h2 className="text-[#1f2937] text-[24px] sm:text-[30px] lg:text-[36px] font-bold text-center mb-8">
             Categories
@@ -131,9 +149,9 @@ export default function AWSCloudDetail() {
             {/* Left: Image */}
             <div className="w-full">
               <img
-                src={aws1Img}
+                src={aws2Img}
                 alt="Cloud Categories"
-                className="w-full h-[280px] sm:h-[340px] lg:h-[380px] object-contain bg-[#f8f9fa] rounded-xl shadow-sm"
+                className="w-full h-[280px] sm:h-[340px] lg:h-[380px] object-contain md:object-cover bg-[#f8f9fa] rounded-xl shadow-sm"
               />
             </div>
             {/* Right: Category List */}
