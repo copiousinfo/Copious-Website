@@ -58,7 +58,7 @@ export default function AzureCloudDetail() {
       <section className="relative w-full">
         <img
         src={heroBg}
-          className=" w-full h-[350px] object-cover"
+          className=" w-full md:h-[500px] object-cover"
         />
           <div className="absolute inset-0 bg-red-400/30" />
         

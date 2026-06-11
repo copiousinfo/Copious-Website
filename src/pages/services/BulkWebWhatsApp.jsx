@@ -56,7 +56,7 @@ export default function BulkWebWhatsApp() {
         <img
           src={aboutHero}
           alt="bulk whatsapp header image"
-          className=" w-full md:h-[400px] object-fit"
+          className=" w-full md:h-[600px] object-cover"
         />
         <div className="absolute inset-0 bg-red-400/20" />
       </section>

@@ -59,7 +59,7 @@ export default function AWSCloudDetail() {
       <section className="relative w-full">
         <img
           src={heroBg}
-          className=" w-full h-[350px] object-cover"
+          className=" w-full object-cover"
           alt="aws-hero-image"
         />
         <div className="absolute inset-0 bg-red-400/30" />

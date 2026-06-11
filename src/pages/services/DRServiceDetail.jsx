@@ -12,7 +12,7 @@ export default function DRServiceDetail() {
         <img
           src={heroImg}
           alt="dr service header image"
-          className="w-full h-[350px] object-cover"
+          className="w-full md:h-[650px] object-cover"
         />
         <div className="absolute inset-0 bg-red-400/20" />
       </section>

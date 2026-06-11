@@ -15,7 +15,7 @@ export default function SecurityDetail() {
       <section className="relative w-full">
         <img
           src={heroBg}
-          className=" w-full h-[370px] object-cover md:object-fit"
+          className=" w-full h-full object-cover md:object-fit"
           alt="endpoint-security-hero-image"
         />
         <div className="absolute inset-0 bg-red-400/20" />

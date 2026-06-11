@@ -12,7 +12,7 @@ export default function ManagedServiceDetail() {
         <img
           src={heroImg}
           alt="manager service header image"
-          className="w-full sm:h-[400px] object-cover"
+          className="w-full md:h-[600px] object-cover"
         />
         <div className="absolute inset-0 bg-red-400/20" />
       </section>

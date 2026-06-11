@@ -33,7 +33,7 @@ export default function AntivirusSecurity() {
         <img
           src={heroBg}
           alt="antivirus security hero image"
-          className=" w-full h-[350px] object-cover"
+          className=" w-full h-full object-cover"
           style={{ backgroundImage: `url(${heroBg})` }}
         />
         <div className="absolute inset-0 bg-red-400/20" />

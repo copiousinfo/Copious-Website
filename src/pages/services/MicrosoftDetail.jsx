@@ -12,7 +12,7 @@ export default function MicrosoftDetail() {
         <img
           src={aboutHero}
           alt="microsoft header image"
-          className=" h-[350px] w-full object-cover"
+          className="  w-full md:h-[600px] object-cover"
           style={{ backgroundImage: `url(${aboutHero})` }}
         />
         <div className="absolute inset-0 bg-red-400/20" />
