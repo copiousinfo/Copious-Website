@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import ticketImg from "../../assets/images/solutions/ticketing/ticket-section.jpeg";
+import ticketImg from "../../assets/images/solutions/ticketing/ticketHero.jpeg";
 import ticketing2Img from "../../assets/images/solutions/ticketing/ticketing2.jpg";
 import ticketing3Img from "../../assets/images/solutions/ticketing/ticketing3.jpg";
 import {
@@ -73,13 +73,13 @@ export default function SolutionsDetail() {
   return (
     <div className="w-full pt-[72px] sm:pt-[80px] lg:pt-[98px] bg-[#efefef]">
       {/* ── Hero Section ── */}
-      <section className="relative h-[300px] sm:h-[400px] lg:h-[700px] overflow-hidden">
+      <section className="relative w-full">
         <img
           src={ticketImg}
           alt={currentTitle}
-          className="absolute inset-0 w-full h-full object-cover"
+          className=" w-full h-[350px] object-fit"
         />
-        <div className="absolute inset-0 bg-red-400/30" />
+        <div className="absolute inset-0 bg-red-400/20" />
       </section>
 
       {/* ── About + Purpose Section ── */}

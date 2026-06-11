@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import aboutHero from '../../assets/images/services/general/backup.jpg';
+import aboutHero from '../../assets/images/services/general/backup header.png';
 
 export default function BackupDetail() {
   const navigate = useNavigate();
@@ -8,29 +8,16 @@ export default function BackupDetail() {
   return (
     <div className="w-full pt-[92px]">
       {/* Hero Section */}
-      <section
-        className="relative h-[400px] sm:h-[450px] lg:h-[500px] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: `url(${aboutHero})` }}
-      >
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 flex flex-col items-center text-center px-4 max-w-[900px]">
-          <span className="bg-[#da251d] text-white text-xs font-semibold px-5 py-1.5 rounded-full mb-6">
-            Services
-          </span>
-          <h1 className="text-white text-3xl sm:text-5xl lg:text-6xl font-bold mb-6">
-            Backup Software Solutions
-          </h1>
-          <p className="text-gray-200 text-sm sm:text-base leading-relaxed mb-8 max-w-[800px]">
-            Backup software is designed to create duplicates of your files, folders, or entire system, encompassing the operating system, software programs, and data. Sophisticated features enable users to generate several backups, ensuring data and system recovery.
-          </p>
-          <button
-            onClick={() => navigate('/contact')}
-            className="bg-[#da251d] text-white font-bold py-3 px-8 rounded-md hover:bg-[#c02019] transition-colors"
-          >
-            Free Live Demo
-          </button>
-        </div>
+      <section className="relative w-full">
+        <img
+        src={aboutHero}
+        className="w-full h-[350px] object-fit"
+        alt='backup service hero-section image'
+      />
+        <div className="absolute inset-0 bg-red-400/20" />
       </section>
+        
+      
 
       {/* Content Section */}
       <section className="bg-white py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">

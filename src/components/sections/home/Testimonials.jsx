@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import SectionHeading from '../../ui/SectionHeading';
-import bgImg from '../../../assets/images/home/hero-bg.jpeg';
+import bgImg from '../../../assets/images/home/testimonial.jpeg';
 
 const testimonialsData = [
   {
@@ -26,7 +26,7 @@ export default function Testimonials() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${bgImg})` }}
       >
-        <div className="absolute inset-0 bg-red-400/40"></div>
+        <div className="absolute inset-0 bg-red-400/20"></div>
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 w-full">

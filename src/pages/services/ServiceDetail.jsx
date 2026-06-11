@@ -1,10 +1,8 @@
 import React from "react";
-import { useParams, Link } from "react-router-dom";
-import heroBg from "../../assets/images/about/about-hero.jpeg";
-import bulkSmsImg from "../../assets/images/services/general/bulksms1.jpg";
+import { useParams } from "react-router-dom";
+import bulkSmsImg from "../../assets/images/services/general/BULKSMS header.png";
 import sectionImg from "../../assets/images/about/about-section.jpg";
 import bulkSmsWhatImg from "../../assets/images/services/general/bulksms1.png";
-import { FiCheckCircle } from "react-icons/fi";
 
 /* ─── Per-Service Content ─────────────────────────────────────── */
 const serviceContent = {
@@ -27,45 +25,6 @@ const serviceContent = {
       "Run large-scale marketing campaigns with ease and high delivery rates.",
       "Track message delivery and engagement with real-time analytics.",
     ],
-
-    features: [
-      {
-        title: "Instant Delivery",
-        subtitle: "Messages reach recipients within seconds of sending.",
-      },
-      {
-        title: "High Open Rate",
-        subtitle: "98%+ open rates compared to email or social media.",
-      },
-      {
-        title: "Bulk Scheduling",
-        subtitle: "Schedule messages for optimal delivery time.",
-      },
-      {
-        title: "WhatsApp Integration",
-        subtitle: "Send messages via WhatsApp Business API.",
-      },
-      {
-        title: "Personalization",
-        subtitle: "Customize messages with recipient name and details.",
-      },
-      {
-        title: "DND Filtering",
-        subtitle: "Automatic DND number filtering for compliance.",
-      },
-      {
-        title: "Unicode Support",
-        subtitle: "Send messages in Hindi and regional languages.",
-      },
-      {
-        title: "API Access",
-        subtitle: "Integrate SMS into your existing apps via REST API.",
-      },
-      {
-        title: "Detailed Reports",
-        subtitle: "Real-time delivery reports and campaign analytics.",
-      },
-    ],
   },
 
   "cloud-service": {
@@ -86,45 +45,6 @@ const serviceContent = {
       "Access data and applications securely from anywhere in the world.",
       "Reduce capital expenditure on physical hardware and infrastructure.",
       "Ensure business continuity with automated backups and failover.",
-    ],
-
-    features: [
-      {
-        title: "Elastic Scaling",
-        subtitle: "Auto-scale resources based on real-time traffic demands.",
-      },
-      {
-        title: "Data Backup",
-        subtitle: "Automated daily backups with one-click restore.",
-      },
-      {
-        title: "Global CDN",
-        subtitle: "Deliver content faster with worldwide edge locations.",
-      },
-      {
-        title: "Load Balancing",
-        subtitle: "Distribute traffic for optimal performance and uptime.",
-      },
-      {
-        title: "Virtual Machines",
-        subtitle: "Deploy and manage VMs on our high-performance cloud.",
-      },
-      {
-        title: "Database Hosting",
-        subtitle: "Managed databases with automatic patching and updates.",
-      },
-      {
-        title: "Disaster Recovery",
-        subtitle: "Geo-redundant failover to protect against data loss.",
-      },
-      {
-        title: "API Management",
-        subtitle: "Publish, secure, and monitor APIs at any scale.",
-      },
-      {
-        title: "99.9% Uptime SLA",
-        subtitle: "Guaranteed uptime with enterprise-grade infrastructure.",
-      },
     ],
   },
 
@@ -148,44 +68,6 @@ const serviceContent = {
       "Build customer trust by demonstrating commitment to data privacy.",
     ],
     planTitle: "Security Service Plans",
-    features: [
-      {
-        title: "Threat Detection",
-        subtitle: "AI-powered real-time detection of suspicious activity.",
-      },
-      {
-        title: "Firewall Management",
-        subtitle: "Next-gen firewall setup and continuous management.",
-      },
-      {
-        title: "Data Encryption",
-        subtitle: "End-to-end encryption for data in transit and at rest.",
-      },
-      {
-        title: "VPN Services",
-        subtitle: "Secure remote access for your distributed workforce.",
-      },
-      {
-        title: "Endpoint Protection",
-        subtitle: "Safeguard all devices connected to your network.",
-      },
-      {
-        title: "Vulnerability Scans",
-        subtitle: "Regular scans to identify and patch security gaps.",
-      },
-      {
-        title: "Compliance Audit",
-        subtitle: "Ensure compliance with GDPR, ISO 27001, and more.",
-      },
-      {
-        title: "Incident Response",
-        subtitle: "24/7 expert response to contain and resolve breaches.",
-      },
-      {
-        title: "Security Training",
-        subtitle: "Employee security awareness programs and workshops.",
-      },
-    ],
   },
 };
 
@@ -195,61 +77,23 @@ export default function ServiceDetail() {
   const content = serviceContent[slug];
   const currentWhatImg = slug === "bulk-sms" ? bulkSmsWhatImg : sectionImg;
 
-  if (!content) {
-    return (
-      <div className="w-full pt-[92px] min-h-screen flex flex-col items-center justify-center bg-[#f8f9fa]">
-        <h1 className="text-3xl font-bold text-[#da251d] mb-4">
-          Service Not Found
-        </h1>
-        <p className="text-gray-500 mb-8">
-          The service page you are looking for does not exist.
-        </p>
-        <Link
-          to="/"
-          className="bg-[#da251d] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#c02019] transition-all"
-        >
-          Go Back Home
-        </Link>
-      </div>
-    );
-  }
-
   return (
     <div className="w-full pt-[92px] bg-[#efefef]">
       {/* ── Hero Banner ─────────────────────────────────────────── */}
-      <section className="w-full">
-        <div
-          className="relative w-full min-h-[380px] sm:min-h-[420px] lg:h-[480px] bg-cover bg-center flex flex-col justify-center py-12 sm:py-16"
-          style={{
-            backgroundImage: `url(${slug === "bulk-sms" ? bulkSmsImg : heroBg})`,
-          }}
-        >
-          <div className="absolute inset-0 bg-black/55" />
-          <div className="relative z-10 w-full flex flex-col items-center justify-center text-center px-4 sm:px-6">
-            <span className="bg-[#da251d] text-white text-[11px] sm:text-xs font-semibold px-4 sm:px-5 py-1.5 rounded-full mb-4 sm:mb-5 inline-block">
-              {content.badge}
-            </span>
-            <h1 className="text-white text-[28px] sm:text-4xl lg:text-[52px] font-bold leading-tight mb-3 sm:mb-4 max-w-3xl mx-auto px-2">
-              {content.hero}
-            </h1>
-            <p className="text-gray-200 text-[13px] sm:text-[15px] max-w-2xl mx-auto leading-relaxed mb-6 sm:mb-8 px-2">
-              {content.heroSub}
-            </p>
-            <Link
-              to="/contact"
-              className="bg-[#da251d] text-white px-8 sm:px-10 py-2.5 sm:py-3 rounded-lg font-bold text-[14px] sm:text-[15px] hover:bg-[#c02019] transition-all shadow-md inline-block"
-            >
-              Free Live Demo
-            </Link>
-          </div>
-        </div>
+      <section className="relative w-full">
+        <img
+          src={bulkSmsImg}
+          alt="bulk service header image"
+          className="w-full md:h-[400px] object-fit"
+        />
+        <div className="absolute inset-0 bg-red-400/20" />
       </section>
 
       {/* ── What Is Section ─────────────────────────────────────── */}
       <section className="w-full bg-white py-14 sm:py-16 lg:py-20">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div>
+          <div className="flex flex-col-reverse md:flex-row gap-5">
+            <div className="w-full md:w-1/2">
               <h2 className="text-[#1f2937] text-2xl sm:text-3xl lg:text-[36px] font-bold mb-6 leading-snug">
                 {content.whatTitle}
               </h2>
@@ -264,11 +108,11 @@ export default function ServiceDetail() {
                 ))}
               </div>
             </div>
-            <div className="w-full">
+            <div className="w-full md:w-1/2">
               <img
                 src={currentWhatImg}
                 alt={content.whatTitle}
-                className="w-full h-[260px] sm:h-[320px] lg:h-[380px] object-contain bg-[#f8f9fa] rounded-xl shadow-sm"
+                className="w-full h-[260px] sm:h-[320px] lg:h-[380px] object-cover bg-[#aaabac] rounded-xl shadow-sm"
               />
             </div>
           </div>

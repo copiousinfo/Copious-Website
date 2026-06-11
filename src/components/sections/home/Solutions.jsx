@@ -2,11 +2,11 @@ import React from 'react';
 import SectionHeading from '../../ui/SectionHeading';
 import ContentCard from '../../ui/ContentCard';
 import billingImg from '../../../assets/images/solutions/billing/billing-hero.jpg';
-import ticketingImg from '../../../assets/images/solutions/ticketing/ticket-hero.jpg';
-import parkingImg from '../../../assets/images/solutions/parking/parking-hero.jpg';
+import ticketingImg from '../../../assets/images/solutions/ticketing/ticketHero.jpeg';
+import parkingImg from '../../../assets/images/solutions/parking/parkingheader.jpg';
 import eventImg from '../../../assets/images/solutions/event/event header.jpeg';
-import acurestroImg from '../../../assets/images/solutions/acurestro/acurestro.jpg';
-import vyoriseImg from '../../../assets/images/solutions/vyorise/Vyorise3.jpg';
+import acurestroImg from '../../../assets/images/solutions/acurestro/acurestro header.jpeg';
+import vyoriseImg from '../../../assets/images/solutions/vyorise/vyorise_header.jpg';
 
 const solutionsData = [
   // {
