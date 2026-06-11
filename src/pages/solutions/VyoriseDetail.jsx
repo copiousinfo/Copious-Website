@@ -1,20 +1,63 @@
-import React from 'react';
-import vyoriseImg from '../../assets/images/solutions/vyorise/vyorise_header.jpg';
-import vyorise2Img from '../../assets/images/solutions/vyorise/vyorise_1.png';
-import vyorise3Img from '../../assets/images/solutions/vyorise/vyorise_2.png';
+import React from "react";
+import vyoriseImg from "../../assets/images/solutions/vyorise/vyorise_header.jpg";
+import vyorise2Img from "../../assets/images/solutions/vyorise/vyorise_1.png";
+import vyorise3Img from "../../assets/images/solutions/vyorise/vyorise_2.png";
+import {
+  FaLock,
+  FaUtensils,
+  FaCalendarAlt,
+  FaPrayingHands,
+  FaStar,
+  FaRupeeSign
+} from "react-icons/fa";
 
-const tabData = [
-  'Vyorise Software',
-];
+import { GiFootprint } from "react-icons/gi";
+
+const tabData = ["Vyorise Software"];
 
 const featureCards = [
-  { title: "Charan Sewa", subtitle: "A dedicated service management solution designed to organize and streamline Charan Sewa operations efficiently." },
-  { title: "Locker System", subtitle: "A secure digital locker management system for safe storage, tracking, and access control." },
-  { title: "Bhandara Management", subtitle: "An efficient platform to manage Bhandara operations, food distribution, and volunteer coordination seamlessly." },
-  { title: "Prashadam", subtitle: "A streamlined system for managing Prashadam preparation, inventory, and distribution efficiently." },
-  { title: "Donation", subtitle: "A secure and transparent system for managing donations, tracking contributions, and maintaining donor records." },
-  { title: "Event", subtitle: "A centralized platform for planning, organizing, and managing events efficiently from start to finish." },
-  { title: "Special Sewa", subtitle: "A dedicated platform for managing special seva bookings, schedules, and devotee participation seamlessly." },
+  {
+    title: "Charan Sewa",
+    subtitle:
+      "A dedicated service management solution designed to organize and streamline Charan Sewa operations efficiently.",
+    icon: GiFootprint,
+  },
+  {
+    title: "Locker System",
+    subtitle:
+      "A secure digital locker management system for safe storage, tracking, and access control.",
+    icon: FaLock,
+  },
+  {
+    title: "Bhandara Management",
+    subtitle:
+      "An efficient platform to manage Bhandara operations, food distribution, and volunteer coordination seamlessly.",
+    icon: FaUtensils,
+  },
+  {
+    title: "Prashadam",
+    subtitle:
+      "A streamlined system for managing Prashadam preparation, inventory, and distribution efficiently.",
+    icon: FaPrayingHands,
+  },
+  {
+    title: "Donation",
+    subtitle:
+      "A secure and transparent system for managing donations, tracking contributions, and maintaining donor records.",
+    icon: FaRupeeSign,
+  },
+  {
+    title: "Event",
+    subtitle:
+      "A centralized platform for planning, organizing, and managing events efficiently from start to finish.",
+    icon: FaCalendarAlt,
+  },
+  {
+    title: "Special Sewa",
+    subtitle:
+      "A dedicated platform for managing special seva bookings, schedules, and devotee participation seamlessly.",
+    icon: FaStar,
+  },
 ];
 
 export default function VyoriseDetail() {
@@ -43,26 +86,37 @@ export default function VyoriseDetail() {
         <div className="bg-white p-5 sm:p-7 lg:p-8 rounded-md">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10 items-start">
             <div>
-              <h2 className="text-3xl font-semibold text-[#1f2937] mb-4">About Us</h2>
+              <h2 className="text-3xl font-semibold text-[#1f2937] mb-4">
+                About Us
+              </h2>
               <div className="flex flex-wrap gap-2 mb-4">
                 {tabData.map((tab, idx) => (
                   <span
                     key={tab}
-                    className={`text-[11px] px-4 py-1.5 rounded-full ${idx === 0 ? 'bg-[#da251d] text-white' : 'bg-[#f1f5f9] text-[#374151]'
-                      }`}
+                    className={`text-[11px] px-4 py-1.5 rounded-full ${
+                      idx === 0
+                        ? "bg-[#da251d] text-white"
+                        : "bg-[#f1f5f9] text-[#374151]"
+                    }`}
                   >
                     {tab}
                   </span>
                 ))}
               </div>
               <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
-                Vyorise software streamlines the operations through automation, including tasks like creation, tracking, and management.
+                Vyorise software streamlines the operations through automation,
+                including tasks like creation, tracking, and management.
               </p>
               <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
-                This eradicates the necessity for manual input of data, minimizing the chances of mistakes and conserving precious time for businesses and their customers.
+                This eradicates the necessity for manual input of data,
+                minimizing the chances of mistakes and conserving precious time
+                for businesses and their customers.
               </p>
               <p className="text-[#4b5563] text-[14px] leading-7">
-                Our comprehensive Software efficiently handles all aspects of your business. With our user-friendly software, you will have access to a wide range of tools that will streamline your business operations effortlessly.
+                Our comprehensive Software efficiently handles all aspects of
+                your business. With our user-friendly software, you will have
+                access to a wide range of tools that will streamline your
+                business operations effortlessly.
               </p>
             </div>
             <img
@@ -83,22 +137,56 @@ export default function VyoriseDetail() {
                 The Purpose Of Vyorise Systems
               </h3>
               <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
-                By automating tasks such as tracking and reporting, Vyorise software makes the process more efficient and less prone to errors, ultimately saving time for both businesses and their clients.
+                By automating tasks such as tracking and reporting, Vyorise
+                software makes the process more efficient and less prone to
+                errors, ultimately saving time for both businesses and their
+                clients.
               </p>
               <h4 className="text-xl font-semibold text-[#1f2937] mb-3 mt-6">
                 Simplify Events. Elevate Experiences.
               </h4>
               <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
-                Vyorise makes event management seamless, smart, and stress-free through our comprehensive suite of features:
+                Vyorise makes event management seamless, smart, and stress-free
+                through our comprehensive suite of features:
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start gap-3 text-[#4b5563] text-[14px] leading-6">
-                  <svg className="w-5 h-5 text-[#da251d] mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                  <span><strong>Create & Manage Events:</strong> Easily create events and manage every detail from a unified dashboard.</span>
+                  <svg
+                    className="w-5 h-5 text-[#da251d] mt-0.5 shrink-0"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span>
+                    <strong>Create & Manage Events:</strong> Easily create
+                    events and manage every detail from a unified dashboard.
+                  </span>
                 </li>
                 <li className="flex items-start gap-3 text-[#4b5563] text-[14px] leading-6">
-                  <svg className="w-5 h-5 text-[#da251d] mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                  <span><strong>Multiple Event Types:</strong> Comprehensive support for organizing both paid and unpaid events.</span>
+                  <svg
+                    className="w-5 h-5 text-[#da251d] mt-0.5 shrink-0"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <span>
+                    <strong>Multiple Event Types:</strong> Comprehensive support
+                    for organizing both paid and unpaid events.
+                  </span>
                 </li>
               </ul>
             </div>
@@ -114,18 +202,30 @@ export default function VyoriseDetail() {
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {featureCards.map((item, index) => (
-              <article
-                key={index}
-                className="site-card bg-[#f8f8f8] rounded-[10px] border border-gray-200 px-4 py-3 flex items-center gap-3 cursor-pointer"
-              >
-                <div className="w-10 h-10 rounded-full bg-[#f2e7e7] shrink-0" aria-hidden />
-                <div>
-                  <h3 className="text-[#da251d] text-sm font-bold">{item.title}</h3>
-                  <p className="text-[#4b5563] text-[11px] mt-0.5">{item.subtitle}</p>
-                </div>
-              </article>
-            ))}
+            {featureCards.map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <article
+                  key={index}
+                  className="site-card bg-[#f8f8f8] rounded-[10px] border border-gray-200 px-4 py-3 flex items-center gap-3 cursor-pointer"
+                >
+                  <div
+                    className="w-10 h-10 rounded-full bg-[#f2e7e7] shrink-0 flex justify-center items-center"
+                    aria-hidden
+                  >
+                    <Icon className="text-red-600 text-xl" />
+                  </div>
+                  <div>
+                    <h3 className="text-[#da251d] text-sm font-bold">
+                      {item.title}
+                    </h3>
+                    <p className="text-[#4b5563] text-[11px] mt-0.5">
+                      {item.subtitle}
+                    </p>
+                  </div>
+                </article>
+              );
+            })}
           </div>
         </div>
       </section>

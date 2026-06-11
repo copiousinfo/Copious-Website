@@ -2,6 +2,17 @@ import React from "react";
 import aboutHero from "../../assets/images/solutions/event/event header.jpeg";
 import eventmgmImg from "../../assets/images/solutions/event/eventohub_post2.png";
 import eventmgmOriginalImg from "../../assets/images/solutions/event/eventohub_3.png";
+import { MdOutlineEvent, MdOutlineSavings } from "react-icons/md";
+import { FaUsers } from "react-icons/fa";
+import { BsQrCodeScan } from "react-icons/bs";
+import { LuDatabase } from "react-icons/lu";
+import {
+  HiOutlineHandThumbUp,
+  HiOutlineCheckBadge,
+  HiOutlineShieldCheck,
+  HiOutlineChartBar,
+} from "react-icons/hi2";
+import { TbTrendingUp } from "react-icons/tb";
 
 const tabData = ["Event Management Software"];
 
@@ -10,50 +21,60 @@ const featureCards = [
     title: "Event Creation",
     subtitle:
       "Effortlessly create, edit, and manage events with customizable details.",
+    icon: MdOutlineEvent,
   },
   {
     title: "User Management",
     subtitle:
       "Easily create and manage user profiles, assign roles, and control access.",
+    icon: FaUsers,
   },
   {
     title: "QR Code Scanning",
     subtitle:
       "Efficiently track attendee attendance with quick and accurate QR code scanning.",
+    icon: BsQrCodeScan,
   },
   {
     title: "Data Storage",
     subtitle:
       "Securely store all event data in a centralized database and generate insightful reports.",
+    icon: LuDatabase,
   },
   {
     title: "User-Friendly",
     subtitle:
       "Intuitive and easy-to-use interface for both administrators and event attendees.",
+    icon: HiOutlineHandThumbUp,
   },
   {
     title: "Increased Efficiency",
     subtitle: "Streamline event planning, execution, and post-event analysis.",
+    icon: TbTrendingUp,
   },
   {
     title: "Improved Accuracy",
     subtitle:
       "Eliminate manual data entry errors and ensure accurate attendance tracking.",
+    icon: HiOutlineCheckBadge,
   },
   {
     title: "Enhanced Security",
     subtitle:
       "Securely store all event data and protect sensitive information.",
+    icon: HiOutlineShieldCheck,
   },
   {
     title: "Better Insights",
     subtitle:
       "Gain valuable insights into event performance with comprehensive reports.",
+    icon: HiOutlineChartBar,
   },
   {
     title: "Cost-Effectiveness",
     subtitle:
       "Reduce administrative overhead and optimize resource allocation.",
+    icon: MdOutlineSavings,
   },
 ];
 
@@ -62,21 +83,11 @@ export default function EventManagementDetail() {
     <div className="w-full pt-[92px] bg-[#efefef]">
       <section className="max-w-[1440px] mx-auto">
         <div
-          className="relative h-[260px] sm:h-[320px] lg:h-[520px] bg-cover bg-center"
+          className="relative h-[260px] sm:h-[320px] lg:h-[600px] bg-cover bg-center"
           style={{ backgroundImage: `url(${aboutHero})` }}
         >
           <div className="absolute inset-0 bg-black/40" />
-          <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
-            {/* <span className="bg-[#da251d] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
-              About Us
-            </span>
-            <h1 className="text-white text-3xl sm:text-5xl lg:text-[64px] font-semibold leading-[1.08] mb-0 max-w-[1320px]">
-              Smart Solutions For Modern Event Management
-            </h1>
-            <p className="text-gray-100 text-xs sm:text-sm max-w-3xl mt-5 sm:mt-6">
-              Simplify Your Events, Boost Efficiency, And Serve Attendees Faster - All From Your Mobile.
-            </p> */}
-          </div>
+          <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4"></div>
         </div>
       </section>
 
@@ -146,7 +157,7 @@ export default function EventManagementDetail() {
             <img
               src={eventmgmImg}
               alt="Solution management"
-              className="w-full h-full rounded-md object-cover object-top shadow-sm"
+              className="w-full h-auto rounded-md object-cover object-top shadow-sm"
             />
           </div>
 
@@ -215,15 +226,20 @@ export default function EventManagementDetail() {
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {featureCards.map((item, index) => (
-              <article
+            {featureCards.map((item, index) => {
+              const Icon = item.icon
+              return(
+                 <article
                 key={index}
                 className="site-card bg-[#f8f8f8] rounded-[10px] border border-gray-200 px-4 py-3 flex items-center gap-3 cursor-pointer"
               >
                 <div
-                  className="w-10 h-10 rounded-full bg-[#f2e7e7] shrink-0"
+                  className="w-10 h-10 rounded-full bg-[#f2e7e7] shrink-0 flex justify-center items-center"
                   aria-hidden
-                />
+                >
+                    <Icon className="text-red-600 text-xl" />
+                  
+                </div>
                 <div>
                   <h3 className="text-[#da251d] text-sm font-bold">
                     {item.title}
@@ -233,7 +249,8 @@ export default function EventManagementDetail() {
                   </p>
                 </div>
               </article>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>

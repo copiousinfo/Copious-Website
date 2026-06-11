@@ -1,19 +1,47 @@
-import React from 'react';
-import acurestroImg from '../../assets/images/solutions/acurestro/acurestro.jpg';
-import acurestro2Img from '../../assets/images/solutions/acurestro/acurestro2.jpg';
-import acurestro1Img from '../../assets/images/solutions/acurestro/Acurestro1.jpg';
+import React from "react";
+import acurestroImg from "../../assets/images/solutions/acurestro/acurestro.jpg";
+import acurestro2Img from "../../assets/images/solutions/acurestro/acurestro2.jpg";
+import acurestro1Img from "../../assets/images/solutions/acurestro/Acurestro1.jpg";
+import { FaUsers } from "react-icons/fa";
+import { MdSupportAgent } from "react-icons/md";
 
-const tabData = [
-  'Acurestro Software',   
-];
+import { TbTruckDelivery, TbArrowsTransferUpDown } from "react-icons/tb";
+import { HiOutlineCreditCard, HiOutlineMagnifyingGlass } from "react-icons/hi2";
+
+const tabData = ["Acurestro Software"];
 
 const featureCards = [
-  { title: "Customer Management", subtitle: "Manage customers easily and effectively." },
-  { title: "Customer Support", subtitle: "Sync customer data with CRM systems" },
-  { title: "Payment Integration", subtitle: "Self Managed MOP like Cash, UPI etc" },
-  { title: "Import & Export", subtitle: "You can easly data import and export" },
-  { title: "Product Transfer", subtitle: "Fast and secure product transfer with reliable tracking and management" },
-  { title: "Searching", subtitle: "Records find easly and fast" },
+  {
+    title: "Customer Management",
+    subtitle: "Manage customers easily and effectively.",
+    icon: FaUsers,
+  },
+  {
+    title: "Customer Support",
+    subtitle: "Sync customer data with CRM systems",
+    icon: MdSupportAgent,
+  },
+  {
+    title: "Payment Integration",
+    subtitle: "Self Managed MOP like Cash, UPI etc",
+    icon: HiOutlineCreditCard,
+  },
+  {
+    title: "Import & Export",
+    subtitle: "You can easly data import and export",
+    icon: TbArrowsTransferUpDown,
+  },
+  {
+    title: "Product Transfer",
+    subtitle:
+      "Fast and secure product transfer with reliable tracking and management",
+    icon: TbTruckDelivery,
+  },
+  {
+    title: "Searching",
+    subtitle: "Records find easly and fast",
+    icon: HiOutlineMagnifyingGlass,
+  },
 ];
 
 export default function AcurestroDetail() {
@@ -33,7 +61,8 @@ export default function AcurestroDetail() {
             Smart Solutions For Modern Acurestro Management
           </h1>
           <p className="text-gray-200 text-sm sm:text-base leading-relaxed max-w-[800px]">
-            Simplify Your Business, Boost Efficiency, And Serve Customers Faster - All From Your Mobile.
+            Simplify Your Business, Boost Efficiency, And Serve Customers Faster
+            - All From Your Mobile.
           </p>
         </div>
       </section>
@@ -42,26 +71,36 @@ export default function AcurestroDetail() {
         <div className="bg-white p-5 sm:p-7 lg:p-8 rounded-md">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10 items-start">
             <div>
-              <h2 className="text-3xl font-semibold text-[#1f2937] mb-4">About Us</h2>
+              <h2 className="text-3xl font-semibold text-[#1f2937] mb-4">
+                About Us
+              </h2>
               <div className="flex flex-wrap gap-2 mb-4">
                 {tabData.map((tab, idx) => (
                   <span
                     key={tab}
-                    className={`text-[11px] px-4 py-1.5 rounded-full ${idx === 0 ? 'bg-[#da251d] text-white' : 'bg-[#f1f5f9] text-[#374151]'
-                      }`}
+                    className={`text-[11px] px-4 py-1.5 rounded-full ${
+                      idx === 0
+                        ? "bg-[#da251d] text-white"
+                        : "bg-[#f1f5f9] text-[#374151]"
+                    }`}
                   >
                     {tab}
                   </span>
                 ))}
               </div>
               <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
-                Acurestro software streamlines the operations through automation, including tasks like creation, tracking, and management.
+                Acurestro software streamlines the operations through
+                automation, including tasks like creation, tracking, and
+                management.
               </p>
               <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
-                This eradicates the necessity for manual input of data, minimizing the chances of mistakes and conserving precious time for businesses and their customers.
+                This eradicates the necessity for manual input of data,
+                minimizing the chances of mistakes and conserving precious time
+                for businesses and their customers.
               </p>
               <p className="text-[#4b5563] text-[14px] leading-7">
-                Our comprehensive Software efficiently handles all aspects of your business.
+                Our comprehensive Software efficiently handles all aspects of
+                your business.
               </p>
             </div>
             <img
@@ -82,13 +121,17 @@ export default function AcurestroDetail() {
                 The Purpose Of Acurestro Systems
               </h3>
               <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
-                By automating tasks such as tracking and reporting, Acurestro software makes the process more efficient and less prone to errors, ultimately saving time for both businesses and their clients.
+                By automating tasks such as tracking and reporting, Acurestro
+                software makes the process more efficient and less prone to
+                errors, ultimately saving time for both businesses and their
+                clients.
               </p>
               <h4 className="text-xl font-semibold text-[#1f2937] mb-3 mt-6">
                 Intuitive Point of Sale & Self-Checkout
               </h4>
               <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
-                Acurestro delivers a modern, touch-friendly interface designed to accelerate transactions and improve the customer experience:
+                Acurestro delivers a modern, touch-friendly interface designed
+                to accelerate transactions and improve the customer experience:
               </p>
             </div>
           </div>
@@ -103,18 +146,30 @@ export default function AcurestroDetail() {
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {featureCards.map((item, index) => (
-              <article
-                key={index}
-                className="site-card bg-[#f8f8f8] rounded-[10px] border border-gray-200 px-4 py-3 flex items-center gap-3 cursor-pointer"
-              >
-                <div className="w-10 h-10 rounded-full bg-[#f2e7e7] shrink-0" aria-hidden />
-                <div>
-                  <h3 className="text-[#da251d] text-sm font-bold">{item.title}</h3>
-                  <p className="text-[#4b5563] text-[11px] mt-0.5">{item.subtitle}</p>
-                </div>
-              </article>
-            ))}
+            {featureCards.map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <article
+                  key={index}
+                  className="site-card bg-[#f8f8f8] rounded-[10px] border border-gray-200 px-4 py-3 flex items-center gap-3 cursor-pointer"
+                >
+                  <div
+                    className="w-10 h-10 rounded-full bg-[#f2e7e7] shrink-0 flex justify-center items-center"
+                    aria-hidden
+                  >
+                    <Icon className="text-red-600 text-xl" />
+                  </div>
+                  <div>
+                    <h3 className="text-[#da251d] text-sm font-bold">
+                      {item.title}
+                    </h3>
+                    <p className="text-[#4b5563] text-[11px] mt-0.5">
+                      {item.subtitle}
+                    </p>
+                  </div>
+                </article>
+              );
+            })}
           </div>
         </div>
       </section>

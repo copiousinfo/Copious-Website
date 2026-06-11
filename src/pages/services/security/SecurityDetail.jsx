@@ -1,7 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import heroBg from '../../../assets/images/services/security/endpoint.jpg';
-import endpoint1Img from '../../../assets/images/services/security/endpoint1.jpg';
+import heroBg from '../../../assets/images/services/security/end point header.png';
+import endpoint1Img from '../../../assets/images/services/security/end point_1.png';
+import endPoint2Img from '../../../assets/images/services/security/end point_2.png';
+import endPoint3Img from '../../../assets/images/services/security/end point_3.png';
 import { FiCheckCircle } from 'react-icons/fi';
 
 export default function SecurityDetail() {
@@ -13,30 +15,11 @@ export default function SecurityDetail() {
       {/* ── Hero Banner ─────────────────────────────────────────── */}
       <section className="w-full">
         <div
-          className="relative w-full min-h-[380px] sm:min-h-[440px] lg:min-h-[480px] bg-cover bg-center flex flex-col justify-center py-14 sm:py-16"
+          className="relative w-full min-h-[380px] sm:min-h-[440px] lg:min-h-[490px] bg-cover bg-center flex flex-col justify-center py-14 sm:py-16"
           style={{ backgroundImage: `url(${heroBg})` }}
         >
-          <div className="absolute inset-0 bg-black/60" />
-          <div className="relative z-10 w-full flex flex-col items-center justify-center text-center px-4 sm:px-6">
-            <span className="bg-[#da251d] text-white text-[11px] sm:text-xs font-semibold px-4 sm:px-5 py-1.5 rounded-full mb-4 sm:mb-5 inline-block tracking-wide">
-              Security
-            </span>
-            <h1 className="text-white text-[28px] sm:text-4xl lg:text-[52px] font-bold leading-tight mb-3 sm:mb-4 max-w-3xl mx-auto px-2">
-              Endpoint Security
-            </h1>
-            <p className="text-gray-200 text-[13px] sm:text-[14px] max-w-2xl mx-auto leading-relaxed mb-3 px-2">
-              Endpoint Protection is a security practice employed by cybersecurity experts to safeguard a wide array of devices, including laptops, mobile phones, printers, and servers.
-            </p>
-            <p className="text-gray-300 text-[12px] sm:text-[13px] max-w-xl mx-auto leading-relaxed mb-6 sm:mb-8 px-2">
-              Its primary objective is to identify, neutralize attacks, and eliminate risks to reinforce ongoing cyber threats, ensuring the security and integrity of these devices. Endpoint security involves safeguarding all devices linked to a network to prevent them from being exploited as entry points by cybercriminals.
-            </p>
-            <button 
-              onClick={() => navigate('/contact')}
-              className="bg-[#da251d] text-white px-8 sm:px-10 py-2.5 sm:py-3 rounded-lg font-bold text-[14px] sm:text-[15px] hover:bg-[#c02019] transition-all shadow-md active:scale-95"
-            >
-              Free Live Demo
-            </button>
-          </div>
+          <div className="absolute inset-0 bg-red-400/30" />
+          
         </div>
       </section>
 

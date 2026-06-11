@@ -11,7 +11,7 @@ import logoImg from "../../assets/images/shared/copious.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#4a0d0a] text-white pt-20 pb-10">
+    <footer className="bg-[#380a08] text-white pt-20 pb-10">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 mb-16 items-start">
           {/* Column 1: Google Map */}

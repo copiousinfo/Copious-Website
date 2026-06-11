@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import contactHero from "../assets/images/contact/contact-hero.jpg";
+import contactHero from "../assets/images/contact/contact-hero.jpeg";
 import { Link } from "react-router-dom";
 
 // API endpoint
@@ -154,46 +154,31 @@ export default function Contact() {
   return (
     <div className="w-full pt-[92px] bg-[#202329]">
       {/* ── Hero Banner ──────────────────────────────────────── */}
-      <section className="max-w-[1440px] mx-auto">
-        <div
-          className="relative h-[260px] sm:h-[320px] lg:h-[370px] bg-cover bg-center"
-          style={{ backgroundImage: `url(${contactHero})` }}
-        >
-          <div className="absolute inset-0 bg-red-400/30" />
-          <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
-            <span className="bg-[#da251d] text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
-              Contact Us
-            </span>
-            <h2 className="text-white text-4xl sm:text-5xl lg:text-[48px] font-semibold mb-3 leading-tight">
-              Send a Hi To Our Team
-            </h2>
-            <p className="text-gray-100 text-xs sm:text-sm max-w-3xl">
-              Simplify Your Billing, Boost Efficiency, And Serve Customers
-              Faster - All From Your Mobile.
-            </p>
-          </div>
-        </div>
+      <section className="relative max-w-[1440px] mx-auto">
+        <img
+          src={contactHero}
+          className="md:h-[350px] w-full object-cover "
+        />
+        <div className="absolute inset-0 bg-red-400/20" />
       </section>
 
       {/* ── Contact Form ─────────────────────────────────────── */}
       <section className="w-full bg-[#efefef]">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-[72px]">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-10">
           <div className="max-w-[640px] mx-auto">
             {/* Toast notification */}
             {toast && (
               <div
-                className={`mb-6 px-4 py-3 rounded-md text-sm font-medium text-center transition-all ${toast.type === "success"
-                  ? "bg-green-100 text-green-700 border border-green-300"
-                  : "bg-red-100 text-red-700 border border-red-300"
-                  }`}
+                className={`mb-6 px-4 py-3 rounded-md text-sm font-medium text-center transition-all ${
+                  toast.type === "success"
+                    ? "bg-green-100 text-green-700 border border-green-300"
+                    : "bg-red-100 text-red-700 border border-red-300"
+                }`}
               >
                 {toast.text}
               </div>
             )}
 
-            <p className="text-[#da251d] text-center text-sm font-medium mb-2">
-              Contact us
-            </p>
             <h3 className="text-[#1f2937] text-4xl font-semibold text-center mb-3">
               Get in touch
             </h3>

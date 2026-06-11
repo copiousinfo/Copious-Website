@@ -1,29 +1,17 @@
-import React from 'react';
-import Button from '../../ui/Button';
-import heroBg from '../../../assets/images/home/hero-bg.jpg';
+import React from "react";
+import Button from "../../ui/Button";
+import heroBg from "../../../assets/images/home/hero-bg.jpg";
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-[500px] flex items-center justify-center pt-32 pb-20 md:py-20">
+    <section className="relative w-full">
       {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}
-      >
-        <div className="absolute inset-0 bg-red-500/40"></div>
-      </div>
- 
-      <div className="relative z-10 max-w-[1440px] mx-auto px-4 text-center flex flex-col items-center">
-        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-[50px] font-bold text-white mb-6 leading-[1.25] md:leading-[1.1] tracking-tight max-w-[320px] sm:max-w-none">
-          Unlock Seamless Experiences <br className="hidden sm:block" />
-          With Our App For Your Booking, <br className="hidden sm:block" />
-          Ticketing, And Parking Needs
-        </h1>
-        
-        <p className="text-gray-200 text-sm md:text-[16px] max-w-3xl mx-auto mb-0 font-medium">
-          Simplify Your Billing, Boost Efficiency, And Serve Customers Faster — All From Your Mobile.
-        </p>
-      </div>
+      <img
+        src={heroBg}
+        className="w-full h-[400px] object-cover"
+        alt="home-hero-image"
+      />
+      <div className="absolute inset-0 bg-red-400/20"></div>
     </section>
   );
 }
