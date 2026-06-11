@@ -10,6 +10,12 @@ const advantages = [
   "Secure Access",
   "Intelligent Control"
 ];
+const detailedAdvantages = [
+  "Comprehensive Defense",
+  "Secure Access",
+  "Intelligent Control",
+  "Block Unauthorized Access",
+]
 
 export default function EmailSecurity() {
   const navigate = useNavigate();
@@ -30,7 +36,7 @@ export default function EmailSecurity() {
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16">
           <div className="flex flex-col-reverse md:flex-row gap-5 md:gap-1">
             {/* Left: Text */}
-            <div>
+            <div className="w-full md:w-1/2">
               <h2 className="text-[#1f2937] text-[24px] sm:text-[28px] lg:text-[32px] font-bold mb-5 leading-snug">
                 Email Security for Safe Office Communication
               </h2>
@@ -55,7 +61,7 @@ export default function EmailSecurity() {
               </button>
             </div>
             {/* Right: Image */}
-            <div className="w-full">
+            <div className="w-full md:w-1/2">
               <img
                 src={email1Img}
                 alt="Email Security for Safe Office Communication"
@@ -127,7 +133,7 @@ export default function EmailSecurity() {
 
           {/* Advantages Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 max-w-5xl mx-auto">
-            {advantages.map((label, i) => (
+            {detailedAdvantages.map((label, i) => (
               <button
                 key={i}
                 className="site-card border border-[#da251d] text-[#da251d] font-semibold text-[13px] sm:text-[14px] py-3.5 sm:py-4 px-4 rounded-lg hover:bg-[#da251d] hover:text-white transition-colors duration-300 cursor-pointer"

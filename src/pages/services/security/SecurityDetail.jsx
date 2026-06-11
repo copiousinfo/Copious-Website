@@ -26,7 +26,7 @@ export default function SecurityDetail() {
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16">
           <div className="flex flex-col-reverse md:flex-row gap-5">
             {/* Left: Text */}
-            <div>
+            <div className="w-full md:w-1/2">
               <h2 className="text-[#1f2937] text-[24px] sm:text-[28px] lg:text-[32px] font-bold mb-5 leading-snug">
                 What Is Endpoint Security?
               </h2>
@@ -34,9 +34,7 @@ export default function SecurityDetail() {
                 <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8]">
                   Endpoint security is a cybersecurity strategy that focuses on
                   protecting individual devices—known as endpoints—that connect
-                  to a corporate network. These devices, including desktops,
-                  laptops, servers, and mobile devices, often serve as the
-                  primary entry points for cyberattacks.
+                  to a corporate network.
                 </p>
                 <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8]">
                   By deploying security software directly on these devices,
@@ -54,7 +52,7 @@ export default function SecurityDetail() {
               </div>
             </div>
             {/* Right: Image */}
-            <div className="w-full">
+            <div className="w-full md:w-1/2">
               <img
                 src={endPoint3Img}
                 alt="What Is Endpoint Security"
@@ -67,11 +65,11 @@ export default function SecurityDetail() {
       </section>
 
       {/* ── Comprehensive Endpoint Security For SMBs ──────────── */}
-      <section className="w-full bg-[#ebecec] py-12 sm:py-16 lg:py-20">
+      <section className="w-full bg-[#ebecec] py-12 ">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16">
           <div className="flex flex-col-reverse md:flex-row gap-5">
             {/* Left: Image */}
-            <div className="w-full order-2 lg:order-1">
+            <div className="w-full md:w-1/2 order-2 lg:order-1">
               <img
                 src={endpoint1Img}
                 alt="Endpoint Security For SMBs"
@@ -79,7 +77,7 @@ export default function SecurityDetail() {
               />
             </div>
             {/* Right: Text */}
-            <div className="order-1 lg:order-2">
+            <div className="w-full md:w-1/2">
               <h2 className="text-[#1f2937] text-[22px] sm:text-[26px] lg:text-[30px] font-bold mb-5 leading-snug">
                 Comprehensive Endpoint Security For SMBs
               </h2>
@@ -93,9 +91,7 @@ export default function SecurityDetail() {
                 The utilization of endpoint security enforces significant
                 advantages to businesses. Endpoint security enforces encompasses
                 features such as application control, data loss protection
-                (DLP), and advanced antivirus protection. Now, let us delve into
-                the interconnected benefits of implementing endpoint security,
-                which serves as an excellent means to safeguard your business.
+                (DLP), and advanced antivirus protection. .
               </p>
               <button
                 onClick={() => navigate("/contact")}
@@ -109,11 +105,11 @@ export default function SecurityDetail() {
       </section>
 
       {/* ── Improve Security Measures ──────────────────────────── */}
-      <section className="w-full bg-white py-12 sm:py-16 lg:py-20">
+      <section className="w-full bg-white py-12 ">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16">
           <div className="flex flex-col-reverse md:flex-row gap-5">
             {/* Left: Text */}
-            <div>
+            <div className="w-full md:w-1/2">
               <h2 className="text-[#1f2937] text-[22px] sm:text-[26px] lg:text-[30px] font-bold mb-5 leading-snug">
                 Improve Security Measures For Your Company
               </h2>
@@ -127,9 +123,7 @@ export default function SecurityDetail() {
                 The utilization of endpoint security enforces significant
                 advantages to businesses. Endpoint security enforces encompasses
                 features such as application control, data loss protection
-                (DLP), and advanced antivirus protection. Now, let us delve into
-                the interconnected benefits of implementing endpoint security,
-                which serves as an excellent means to safeguard your business.
+                (DLP), and advanced antivirus protection.
               </p>
               <button
                 onClick={() => navigate("/contact")}
@@ -139,7 +133,7 @@ export default function SecurityDetail() {
               </button>
             </div>
             {/* Right: Image */}
-            <div className="w-full">
+            <div className="w-full md:w-1/2">
               <img
                 src={endPoint2Img}
                 alt="Improve Security Measures"

@@ -81,14 +81,13 @@ const featureCards = [
 export default function EventManagementDetail() {
   return (
     <div className="w-full pt-[92px] bg-[#efefef]">
-      <section className="max-w-[1440px] mx-auto">
-        <div
-          className="relative h-[260px] sm:h-[320px] lg:h-[600px] bg-cover bg-center"
-          style={{ backgroundImage: `url(${aboutHero})` }}
-        >
-          <div className="absolute inset-0 bg-black/40" />
-          <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4"></div>
-        </div>
+      <section className="relative w-full mx-auto">
+        <img
+          src={aboutHero}
+          alt="eventohub header image"
+          className="w-full md:h-[420px] object-fit"
+        />
+        <div className="absolute inset-0 bg-red-400/20" />
       </section>
 
       <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-8 sm:py-10 lg:py-12">
@@ -227,29 +226,28 @@ export default function EventManagementDetail() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {featureCards.map((item, index) => {
-              const Icon = item.icon
-              return(
-                 <article
-                key={index}
-                className="site-card bg-[#f8f8f8] rounded-[10px] border border-gray-200 px-4 py-3 flex items-center gap-3 cursor-pointer"
-              >
-                <div
-                  className="w-10 h-10 rounded-full bg-[#f2e7e7] shrink-0 flex justify-center items-center"
-                  aria-hidden
+              const Icon = item.icon;
+              return (
+                <article
+                  key={index}
+                  className="site-card bg-[#f8f8f8] rounded-[10px] border border-gray-200 px-4 py-3 flex items-center gap-3 cursor-pointer"
                 >
+                  <div
+                    className="w-10 h-10 rounded-full bg-[#f2e7e7] shrink-0 flex justify-center items-center"
+                    aria-hidden
+                  >
                     <Icon className="text-red-600 text-xl" />
-                  
-                </div>
-                <div>
-                  <h3 className="text-[#da251d] text-sm font-bold">
-                    {item.title}
-                  </h3>
-                  <p className="text-[#4b5563] text-[11px] mt-0.5">
-                    {item.subtitle}
-                  </p>
-                </div>
-              </article>
-              )
+                  </div>
+                  <div>
+                    <h3 className="text-[#da251d] text-sm font-bold">
+                      {item.title}
+                    </h3>
+                    <p className="text-[#4b5563] text-[11px] mt-0.5">
+                      {item.subtitle}
+                    </p>
+                  </div>
+                </article>
+              );
             })}
           </div>
         </div>

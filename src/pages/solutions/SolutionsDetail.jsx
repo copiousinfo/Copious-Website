@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import ticketImg from "../../assets/images/solutions/ticketing/ticketHero.jpeg";
-import ticketing2Img from "../../assets/images/solutions/ticketing/ticketing2.jpg";
-import ticketing3Img from "../../assets/images/solutions/ticketing/ticketing3.jpg";
+import ticketing2Img from "../../assets/images/solutions/ticketing/playtrek_1.jpeg";
+import ticketing3Img from "../../assets/images/solutions/ticketing/playtrek_2.jpeg";
 import {
   HiOutlineClipboardDocumentList,
   HiOutlineFolderOpen,
@@ -71,23 +71,23 @@ export default function SolutionsDetail() {
   const currentTitle = titleMap[slug] || "Solutions";
 
   return (
-    <div className="w-full pt-[72px] sm:pt-[80px] lg:pt-[98px] bg-[#efefef]">
+    <div className="w-full pt-[72px]  bg-[#efefef]">
       {/* ── Hero Section ── */}
       <section className="relative w-full">
         <img
           src={ticketImg}
           alt={currentTitle}
-          className=" w-full h-[350px] object-fit"
+          className=" w-full h-[420px] object-fit"
         />
         <div className="absolute inset-0 bg-red-400/20" />
       </section>
 
       {/* ── About + Purpose Section ── */}
-      <section className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-10 py-6 sm:py-10 lg:py-12">
-        <div className="bg-white p-4 sm:p-6 lg:p-8 rounded-md">
+      <section className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-8 py-6 sm:py-10 lg:py-12">
+        <div className="bg-white p-2 sm:p-6 lg:p-6 rounded-md">
           {/* About Us row */}
-          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-5 lg:gap-10 items-start">
-            <div>
+          <div className="w-full flex flex-col-reverse md:flex-row  gap-5 lg:gap-10 items-start">
+            <div className="w-full md:w-1/2">
               <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#1f2937] mb-3 sm:mb-4">
                 About Us
               </h2>
@@ -120,18 +120,18 @@ export default function SolutionsDetail() {
             <img
               src={ticketing2Img}
               alt="Ticket Management"
-              className="w-full rounded-md object-contain bg-[#f8f9fa] h-[200px] sm:h-[260px] lg:h-[320px] mt-2 lg:mt-0"
+              className="w-full md:w-1/2 rounded-md object-fit bg-[#f8f9fa] h-[200px] sm:h-[260px] lg:h-[320px] mt-2 lg:mt-0"
             />
           </div>
 
           {/* Purpose of Online Booking row */}
-          <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5 lg:gap-10 mt-6 sm:mt-10 items-start">
+          <div className="flex flex-col md:flex-row gap-5  mt-6 sm:mt-10">
             <img
               src={ticketing3Img}
               alt="Online booking"
-              className="w-full rounded-md object-cover h-[200px] sm:h-[260px] lg:h-[320px]"
+              className="w-full md:w-1/2 rounded-md object-fit h-[200px] sm:h-[260px] lg:h-[320px]"
             />
-            <div>
+            <div className="w-full md:w-1/2">
               <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#1f2937] mb-3 sm:mb-4">
                 The Purpose Of Online Booking Systems
               </h3>
@@ -163,8 +163,7 @@ export default function SolutionsDetail() {
       <section className="max-w-[1440px] mx-auto px-3 sm:px-6 lg:px-10 pb-8 sm:pb-12 lg:pb-16">
         <div className="bg-white rounded-md p-4 sm:p-6 lg:p-8">
           <h2 className="text-center text-2xl sm:text-3xl lg:text-[48px] font-semibold text-[#1f2937] mb-6 sm:mb-10 lg:mb-12 leading-tight">
-            Ticket Booking Management{" "}
-            <span className="block sm:inline">Feature</span>
+            Ticket Booking Management Feature
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
