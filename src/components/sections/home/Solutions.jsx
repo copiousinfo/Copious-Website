@@ -1,24 +1,16 @@
 import React from 'react';
 import SectionHeading from '../../ui/SectionHeading';
 import ContentCard from '../../ui/ContentCard';
-import billingImg from '../../../assets/images/solutions/billing/billing-hero.jpg';
 import ticketingImg from '../../../assets/images/solutions/ticketing/ticketHero.jpeg';
-import parkingImg from '../../../assets/images/solutions/parking/parkingheader.jpg';
+import parkingImg from '../../../assets/images/solutions/parking/parkingheader.jpeg';
 import eventImg from '../../../assets/images/solutions/event/event header.jpeg';
 import acurestroImg from '../../../assets/images/solutions/acurestro/acurestro hero.jpeg';
 import vyoriseImg from '../../../assets/images/solutions/vyorise/vyorise header.jpeg';
 
 const solutionsData = [
-  // {
-  //   id: 1,
-  //   slug: 'billing',
-  //   title: 'Billing',
-  //   image: billingImg,
-  //   description:
-  //     'Simplify your billing processes with our advanced, automated billing software. Generate invoices, track payments, and manage financial records effortlessly to boost your business efficiency.',
-  // },
+  
   {
-    id: 2,
+    id: 1,
     slug: 'ticketing',
     title: 'Ticketing',
     image: ticketingImg,
@@ -26,7 +18,7 @@ const solutionsData = [
       'Our ticket management software helps businesses handle customer service requests efficiently. Track, categorize, and resolve incoming tickets to deliver effective and timely support.',
   },
   {
-    id: 3,
+    id: 2,
     slug: 'parking',
     title: 'Parking',
     image: parkingImg,
@@ -34,7 +26,7 @@ const solutionsData = [
       'Optimize your parking operations with smart management solutions. Ensure seamless entry and exit, track availability, and provide a hassle-free parking experience for your customers.',
   },
   {
-    id: 4,
+    id: 3,
     slug: 'event-management',
     title: 'Event Management',
     image: eventImg,
@@ -42,7 +34,7 @@ const solutionsData = [
       'Streamline your events from planning to execution with our comprehensive event management solution. Handle registrations, ticketing, attendee tracking, and real-time reporting all in one place.',
   },
   {
-    id: 5,
+    id: 4,
     slug: 'acurestro',
     title: 'Acurestro',
     image: acurestroImg,
@@ -50,7 +42,7 @@ const solutionsData = [
       'Acurestro is a powerful restaurant and retail POS solution designed to streamline order management, billing, inventory, and customer experience — all from a single unified platform.',
   },
   {
-    id: 6,
+    id: 5,
     slug: 'vyorise',
     title: 'Vyorise',
     image: vyoriseImg,

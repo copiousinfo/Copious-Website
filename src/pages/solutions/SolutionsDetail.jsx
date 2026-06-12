@@ -77,7 +77,7 @@ export default function SolutionsDetail() {
         <img
           src={ticketImg}
           alt={currentTitle}
-          className=" w-full md:h-[500px] object-fit"
+          className=" w-full md:h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-red-400/20" />
       </section>
@@ -120,7 +120,7 @@ export default function SolutionsDetail() {
             <img
               src={ticketing2Img}
               alt="Ticket Management"
-              className="w-full md:w-1/2 rounded-md object-fit bg-[#f8f9fa] h-[200px] sm:h-[260px] lg:h-[320px] mt-2 lg:mt-0"
+              className="w-full md:w-1/2 rounded-md object-contain bg-[#f8f9fa] h-[200px] sm:h-[260px] lg:h-[300px] mt-2 lg:mt-0"
             />
           </div>
 
@@ -129,7 +129,7 @@ export default function SolutionsDetail() {
             <img
               src={ticketing3Img}
               alt="Online booking"
-              className="w-full md:w-1/2 rounded-md object-fit h-[200px] sm:h-[260px] lg:h-[320px]"
+              className="w-full md:w-1/2 rounded-md object-cover h-[200px] sm:h-[260px] lg:h-[300px]"
             />
             <div className="w-full md:w-1/2">
               <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#1f2937] mb-3 sm:mb-4">

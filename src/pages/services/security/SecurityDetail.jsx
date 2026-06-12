@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import heroBg from "../../../assets/images/services/security/end point header.jpeg";
-import endpoint1Img from "../../../assets/images/services/security/end point_1.jpeg";
+import endPoint1Img from "../../../assets/images/services/security/end point_1.jpeg";
 import endPoint2Img from "../../../assets/images/services/security/end point_2.jpeg";
 import endPoint3Img from "../../../assets/images/services/security/end point_3.jpeg";
 import { FiCheckCircle } from "react-icons/fi";
@@ -15,7 +15,7 @@ export default function SecurityDetail() {
       <section className="relative w-full">
         <img
           src={heroBg}
-          className=" w-full md:h-[500px] object-cover"
+          className=" w-full md:h-[500px] object-contain"
           alt="endpoint-security-hero-image"
         />
         <div className="absolute inset-0 bg-red-400/20" />
@@ -54,7 +54,7 @@ export default function SecurityDetail() {
             {/* Right: Image */}
             <div className="w-full md:w-1/2">
               <img
-                src={endPoint3Img}
+                src={endPoint1Img}
                 alt="What Is Endpoint Security"
                 className="w-full h-[240px] sm:h-[290px] lg:h-[320px] object-fit
                  bg-[#f8f9fa] rounded-xl shadow-sm"
@@ -71,7 +71,7 @@ export default function SecurityDetail() {
             {/* Left: Image */}
             <div className="w-full md:w-1/2 order-2 lg:order-1">
               <img
-                src={endpoint1Img}
+                src={endPoint2Img}
                 alt="Endpoint Security For SMBs"
                 className="w-full h-[240px] sm:h-[290px] lg:h-[340px] object-fit bg-[#f8f9fa] rounded-xl shadow-sm"
               />
@@ -135,7 +135,7 @@ export default function SecurityDetail() {
             {/* Right: Image */}
             <div className="w-full md:w-1/2">
               <img
-                src={endPoint2Img}
+                src={endPoint3Img}
                 alt="Improve Security Measures"
                 className="w-full h-[240px] sm:h-[290px] lg:h-[340px] object-cover bg-[#f8f9fa] rounded-xl shadow-sm"
               />

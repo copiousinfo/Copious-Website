@@ -1,7 +1,7 @@
 import React from "react";
 import acurestroImg from "../../assets/images/solutions/acurestro/acurestro hero.jpeg";
 import acurestro2Img from "../../assets/images/solutions/acurestro/acurestro2.jpg";
-import acurestro1Img from "../../assets/images/solutions/acurestro/Acurestro1.jpg";
+import acurestro1Img from "../../assets/images/solutions/acurestro/acurestro1.jpeg";
 import { FaUsers } from "react-icons/fa";
 import { MdSupportAgent } from "react-icons/md";
 
@@ -102,11 +102,11 @@ export default function AcurestroDetail() {
             />
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 lg:gap-10">
+          <div className="flex flex-col md:flex-row gap-7 lg:gap-10 mb-12 sm:mb-16">
             <img
               src={acurestro1Img}
               alt="Online booking"
-              className="w-full rounded-md object-cover h-[240px] sm:h-[300px] lg:h-[320px]"
+              className="w-full rounded-md object-contain h-[240px] sm:h-[300px] lg:h-[320px]"
             />
             <div>
               <h3 className="text-3xl font-semibold text-[#1f2937] mb-4">

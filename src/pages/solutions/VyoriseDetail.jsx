@@ -65,7 +65,7 @@ export default function VyoriseDetail() {
     <div className="w-full pt-[92px] bg-[#efefef]">
       {/* ── Hero Section ── */}
       <section className="relative w-full">
-        <img src={vyoriseImg} className=" w-full md:h-[500px] object-fit" />
+        <img src={vyoriseImg} className=" w-full md:h-[500px] object-cover" />
         <div className="absolute inset-0 bg-red-400/20" />
       </section>
 

@@ -1,6 +1,6 @@
 import React from "react";
-import parkingImg from "../../assets/images/solutions/parking/parkingheader.jpg";
-import parking4Img from "../../assets/images/solutions/parking/ParkingHub_1.png";
+import parkingImg from "../../assets/images/solutions/parking/parkingheader.jpeg";
+import parking4Img from "../../assets/images/solutions/parking/ParkingHub_1.jpeg";
 import { FaRupeeSign } from "react-icons/fa";
 import { BsQrCodeScan } from "react-icons/bs";
 import { HiOutlineMagnifyingGlass, HiOutlineCreditCard } from "react-icons/hi2";
@@ -37,35 +37,21 @@ export default function ParkingDetail() {
       {/* ── Hero Section ── */}
       <section className="relative w-full">
         <img
-        src={parkingImg}
-        alt="parking header image"
-        className="w-full md:h-[400px] object-fit"
-      />
+          src={parkingImg}
+          alt="parking header image"
+          className="w-full md:h-[500px] object-fit"
+        />
         <div className="absolute inset-0 bg-red-400/20" />
       </section>
-        
 
-      <section className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-4 py-8 sm:py-10 lg:py-12">
+      <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-4 py-8 sm:py-10 lg:py-12">
         <div className="bg-white p-4 sm:p-5 lg:p-6 rounded-md">
           <div className="flex flex-col-reverse md:flex-row gap-5">
             <div className="">
               <h2 className="text-3xl font-semibold text-[#1f2937] mb-4">
                 About Us
               </h2>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {tabData.map((tab, idx) => (
-                  <span
-                    key={tab}
-                    className={`text-[11px] px-4 py-1.5 rounded-full ${
-                      idx === 0
-                        ? "bg-[#da251d] text-white"
-                        : "bg-[#f1f5f9] text-[#374151]"
-                    }`}
-                  >
-                    {tab}
-                  </span>
-                ))}
-              </div>
+
               <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
                 The Parking Management Software enables users to find, register,
                 and make payments for parking through their Smartphone in areas
@@ -75,13 +61,7 @@ export default function ParkingDetail() {
                 solution assists both individuals and businesses in handling
                 vehicle spot reservations and tickets efficiently.
               </p>
-              <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
-                Companies can effectively manage access to parking locations and
-                handle various fees with the assistance of parking management
-                software. The integration of parking management software with
-                video surveillance or image capture and recognition solutions
-                enhances its functionality.
-              </p>
+
               <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
                 Our advanced parking systems also come equipped with real-time
                 occupancy tracking, ensuring that drivers can easily locate
@@ -89,34 +69,11 @@ export default function ParkingDetail() {
                 reduces traffic congestion and carbon emissions within the
                 facility.
               </p>
-              <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
-                Furthermore, the automated reporting and analytics dashboard
-                provides operators with valuable insights into peak usage times,
-                revenue generation, and customer behavior. This data-driven
-                approach empowers management to optimize pricing strategies and
-                improve overall service efficiency.
-              </p>
-              <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
-                With robust security features including automated gate controls
-                and unauthorized access alerts, our solution guarantees a safe
-                and seamless parking experience. It effortlessly bridges the gap
-                between modern technology and everyday convenience, making smart
-                parking a reality for everyone.
-              </p>
+
               <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
                 A key advantage of our comprehensive parking management solution
                 is its ability to seamlessly integrate with third-party payment
-                gateways and mobile wallets. This ensures a frictionless
-                checkout process for users, reducing queues at exit gates and
-                significantly improving overall customer satisfaction. The
-                system also supports dynamic pricing models, allowing operators
-                to adjust rates based on demand, time of day, or special events.
-              </p>
-              <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
-                For commercial complexes and residential buildings, the software
-                offers a dedicated tenant portal. This feature allows
-                administrators to easily allocate parking spaces, manage monthly
-                passes, and monitor visitor parking in real-time.
+                gateways and mobile wallets.
               </p>
             </div>
             <div className="lg:col-span-7 rounded-md shadow-sm overflow-hidden bg-[#f8f9fa] self-stretch">

@@ -7,7 +7,6 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Faq from "./pages/Faq";
 import SolutionsDetail from "./pages/solutions/SolutionsDetail";
-import BillingDetail from "./pages/solutions/BillingDetail";
 import ParkingDetail from "./pages/solutions/ParkingDetail";
 import EventManagementDetail from "./pages/solutions/EventManagementDetail";
 import AcurestroDetail from "./pages/solutions/AcurestroDetail";
@@ -40,7 +39,6 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<Faq />} />
-          <Route path="/solutions/billing" element={<BillingDetail />} />
           <Route path="/solutions/parking" element={<ParkingDetail />} />
           <Route
             path="/solutions/event-management"

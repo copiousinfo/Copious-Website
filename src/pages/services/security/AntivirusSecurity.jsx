@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import heroBg from "../../../assets/images/services/security/antivirus.jpg";
+import heroBg from "../../../assets/images/services/security/antivirus.jpeg";
 import antivirus1Img from "../../../assets/images/services/security/antivirus1.jpg";
 import antivirus2Img from "../../../assets/images/services/security/antivirus2.jpeg";
 
@@ -34,7 +34,6 @@ export default function AntivirusSecurity() {
           src={heroBg}
           alt="antivirus security hero image"
           className=" w-full md:h-[500px] object-cover"
-          style={{ backgroundImage: `url(${heroBg})` }}
         />
         <div className="absolute inset-0 bg-red-400/20" />
       </section>

@@ -8,7 +8,7 @@ export default function Hero() {
       {/* Background Image with Overlay */}
       <img
         src={heroBg}
-        className="w-full h-full object-cover"
+        className="w-full h-[500px] object-cover"
         alt="home-hero-image"
       />
       <div className="absolute inset-0 bg-red-400/20"></div>
