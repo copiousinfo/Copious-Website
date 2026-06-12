@@ -11,7 +11,7 @@ export default function BackupDetail() {
       <section className="relative w-full">
         <img
         src={aboutHero}
-        className="w-full md:h-[500px] object-fit"
+        className="w-full md:h-[600px] object-fit"
         alt='backup service hero-section image'
       />
         <div className="absolute inset-0 bg-red-400/20" />

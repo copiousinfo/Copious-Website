@@ -151,7 +151,7 @@ export default function AWSCloudDetail() {
               <img
                 src={aws2Img}
                 alt="Cloud Categories"
-                className="w-full h-[280px] sm:h-[340px] lg:h-[380px] object-contain md:object-cover bg-[#f8f9fa] rounded-xl shadow-sm"
+                className="w-full h-[280px] sm:h-[340px] lg:h-[370px] object-contain md:object-cover bg-[#f8f9fa] rounded-xl shadow-sm"
               />
             </div>
             {/* Right: Category List */}

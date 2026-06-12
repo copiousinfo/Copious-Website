@@ -28,6 +28,9 @@ export default function Contact() {
   const [loading, setLoading] = useState(false);
   const [toast, setToast] = useState(null); // { type: 'success' | 'error', text: string }
 
+  const nameRegex = /^[A-Za-z\s]+$/;
+  const phoneRegex = /^\d{12}$/;
+
   // ── Helpers ───────────────────────────────────────────────────
   const showToast = (type, text) => {
     setToast({ type, text });
@@ -47,17 +50,39 @@ export default function Contact() {
   // ── Validation ────────────────────────────────────────────────
   const validate = () => {
     const newErrors = {};
-    if (!formData.firstName.trim())
+
+    const firstName = formData.firstName.trim();
+    const lastName = formData.lastName.trim();
+    const phone = formData.phone.trim();
+
+    if (!firstName) {
       newErrors.firstName = "First name is required.";
-    if (!formData.lastName.trim())
+    } else if (!nameRegex.test(firstName)) {
+      newErrors.firstName = "First name may only contain letters and spaces.";
+    }
+
+    if (!lastName) {
       newErrors.lastName = "Last name is required.";
+    } else if (!nameRegex.test(lastName)) {
+      newErrors.lastName = "Last name may only contain letters and spaces.";
+    }
+
     if (!formData.email.trim()) {
       newErrors.email = "Email is required.";
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newErrors.email = "Please enter a valid email.";
     }
-    if (!formData.phone.trim()) newErrors.phone = "Phone number is required.";
-    if (!formData.message.trim()) newErrors.message = "Message is required.";
+
+    if (!phone) {
+      newErrors.phone = "Phone number is required.";
+    } else if (!phoneRegex.test(phone)) {
+      newErrors.phone = "Phone number must be exactly 12 digits.";
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = "Message is required.";
+    }
+
     return newErrors;
   };
 
@@ -139,9 +164,24 @@ export default function Contact() {
       } else if (error.code === "ERR_NETWORK") {
         userMsg = "Network error. Please check your internet connection.";
       } else {
-        const serverMsg = error?.response?.data?.message;
-        if (serverMsg && serverMsg !== "validation Error!!")
+        const serverData = error?.response?.data;
+        const serverMsg =
+          typeof serverData === "string"
+            ? serverData
+            : typeof serverData?.message === "string"
+            ? serverData.message
+            : null;
+
+        if (serverMsg && serverMsg !== "validation Error!!") {
           userMsg = serverMsg;
+        } else if (serverData?.errors && typeof serverData.errors === "object") {
+          const fieldMessages = Object.values(serverData.errors)
+            .flat()
+            .filter(Boolean);
+          if (fieldMessages.length) {
+            userMsg = fieldMessages[0];
+          }
+        }
       }
 
       showToast("error", userMsg);
@@ -262,6 +302,7 @@ export default function Contact() {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="phone number"
+                  maxLength={12}
                   className="w-full h-11 px-3 text-sm border border-[#d1d5db] rounded-md bg-transparent focus:outline-none focus:ring-2 focus:ring-[#da251d]/20 focus:border-[#da251d]"
                 />
                 {errors.phone && (

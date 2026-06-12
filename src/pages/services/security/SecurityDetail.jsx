@@ -15,7 +15,7 @@ export default function SecurityDetail() {
       <section className="relative w-full">
         <img
           src={heroBg}
-          className=" w-full md:h-[500px] object-contain"
+          className=" w-full md:h-[500px] object-cover"
           alt="endpoint-security-hero-image"
         />
         <div className="absolute inset-0 bg-red-400/20" />
@@ -39,13 +39,11 @@ export default function SecurityDetail() {
                 <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8]">
                   By deploying security software directly on these devices,
                   organizations can monitor for, detect, and block malicious
-                  activity, such as viruses, ransomware, and unauthorized access
-                  attempts, at the point of entry before they can propagate
-                  through the wider IT infrastructure.
+                  activit.
                 </p>
                 <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8]">
                   Modern endpoint security solutions have evolved beyond
-                  traditional antivirus, incorporating advanced features like
+                  traditional antivirus, incorporating advanced features li////////////ke
                   AI-driven threat intelligence, real-time behavioral analysis,
                   and cloud-based centralized management.
                 </p>
