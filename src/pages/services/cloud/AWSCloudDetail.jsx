@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import heroBg from "../../../assets/images/services/cloud/aws header.jpeg";
-import aws1Img from "../../../assets/images/services/cloud/aws_1.png";
-import aws2Img from "../../../assets/images/services/cloud/aws_2.png";
+import aws1Img from "../../../assets/images/services/cloud/aws_1.jpeg";
+import aws2Img from "../../../assets/images/services/cloud/aws_2.jpeg";
 
 const categories = {
   "use-case": [

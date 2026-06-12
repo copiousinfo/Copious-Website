@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import bulkSmsImg from "../../assets/images/services/general/BULKSMS header.png";
+import bulkSmsImg from "../../assets/images/services/general/BULKSMS header.jpeg";
 import sectionImg from "../../assets/images/about/about-section.jpg";
 import bulkSmsWhatImg from "../../assets/images/services/general/bulksms1.png";
 

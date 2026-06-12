@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import heroImg from "../../assets/images/services/general/dr header.jpeg";
+import heroImg from "../../assets/images/services/general/drHeader.jpeg";
 
 export default function DRServiceDetail() {
   const navigate = useNavigate();
@@ -12,13 +12,13 @@ export default function DRServiceDetail() {
         <img
           src={heroImg}
           alt="dr service header image"
-          className="w-full md:h-[650px] object-cover"
+          className="w-full md:h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-red-400/20" />
       </section>
 
       {/* Content Section */}
-      <section className="bg-white py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
+      <section className="bg-white py-12 sm:py-14 lg:py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-[1000px] mx-auto">
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold text-[#1f2937] mb-6">

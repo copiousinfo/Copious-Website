@@ -37,14 +37,15 @@ export default function Footer() {
               <img src={logoImg} alt="Copious Logo" className="h-8" />
             </div>
 
-            <p className="text-gray-400 text-lg leading-relaxed mb-8 max-w-sm">
+            <p className="text-gray-200 text-lg leading-relaxed mb-8 max-w-sm">
               Copious Infotech
             </p>
 
             <h4 className="font-bold text-lg mb-4">Stay In Touch</h4>
             <div className="flex items-center gap-4">
               <Link
-                to
+                to="https://www.instagram.com/copious_infotech?igsh=dWs1M2ozYTRzcml5"
+                target="_blank"
                 className="w-8 h-8 rounded-full bg-white text-[#0e1626] flex items-center justify-center hover:bg-[#E42A23] hover:text-white transition-colors"
               >
                 <FaInstagram size={14} />
@@ -55,7 +56,7 @@ export default function Footer() {
           {/* Column 3: Quick Links */}
           <div className="w-full lg:w-[160px] flex flex-col">
             <h4 className="font-bold text-lg mb-6">Quick Links</h4>
-            <ul className="space-y-4 text-sm text-gray-400">
+            <ul className="space-y-4 text-sm text-gray-300">
               <li>
                 <Link
                   to="/"
@@ -102,7 +103,7 @@ export default function Footer() {
           {/* Column 4: Reach Me */}
           <div className="w-full lg:w-[260px] flex flex-col">
             <h4 className="font-bold text-lg mb-6">Reach Me</h4>
-            <ul className="space-y-4 text-sm text-gray-400">
+            <ul className="space-y-4 text-sm text-gray-200">
               <li className="flex items-start gap-3">
                 <div className="mt-1 w-5 h-5 rounded-full bg-white flex items-center justify-center text-[#0e1626] shrink-0">
                   <FaPhoneAlt size={10} />

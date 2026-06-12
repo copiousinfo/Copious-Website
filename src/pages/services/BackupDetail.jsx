@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import aboutHero from '../../assets/images/services/general/backup header.png';
+import aboutHero from '../../assets/images/services/general/backup header.jpeg';
 
 export default function BackupDetail() {
   const navigate = useNavigate();
