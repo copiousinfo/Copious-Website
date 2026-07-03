@@ -20,7 +20,7 @@ const detailedAdvantages = [
 export default function EmailSecurity() {
   const navigate = useNavigate();
   return (
-    <div className="w-full pt-[92px] bg-white">
+    <div className="w-full pt-[56px] bg-white">
       {/* ── Hero Banner ─────────────────────────────────────────── */}
       <section className="relative w-full">
         <img

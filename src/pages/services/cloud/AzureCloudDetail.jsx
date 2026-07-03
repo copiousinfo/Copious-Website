@@ -53,7 +53,7 @@ export default function AzureCloudDetail() {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full pt-[92px] bg-white">
+    <div className="w-full pt-[56px] bg-white">
       {/* ── Hero ─────────────────────────────────────────────── */}
       <section className="relative w-full">
         <img

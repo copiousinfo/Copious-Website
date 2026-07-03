@@ -5,13 +5,15 @@ import {
   FaPhoneAlt,
   FaEnvelope,
   FaMapMarkerAlt,
+  FaLinkedin,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logoImg from "../../assets/images/shared/copious.png";
+import { FaX } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#380a08] text-white pt-20 pb-10">
+    <footer className="bg-[#4B0505] text-white pt-20 pb-4">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {/* Column 1: Google Map */}
@@ -39,12 +41,18 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-white transition-colors">
+                <Link
+                  to="/contact"
+                  className="hover:text-white transition-colors"
+                >
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link to="/privacy-policy" className="hover:text-white transition-colors">
+                <Link
+                  to="/privacy-policy"
+                  className="hover:text-white transition-colors"
+                >
                   Privacy Policy
                 </Link>
               </li>
@@ -59,36 +67,87 @@ export default function Footer() {
                 <div className="mt-1 w-7 h-7 rounded-full bg-white flex items-center justify-center text-[#0e1626] shrink-0">
                   <FaPhoneAlt size={12} />
                 </div>
-                <a href="tel:8882320033" className="hover:underline">8882320033</a>
+                <a href="tel:8882320033" className="hover:underline">
+                  8882320033
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <div className="mt-1 w-7 h-7 rounded-full bg-white flex items-center justify-center text-[#0e1626] shrink-0">
                   <FaEnvelope size={12} />
                 </div>
-                <a href="mailto:connect@copiousinfo.com" className="hover:underline">connect@copiousinfo.com</a>
+                <a
+                  href="mailto:connect@copiousinfo.com"
+                  className="hover:underline"
+                >
+                  connect@copiousinfo.com
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <div className="mt-1 w-7 h-7 rounded-full bg-white flex items-center justify-center text-[#0e1626] shrink-0">
                   <FaMapMarkerAlt size={12} />
                 </div>
-                <address className="not-italic">H-141, Sector 63 Rd, Electronic City, H Block, Sector 63, Noida, Uttar Pradesh 201309</address>
+                <address className="not-italic">
+                  H-141, Sector 63 Rd, Electronic City, H Block, Sector 63,
+                  Noida, Uttar Pradesh 201309
+                </address>
+              </li>
+              <li className="flex items-center gap-3 cursor-pointer">
+                <div className="mt-1 w-7 h-7 rounded-full bg-white flex items-center justify-center text-[#0e1626] shrink-0">
+                  <FaFacebookF size={12} />
+                </div>
+                <Link
+                  to="https://www.facebook.com/p/Copious-Infotech-100088582103621"
+                  target="_blank"
+                  className="hover:underline"
+                >
+                  Facebook
+                </Link>
               </li>
               <li className="flex items-center gap-3 cursor-pointer">
                 <div className="mt-1 w-7 h-7 rounded-full bg-white flex items-center justify-center text-[#0e1626] shrink-0">
                   <FaInstagram size={12} />
                 </div>
-                <Link tp="https://www.instagram.com/copious_infotech" target="_blank"  className="hover:underline">Instagram</Link>
+                <Link
+                  to="https://www.instagram.com/copious_infotech"
+                  target="_blank"
+                  className="hover:underline"
+                >
+                  Instagram
+                </Link>
+              </li>
+              <li className="flex items-center gap-3 cursor-pointer">
+                <div className="mt-1 w-7 h-7 rounded-full bg-white flex items-center justify-center text-[#0e1626] shrink-0">
+                  <FaLinkedin size={12} />
+                </div>
+                <Link
+                  to="https://www.linkedin.com/company/copious-infotech"
+                  target="_blank"
+                  className="hover:underline"
+                >
+                  LinkedIn
+                </Link>
+              </li>
+              <li className="flex items-center gap-3 cursor-pointer">
+                <div className="mt-1 w-7 h-7 rounded-full bg-white flex items-center justify-center text-[#0e1626] shrink-0">
+                  <FaX size={12} />
+                </div>
+                <Link
+                  to="https://x.com/copiousinfo"
+                  target="_blank"
+                  className="hover:underline"
+                >
+                  X (Formerly Twitter)
+                </Link>
               </li>
             </ul>
           </div>
-
-          
-          
         </div>
 
         {/* Bottom Copyright */}
-        <div className="border-t border-gray-400 pt-6 flex  items-center justify-center">
-          <p className="text-gray-300 text-center md:text-left">© 2026 All Rights Reserved By Copious Infotech</p>
+        <div className="border-t border-gray-400 pt-4 flex  items-center justify-center">
+          <p className="text-gray-300 text-center md:text-left">
+            © 2026 All Rights Reserved By Copious Infotech
+          </p>
         </div>
       </div>
     </footer>

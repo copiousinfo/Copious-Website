@@ -29,7 +29,7 @@ export default function Contact() {
   const [toast, setToast] = useState(null); // { type: 'success' | 'error', text: string }
 
   const nameRegex = /^[A-Za-z\s]+$/;
-  const phoneRegex = /^\d{12}$/;
+  const phoneRegex = /^\d{10}$/;
 
   // ── Helpers ───────────────────────────────────────────────────
   const showToast = (type, text) => {
@@ -192,7 +192,7 @@ export default function Contact() {
 
   // ── Render ────────────────────────────────────────────────────
   return (
-    <div className="w-full pt-[92px] bg-[#202329]">
+    <div className="w-full pt-[56px] bg-[#202329]">
       {/* ── Hero Banner ──────────────────────────────────────── */}
       <section className="relative max-w-[1440px] mx-auto">
         <img

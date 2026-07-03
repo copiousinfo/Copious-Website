@@ -3,7 +3,7 @@ import aboutHero from "../assets/images/about/about hero.jpeg";
 
 export default function About() {
   return (
-    <div className="w-full pt-[92px] bg-[#202329]">
+    <div className="w-full pt-[56px] bg-[#202329]">
       <section className="relative max-w-[1440px] mx-auto">
         <img src={aboutHero} className=" w-full md:h-[500px] object-cover" />
         <div className="absolute inset-0 bg-red-400/20" />

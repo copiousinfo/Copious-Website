@@ -54,7 +54,7 @@ export default function AWSCloudDetail() {
   const [activeTab, setActiveTab] = useState("use-case");
 
   return (
-    <div className="w-full pt-[92px] bg-white">
+    <div className="w-full pt-[56px] bg-white">
       {/* ── Hero ─────────────────────────────────────────────── */}
       <section className="relative w-full">
         <img

@@ -26,7 +26,7 @@ export default function ContentCard({
         <img
           src={image}
           alt={imageAlt || title}
-          className="w-full h-full object-fit md:object-cover transition-transform duration-300 ease-out group-hover:scale-105"
+          className="w-full h-full object-cover md:object-cover transition-transform duration-300 ease-out"
         />
       </div>
 

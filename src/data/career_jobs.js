@@ -1,6 +1,8 @@
 import bdaImg from "../assets/images/about/bda.jpg";
 import androidImg from "../assets/images/about/android.jpg";
 import phpImg from "../assets/images/about/php.jpg";
+import digitalMarketingImg from "../assets/images/about/digital-marketing-executive.jpeg";
+import frontendDevImg from "../assets/images/about/frontend-developer.jpeg";
 
 /**
  * Career job listings — single source of truth for the Careers page.
@@ -15,6 +17,16 @@ import phpImg from "../assets/images/about/php.jpg";
  *  - Jd php.pdf
  */
 export const careerJobs = [
+  {
+    id: "social-mdeia-marketing",
+    title: "Digital Marketing Executive",
+    img: digitalMarketingImg,
+    pdf: "jd Social Media Marketing.pdf",
+    desc: [
+      "A Social Media Executive is responsible for managing the company's online presence by creating engaging content, growing brand awareness, and building strong connections with the target audience across social media platforms.",
+      "The roles and responsibilities include planning and publishing posts, designing creative content, monitoring audience engagement, and managing social media campaigns. They also analyze performance metrics to improve reach, engagement, and overall campaign effectiveness.",
+    ],
+  },
   {
     id: "business-development-executive",
     title: "Business Development Executive",
@@ -44,6 +56,17 @@ export const careerJobs = [
       "A PHP developer is part of the company's backend team, responsible for writing, testing, and maintaining PHP code for web applications.",
       "The roles and responsibilities include preparing server-side logic, managing database connections, and assuring high performance and responsiveness to requests from the front end. They also participate in front-end integration to ensure quality in the overall experience.",
       "A PHP developer collaborates with cross-functional teams to define, design, and develop new features. They also participate in the design and testing process.",
+    ],
+  },
+  {
+    id: "frontend-developer",
+    title: "Frontend Developer",
+    img: frontendDevImg,
+    pdf: "Job Description frontend intern.pdf",
+    desc: [
+      "A Frontend Developer is responsible for creating responsive, user-friendly, and visually appealing web interfaces that deliver an excellent user experience across all modern devices and browsers.",
+      "The roles and responsibilities include developing interactive user interfaces using HTML, CSS, JavaScript, and modern frontend frameworks (React.js, TailwindCSS). They ensure websites are fast, responsive, and optimized for performance while maintaining clean and reusable code.",
+      "A Frontend Developer collaborates with UI/UX designers and backend developers to transform designs into functional web applications. ",
     ],
   },
 ];

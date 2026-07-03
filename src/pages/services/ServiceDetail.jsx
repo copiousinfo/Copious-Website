@@ -78,7 +78,7 @@ export default function ServiceDetail() {
   const currentWhatImg = slug === "bulk-sms" ? bulkSmsWhatImg : sectionImg;
 
   return (
-    <div className="w-full pt-[92px] bg-[#efefef]">
+    <div className="w-full pt-[56px] bg-[#efefef]">
       {/* ── Hero Banner ─────────────────────────────────────────── */}
       <section className="relative w-full">
         <img

@@ -50,7 +50,7 @@ export default function BulkWebWhatsApp() {
   ];
 
   return (
-    <div className="w-full pt-[92px] bg-[#efefef]">
+    <div className="w-full pt-[56px] bg-[#efefef]">
       {/* Hero Section */}
       <section className="relative w-full">
         <img

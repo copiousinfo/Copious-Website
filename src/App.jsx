@@ -1,5 +1,9 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+
 import useScrollToTop from "./hooks/useScrollToTop";
+import { initGA, trackPageView } from "./services/analytics.js";
+
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Home from "./pages/Home";
@@ -23,15 +27,31 @@ import AzureCloudDetail from "./pages/services/cloud/AzureCloudDetail";
 import ManagedServiceDetail from "./pages/services/ManagedServiceDetail";
 import DRServiceDetail from "./pages/services/DRServiceDetail";
 import Career from "./pages/Career";
-
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import VoterManagement from "./pages/solutions/VoterManagement";
 
 function App() {
   useScrollToTop();
 
+  const location = useLocation();
+  
+  useEffect(() => {
+    initGA();
+  }, []);
+  // track page changes
+  useEffect(() => {
+    // avoid firing before GA is ready
+    const timeout = setTimeout(() => {
+      trackPageView(location.pathname + location.search);
+    }, 100);
+
+    return () => clearTimeout(timeout);
+  }, [location]);
+
   return (
-    <div className="flex flex-col min-h-screen  font-poppins">
+    <div className="flex flex-col min-h-screen font-poppins">
       <Navbar />
+
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -39,6 +59,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<Faq />} />
+
           <Route path="/solutions/parking" element={<ParkingDetail />} />
           <Route
             path="/solutions/event-management"
@@ -46,10 +67,17 @@ function App() {
           />
           <Route path="/solutions/acurestro" element={<AcurestroDetail />} />
           <Route path="/solutions/vyorise" element={<VyoriseDetail />} />
+          <Route
+            path="/solutions/voter-management"
+            element={<VoterManagement />}
+          />
+
           <Route path="/solutions/:slug" element={<SolutionsDetail />} />
+
           <Route path="/services/security" element={<SecurityDetail />} />
           <Route path="/security/email" element={<EmailSecurity />} />
           <Route path="/security/antivirus" element={<AntivirusSecurity />} />
+
           <Route path="/career" element={<Career />} />
 
           <Route
@@ -70,10 +98,15 @@ function App() {
             path="/services/managed-service"
             element={<ManagedServiceDetail />}
           />
-          <Route path="/services/dr-service" element={<DRServiceDetail />} />
+          <Route
+            path="/security/disaster-recovery"
+            element={<DRServiceDetail />}
+          />
+
           <Route path="/services/:slug" element={<ServiceDetail />} />
         </Routes>
       </main>
+
       <Footer />
     </div>
   );

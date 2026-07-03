@@ -62,10 +62,10 @@ const featureCards = [
 
 export default function VyoriseDetail() {
   return (
-    <div className="w-full pt-[92px] bg-[#efefef]">
+    <div className="w-full pt-[56px] bg-[#efefef]">
       {/* ── Hero Section ── */}
       <section className="relative w-full">
-        <img src={vyoriseImg} className=" w-full md:h-[500px] object-cover" />
+        <img src={vyoriseImg} className=" w-full md:h-[540px] object-cover" />
         <div className="absolute inset-0 bg-red-400/20" />
       </section>
 
@@ -74,22 +74,11 @@ export default function VyoriseDetail() {
           <div className="flex flex-col-reverse md:flex-row gap-5">
             <div className="w-full md:w-1/2">
               <h2 className="text-3xl font-semibold text-[#1f2937] mb-4">
-                About Us
+                About Software
               </h2>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {tabData.map((tab, idx) => (
-                  <span
-                    key={tab}
-                    className={`text-[11px] px-4 py-1.5 rounded-full ${
-                      idx === 0
-                        ? "bg-[#da251d] text-white"
-                        : "bg-[#f1f5f9] text-[#374151]"
-                    }`}
-                  >
-                    {tab}
-                  </span>
-                ))}
-              </div>
+              <span className="flex flex-wrap gap-2 mb-3 sm:mb-4 bg-[#da251d] w-36 px-4 py-1.5 rounded-full text-white text-sm">
+                {tabData}
+              </span>
               <p className="text-[#4b5563] text-[14px] leading-7 mb-4">
                 Vyorise software streamlines the operations through automation,
                 including tasks like creation, tracking, and management.
@@ -183,9 +172,8 @@ export default function VyoriseDetail() {
 
       <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pb-12 sm:pb-14 lg:pb-16">
         <div className="bg-white rounded-md p-5 sm:p-7 lg:p-8">
-          <h2 className="text-center text-3xl sm:text-4xl lg:text-[56px] font-semibold text-[#1f2937] flex flex-col lg:gap-4 mb-12">
-            <span>Vyorise Management</span>
-            <span>Feature</span>
+          <h2 className="text-center text-2xl sm:text-4xl lg:text-[44px] font-semibold text-[#1f2937] flex flex-col lg:gap-4 mb-9">
+            <span>Vyorise Management Feature</span>
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

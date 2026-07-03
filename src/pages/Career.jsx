@@ -8,7 +8,7 @@ export default function Career() {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full pt-[92px] bg-white">
+    <div className="w-full pt-[56px] bg-white">
       {/* ── Hero Banner ───────────────────────────────────────── */}
       <section className="relative w-full">
         <img src={heroBg} className="w-full md:h-[500px] object-cover" />
@@ -40,7 +40,6 @@ export default function Career() {
                   extremely important to our success. Database solutions are
                   proficient and well curated.
                 </p>
-                
               </div>
             </div>
             <div className="w-full md:w-1/2">
@@ -55,7 +54,7 @@ export default function Career() {
       </section>
 
       {/* ── Open Positions ────────────────────────────────────── */}
-      <section className="w-full bg-[#e5e6e7] py-8">
+      <section className="w-full bg-[#f1f1f1] py-8">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-16">
           <div className="text-center mb-12">
             <h2 className="text-[#1f2937] text-[24px] sm:text-[30px] lg:text-[36px] font-bold mb-5">
@@ -76,17 +75,21 @@ export default function Career() {
           </div>
 
           <div className="space-y-10 sm:space-y-12">
-            {careerJobs.map((job) => (
+            {careerJobs.map((job, index) => (
               <div
                 key={job.id}
                 className="w-full site-card bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden"
               >
-                <div className="flex flex-col-reverse md:flex-row gap-6 md:gap-7">
+                <div
+                  className={`flex flex-col-reverse gap-6 md:gap-7 ${
+                    index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                  }`}
+                >
                   <div className="w-full md:w-1/2 p-6 sm:p-8 lg:p-10">
                     <h3 className="text-[#1f2937] text-[20px] sm:text-[22px] font-bold mb-5">
                       {job.title}
                     </h3>
-                    <div className="space-y-3 mb-7">
+                    <div className="space-y-3 mb-4">
                       {job.desc.map((para, i) => (
                         <p
                           key={i}
@@ -118,7 +121,7 @@ export default function Career() {
                     <img
                       src={job.img || jobImg}
                       alt={job.title}
-                      className="w-full h-full object-fit bg-[#f8f9fa] rounded-xl"
+                      className="w-full h-full object-cover bg-[#f8f9fa] rounded-xl"
                     />
                   </div>
                 </div>

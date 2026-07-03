@@ -6,10 +6,10 @@ import Testimonials from '../components/sections/home/Testimonials';
 
 export default function Home() {
   return (
-    <div className="w-full flex flex-col pt-[92px]">
+    <div className="w-full flex flex-col pt-[56px]">
       <Hero />
-      <Services />
       <Solutions />
+      <Services />
       <Testimonials />
     </div>
   );

@@ -6,7 +6,7 @@ export default function BackupDetail() {
   const navigate = useNavigate();
 
   return (
-    <div className="w-full pt-[92px]">
+    <div className="w-full pt-[56px]">
       {/* Hero Section */}
       <section className="relative w-full">
         <img

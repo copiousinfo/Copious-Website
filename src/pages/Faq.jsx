@@ -88,7 +88,7 @@ export default function Faq() {
   ];
 
   return (
-    <div className="w-full pt-[92px] bg-[#f8f9fa] pb-16">
+    <div className="w-full pt-[56px] bg-[#f8f9fa] pb-16">
       {/* Hero Section */}
       <section className="relative max-w-[1440px] mx-auto">
         <img src={faqHero} className="md:h-[500px] w-full object-contain " />

@@ -6,53 +6,54 @@
  *   - children: Array of child items (creates a dropdown)
  */
 export const navLinks = [
-  { name: 'Home', path: '/' },
+  { name: "Home", path: "/" },
   {
-    name: 'Solutions',
+    name: "Solutions",
     children: [
-      { name: 'Ticketing',         path: '/solutions/ticketing' },
-      // { name: 'Billing',           path: '/solutions/billing' },
-      { name: 'Parking',           path: '/solutions/parking' },
-      { name: 'Event Management',  path: '/solutions/event-management' },
-      { name: 'Acurestro',         path: '/solutions/acurestro' },
-      { name: 'Vyorise',           path: '/solutions/vyorise' },
+      { name: "Ticketing", path: "/solutions/ticketing" },
+      { name: "Parking", path: "/solutions/parking" },
+      { name: "Event Management", path: "/solutions/event-management" },
+      { name: "Acurestro", path: "/solutions/acurestro" },
+      { name: "Vyorise", path: "/solutions/vyorise" },
+      { name: "Voter Management", path: "/solutions/voter-management" },
     ],
   },
   {
-    name: 'Services',
+    name: "Services",
     children: [
-      { name: 'Bulk SMS',           path: '/services/bulk-sms' },
-      { name: 'Bulk Whatsapp Business', path: '/services/bulk-web-whatsapp' },
-      { name: 'Microsoft',      path: '/services/microsoft' },
+      { name: "Bulk SMS", path: "/services/bulk-sms" },
+      { name: "Bulk Whatsapp Business", path: "/services/bulk-web-whatsapp" },
+      { name: "Microsoft", path: "/services/microsoft" },
       // { name: 'Cloud Service',  path: '/services/cloud-service' },
-      { name: 'Backup',         path: '/services/backup' },
-      { name: 'Manage Service', path: '/services/managed-service' },
-      { name: 'DR Service',     path: '/services/dr-service' },
+      { name: "Backup", path: "/services/backup" },
+      { name: "Manage Service", path: "/services/managed-service" },
     ],
   },
   {
-    name: 'Security',
+    name: "Security",
     children: [
-      { name: 'End Point Security', path: '/services/security' },
-      { name: 'Email Security',     path: '/security/email' },
-      { name: 'Antivirus Security', path: '/security/antivirus' },
+      { name: "End Point Security", path: "/services/security" },
+      { name: "Email Security", path: "/security/email" },
+      { name: "Antivirus Security", path: "/security/antivirus" },
+      { name: "Disaster Recovery", path: "/security/disaster-recovery" },
+
     ],
   },
   {
-    name: 'Cloud',
+    name: "Cloud",
     children: [
-      { name: 'AWS',      path: '/services/cloud-service_aws' },
-      { name: 'Azure',    path: '/services/cloud-service_azure' },
+      { name: "AWS", path: "/services/cloud-service_aws" },
+      { name: "Azure", path: "/services/cloud-service_azure" },
     ],
   },
   // { name: 'Blog', path: '/blog' },
   {
-    name: 'Company',
+    name: "Company",
     children: [
-      { name: 'About Us', path: '/about' },
-      { name: 'Career',   path: '/career' },
-      { name: 'FAQ',      path: '/faq' },
+      { name: "About Us", path: "/about" },
+      { name: "Career", path: "/career" },
+      { name: "FAQ", path: "/faq" },
     ],
   },
-  { name: 'Contact', path: '/contact' },
+  { name: "Contact", path: "/contact" },
 ];

@@ -1,8 +1,8 @@
-import React, { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaBars, FaTimes, FaChevronDown, FaChevronRight } from "react-icons/fa";
 import { navLinks } from "../../constants/navLinks";
-import logoImg from "../../assets/images/shared/copious.png";
+import logoImg from "../../assets/images/shared/copious full logo.png";
 
 /* ─── Nav items from constants ────────────────────────────────── */
 const navItems = navLinks;
@@ -203,28 +203,35 @@ function MobileAccordion({ item, depth = 0, onNavigate }) {
 /* ─── Main Navbar ─────────────────────────────────────────────── */
 export default function Navbar() {
   const location = useLocation();
-  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    setIsOpen(false);
+    const timer = window.setTimeout(() => {
+      setIsOpen(false);
+    }, 0);
+
+    return () => window.clearTimeout(timer);
   }, [location.pathname]);
+
+  const toggleMenu = useCallback(() => {
+    setIsOpen((prev) => !prev);
+  }, []);
+
+  const closeMenu = useCallback(() => {
+    setIsOpen(false);
+  }, []);
 
   return (
     <header className="w-full z-[100] fixed top-0 left-0 right-0 shadow-sm bg-white">
       {/* Top Announcement Bar */}
-      <div className="bg-red-700 w-full py-1.5 flex justify-center items-center">
-        <span className="text-white text-[14px] tracking-wider font-medium">
-          Welcome to Copious Infotech
-        </span>
-      </div>
+      <div className="bg-red-700 w-full py-0.5 flex justify-center items-center"></div>
 
       {/* Main Navbar Row */}
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-12">
-        <div className="max-w-[1440px] mx-auto flex items-center justify-between h-[64px]">
+        <div className="max-w-[1440px] mx-auto flex items-center justify-between h-[52px]">
           {/* Logo */}
           <Link to="/" className="shrink-0 flex items-center">
-            <img src={logoImg} alt="Copious Logo" className="h-9 lg:h-10" />
+            <img src={logoImg} alt="Copious Logo" className="w-36 object-cover" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -236,7 +243,7 @@ export default function Navbar() {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`text-[13px] xl:text-[14px] font-bold py-2 transition-colors hover:text-[#da251d] ${
+                  className={`text-[13px] xl:text-[14px] font-bold py-1 transition-colors hover:text-[#da251d] ${
                     item.path === "/blog"
                       ? location.pathname.startsWith("/blog")
                         ? "text-[#da251d]"
@@ -256,8 +263,9 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             <button
               className="lg:hidden p-2 text-[#1A1A1A]"
-              onClick={() => setIsOpen(!isOpen)}
+              onClick={toggleMenu}
               aria-label="Toggle menu"
+              aria-expanded={isOpen}
             >
               {isOpen ? <FaTimes size={22} /> : <FaBars size={22} />}
             </button>
@@ -273,11 +281,7 @@ export default function Navbar() {
       >
         <div className="px-4 pt-2 pb-5">
           {navItems.map((item) => (
-            <MobileAccordion
-              key={item.name}
-              item={item}
-              onNavigate={() => setIsOpen(false)}
-            />
+            <MobileAccordion key={item.name} item={item} onNavigate={closeMenu} />
           ))}
         </div>
       </div>
