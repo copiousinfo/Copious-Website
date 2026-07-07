@@ -1,28 +1,30 @@
-import React from 'react';
-import { FaStar } from 'react-icons/fa';
-import SectionHeading from '../../ui/SectionHeading';
-import bgImg from '../../../assets/images/home/testimonial.jpeg';
+import React from "react";
+import { FaStar } from "react-icons/fa";
+import SectionHeading from "../../ui/SectionHeading";
+import bgImg from "../../../assets/images/home/testimonial.jpeg";
 
 const testimonialsData = [
   {
     id: 1,
-    name: 'Rajesh Kumar',
-    role: 'Acural Solutions',
-    quote: '"Overall, the two reports were very clear and helpful so thank you for the suggestion to do the focus group. We are currently working with our developer to implement some of these suggestions"'
+    name: "Rajesh Kumar, CEO",
+    client: "Acural Solutions Pvt. Ltd.",
+    quote:
+      '"Copious did not just build software for us; they built a solution that transformed how Acural operates. From the initial architecture design to final deployment, their team demonstrated deep domain expertise and total commitment to our success. The software is intuitive, powerful, and tailored perfectly to our needs. If you are looking for an agile technology partner who delivers exactly what they promise, I highly recommend Copious."',
   },
   {
     id: 2,
-    name: 'M. Kapoor',
-    role: 'Haryana Tourism',
-    quote: '"We are very happy and satisfied with Copious service. Our account manager is efficient and very knowledgeable. It was able to create a vast fan base within very short period of time. We would highly recommend Copious to everyone."'
-  }
+    name: "M. Kapoor, Retired IT Head",
+    client: "Haryana Tourism",
+    quote:
+      '"We are highly satisfied with Copious and their exceptional team! They provided us with an outstanding ticketing software for Pinjore Garden that helped us build a massive fan base in no time. Our account manager is efficient, incredibly knowledgeable, and always supportive. We highly recommend Copious to everyone looking for cutting-edge software development."',
+  },
 ];
 
 export default function Testimonials() {
   return (
     <section className="relative w-full py-16 flex flex-col items-center">
       {/* Background Image with Overlay */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${bgImg})` }}
       >
@@ -31,20 +33,24 @@ export default function Testimonials() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 w-full">
         <SectionHeading dark={false}>Testimonials</SectionHeading>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {testimonialsData.map((testimonial) => (
-            <div key={testimonial.id} className="site-card bg-white rounded-2xl p-6 flex flex-col gap-6 shadow-lg border border-transparent">
+            <div
+              key={testimonial.id}
+              className="site-card bg-white rounded-2xl p-6 flex flex-col gap-6 shadow-lg border border-transparent"
+            >
               <div className="flex flex-col h-full text-left">
                 <div className="flex text-[#1E50FF] mb-4 justify-center sm:justify-start">
-                  <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
+                  {testimonial.client}
                 </div>
                 <p className="text-dark font-medium text-[15px] leading-relaxed mb-6 italic">
                   {testimonial.quote}
                 </p>
                 <div className="mt-auto">
-                  <span className="font-bold text-dark">{testimonial.name}</span>
-                  <span className="text-gray-500 text-sm ml-2">{testimonial.role}</span>
+                  <span className="font-bold text-dark">
+                    {testimonial.name}
+                  </span>
                 </div>
               </div>
             </div>

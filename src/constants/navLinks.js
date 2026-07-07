@@ -35,7 +35,7 @@ export const navLinks = [
       { name: "End Point Security", path: "/services/security" },
       { name: "Email Security", path: "/security/email" },
       { name: "Antivirus Security", path: "/security/antivirus" },
-      { name: "Disaster Recovery", path: "/security/disaster-recovery" },
+      { name: "Disaster Recovery (DR)", path: "/security/disaster-recovery" },
 
     ],
   },
