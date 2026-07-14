@@ -43,7 +43,7 @@ export default function SecurityDetail() {
                 </p>
                 <p className="text-[#4b5563] text-[14px] sm:text-[15px] leading-[1.8]">
                   Modern endpoint security solutions have evolved beyond
-                  traditional antivirus, incorporating advanced features li////////////ke
+                  traditional antivirus, incorporating advanced features like
                   AI-driven threat intelligence, real-time behavioral analysis,
                   and cloud-based centralized management.
                 </p>

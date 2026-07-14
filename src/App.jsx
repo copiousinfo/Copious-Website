@@ -34,7 +34,7 @@ function App() {
   useScrollToTop();
 
   const location = useLocation();
-  
+
   useEffect(() => {
     initGA();
   }, []);
@@ -55,6 +55,7 @@ function App() {
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/index" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/contact" element={<Contact />} />
