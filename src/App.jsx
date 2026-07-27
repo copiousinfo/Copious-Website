@@ -34,20 +34,17 @@ function App() {
   useScrollToTop();
 
   const location = useLocation();
-
   useEffect(() => {
     initGA();
   }, []);
-  // track page changes
+
   useEffect(() => {
-    // avoid firing before GA is ready
     const timeout = setTimeout(() => {
       trackPageView(location.pathname + location.search);
     }, 100);
 
     return () => clearTimeout(timeout);
   }, [location]);
-
   return (
     <div className="flex flex-col min-h-screen font-poppins">
       <Navbar />

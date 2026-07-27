@@ -1,26 +1,29 @@
 const GA_ID = import.meta.env.VITE_GA_MEASUREMENT_ID;
 
-// initialize GA
 export const initGA = () => {
   if (!GA_ID) return;
 
   window.dataLayer = window.dataLayer || [];
 
-  function gtag() {
-    window.dataLayer.push(arguments);
-  }
+  window.gtag =
+    window.gtag ||
+    function () {
+      window.dataLayer.push(arguments);
+    };
 
-  window.gtag = gtag;
+  window.gtag("js", new Date());
 
-  gtag("js", new Date());
-  gtag("config", GA_ID);
+  window.gtag("config", GA_ID, {
+    send_page_view: false, // React Router will send page views
+  });
 };
 
-// track page view (SPA routing)
 export const trackPageView = (path) => {
   if (!window.gtag || !GA_ID) return;
 
-  window.gtag("config", GA_ID, {
+  window.gtag("event", "page_view", {
+    page_location: window.location.href,
     page_path: path,
+    page_title: document.title,
   });
 };

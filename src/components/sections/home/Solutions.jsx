@@ -11,30 +11,6 @@ import voterManagementImg from "../../../assets/images/solutions/voter-managemen
 const solutionsData = [
   {
     id: 1,
-    slug: "ticketing",
-    title: "Ticketing",
-    image: ticketingImg,
-    description:
-      "Our ticket management software helps businesses handle customer service requests efficiently. Track, categorize, and resolve incoming tickets to deliver effective and timely support.",
-  },
-  {
-    id: 2,
-    slug: "parking",
-    title: "Parking",
-    image: parkingImg,
-    description:
-      "Optimize your parking operations with smart management solutions. Ensure seamless entry and exit, track availability, and provide a hassle-free parking experience for your customers.",
-  },
-  {
-    id: 3,
-    slug: "event-management",
-    title: "Event Management",
-    image: eventImg,
-    description:
-      "Streamline your events from planning to execution with our comprehensive event management solution. Handle registrations, ticketing, attendee tracking, and real-time reporting all in one place.",
-  },
-  {
-    id: 4,
     slug: "acurestro",
     title: "Acurestro",
     image: acurestroImg,
@@ -42,7 +18,7 @@ const solutionsData = [
       "Acurestro is a powerful restaurant and retail POS solution designed to streamline order management, billing, inventory, and customer experience — all from a single unified platform.",
   },
   {
-    id: 5,
+    id: 2,
     slug: "vyorise",
     title: "Vyorise",
     image: vyoriseImg,
@@ -50,12 +26,36 @@ const solutionsData = [
       "Vyorise delivers cutting-edge business management tools tailored for modern enterprises. Enhance your operational efficiency, data insights, and team collaboration with our smart platform.",
   },
   {
-    id: 6,
+    id: 3,
     slug: "voter-management",
     title: "Voter Management",
     image: voterManagementImg,
     description:
       "Simplify your election campaign with a powerful Voter Management System designed to organize voter data, improve field operations, and enhance voter outreach.",
+  },
+  {
+    id: 4,
+    slug: "ticketing",
+    title: "Ticketing",
+    image: ticketingImg,
+    description:
+      "Our ticket management software helps businesses handle customer service requests efficiently. Track, categorize, and resolve incoming tickets to deliver effective and timely support.",
+  },
+  {
+    id: 5,
+    slug: "parking",
+    title: "Parking",
+    image: parkingImg,
+    description:
+      "Optimize your parking operations with smart management solutions. Ensure seamless entry and exit, track availability, and provide a hassle-free parking experience for your customers.",
+  },
+  {
+    id: 6,
+    slug: "event-management",
+    title: "Event Management",
+    image: eventImg,
+    description:
+      "Streamline your events from planning to execution with our comprehensive event management solution. Handle registrations, ticketing, attendee tracking, and real-time reporting all in one place.",
   },
 ];
 
